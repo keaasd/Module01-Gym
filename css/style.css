@@ -1,0 +1,5 @@
+body {
+    color: blue;
+    background-color: grey;
+}
+@import ("fonts.css")
