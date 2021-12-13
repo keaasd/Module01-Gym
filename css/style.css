@@ -1,5 +1,36 @@
+/* @import ("fonts.css") */
 body {
+    border: 2px solid green;
     color: blue;
-    background-color: grey;
+    background-color: grey;    
 }
-@import ("fonts.css")
+
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.wrapper {
+    /* max-width: 360px; */
+}
+.header {
+    display: flex;
+}
+.header-burger {
+    display: flex;
+}
+.social {
+    display: flex;
+}
+.header-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 54px;
+}
+.nav-items {
+    text-decoration: none;
+}
+.menu-items {
+    border: 2px solid green;
+    margin-bottom: 80px;
+}
