@@ -65,7 +65,7 @@ body {
     border-bottom: 1px solid #2B3541;
     padding-bottom: 10px;
 }
-.header-social-in {
+.header-social-fb {
     display: block;
     background-image: url(../img/icons/FB.svg);
     background-repeat: no-repeat;
@@ -73,10 +73,11 @@ body {
     width: 30px;
     height: 30px;
 }
-.header-social-in:hover {
+.header-social-fb:hover {
     width: 38px;
     height: 38px;
 }
+/* in */
 .header-social-fb {
     display: block;
     background-image: url(../img/icons/in.svg);
