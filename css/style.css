@@ -16,8 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 49px;
-    padding-bottom: 27px;
+    padding: 49px 50px 27px;
 }
 .header-items {
     display: flex;
@@ -155,6 +154,8 @@ body {
 .menu-bg-mobil {
     display: none;
 }
+border: 1px solid #2B3541;
+
 
 @media (max-width: 360px) {
     .menu {
