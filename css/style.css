@@ -1,13 +1,12 @@
 /* @import ("fonts.css") */
 body {
-    border: 2px solid green;
-    color: blue;
-    background-color: grey;    
+    font-family: Montserrat;
+    border: 2px solid blue;
 }
 
 .container {
-    padding-right: 10px;
-    padding-left: 10px;
+    max-width: 1325px;
+    margin: 0 auto;        
 }
 .wrapper {
     /* max-width: 360px; */
@@ -16,50 +15,244 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 49px;
-    padding-left: 52.6px;
-    padding-right: 50px;
-    /* padding-bottom: 27px; */    
+    margin: 0 auto;
+    padding-top: 49px;
+    padding-bottom: 27px;
 }
-.logo {        
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 30%;  
+}
+
+.header-logo { 
+    display: block;   
     background-image: url(../img/logo.svg);         
     background-repeat: no-repeat;
     background-size: contain;
     width: 97px;
     height: 30px;
 }
+.header-logo:hover { 
+    width: 98px;    
+}
 .header-burger {
     display: none;
+
 }
-.social {
+.header-social {
     display: flex;
+    list-style-type: none;
+    gap: 30px;
 }
 .header-nav {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    gap: 54px;
+    gap: 12.3%;
+    padding-left: 0;
 }
 .nav-items {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 150%;
     text-decoration: none;
 }
+.header-social-in {
+    display: block;
+    background-image: url(../img/icons/FB.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.header-social-fb {
+    display: block;
+    background-image: url(../img/icons/in.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
 .menu-items {
     border: 2px solid green;
     margin-bottom: 80px;
-    ;
+}
+.menu {
+    max-width: 1325px;
+    padding-right: 390px;
+    padding-left: 205px;
+    margin-bottom: 80px;
+}
+.menu-bg {
+    position: relative;
+    background-image: url(../img/@2x/Image-1-screen@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+    border: 2px solid red;
+    padding-top: 228px;
+    padding-bottom: 239px;
+    padding-right: 649px;
+}
+.menu-text {
+    max-width: 676px;
+}
+.menu-title {
+    max-width: 676px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;    
+    text-transform: uppercase;
+    color: #2B3541;
+    /* letter-spacing: 0.03em; */
+}
+
+.menu-item-text {
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.menu-item-text-sport {
+    max-width: 300px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #2B3541;
+    padding-left: 51px;
+}
+.menu-button {
+    display: block;
+    max-width: 252px;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2B3541;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.1);
+    margin-left: 51px;
+}
+.menu-button:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
+.menu-arroy {    
+    position: absolute;
+    background-image: url(../img/icons/Arrow.svg);
+    left: 90px;
+    bottom: 0;
+    width: 52px;
+    height: 55px;
+}
+.menu-bg-mobil {
+    display: none;
 }
 
 @media (max-width: 360px) {
+    .menu {
+        max-width: 359px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .header {
+        padding: 30px 10px 60px;
+        
+    }
     .header-burger {
         display: block;
-    }
-    .header-navigation {
-        display: none;
+        background-image: url(../img/icons/burger.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 29px;
+        height: 22px;
+        margin-left: 57px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
     
-    .logo {
+    .header-nav {
+        display: none;
+        /* нави отключаем */
+    }
+    .header-social {
+        gap: 20px;
+    }
+    .header-social-in {
+        width: 26px;
+        height: 26px;
+    }
+    .header-social-fb {
+        width: 26px;
+        height: 26px;
+    }
+    .header-logo {
         width: 78px;
         height: 24px;
     }
+    .header-logo:hover {
+        width: 79px;
+    }
+    /* навигация */
+    .menu-bg {
+        background-image: none;
+        padding: 0 10px;
+    }
+    
+    .menu-title {
+        max-width: 358px;        
+        font-size: 26px;
+        margin: 0;
+    }
+    .menu-text {
+        text-align: left;
+    }
+    .menu-item-text {
+        font-size: 26px;
+        padding-top: 40px;
+        padding-bottom: 16px;    
+        padding-left: 0;
+    }
+    .menu-item-text-sport {
+        max-width: 255px;
+        font-weight: 400;
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    .menu-button {
+        /* display: block; */
+        max-width: 340px;
+        text-decoration: none;
+        padding: 17px 72px;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 40px auto;
+    }
+    .menu-button:hover {
+        color: #FBF138;
+        background-color: #2B3541;
+    }
+    .menu-arroy {
+        display: none;
+    }
+    .menu-bg-mobil {
+        display: block;
+        background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
+        background-image: url(../img/@1x/image-1-girl.png);
+        background-size: 100% 100%;
+        height: 310px;
+        /* width: 340px; */
+        padding-right: 10px;
+        border: 2px solid blue;
+    } 
 }
-/* flex-basis: 10%; */

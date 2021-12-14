@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <script defer src="js/main.js"></script>
     <title>Document</title>
 </head>
@@ -12,34 +15,50 @@
 <body>
     <div class="wrapper">
         <header class="header"><!-- flex -->
-                <a class="logo" href="#"></a>
+            <div class="header-items">
+                <a class="header-logo" href="#"></a>
                 
                 <!--нав бургера отключаем\ отключаем-->
-                <div class="header-burger">в</div><!-- flex -->
+                <button class="header-burger" onclick="openModal()"></button><!-- flex -->
                     
                 <!--нав десктоп отключаем-->
                 <nav class="header-navigation">
                     <ul class="header-nav">
                         <li> <a class="nav-items" href="#">Мероприятия</a></li>
                         <li> <a class="nav-items" href="#">Расписание</a></li>
-                        <li> <a class="nav-items" href="#">О компании</a></li>
+                        <li> <a class="nav-items" href="#">О&nbsp;компании</a></li>
                     </ul>
                 </nav>
+            </div>
+                
                 <!-- иконки                 -->
-                <div class="header-social">
-                    <ul class="social">
-                        <li> <a class="header-social-items" href="#"> d</a></li>
-                        <li> <a class="header-social-items" href="#"> d</a></li>                        
-                    </ul>
-                </div>
+                <ul class="header-social">
+                    <li> <a class="header-social-in" href="#"></a></li>
+                    <li> <a class="header-social-fb" href="#"></a></li>                        
+                </ul>               
             </header>    
         
     
     <!-- ---- меню ----  -->
     <main>
-        <div class="container">
-            <section class="menu-items"><!-- padding botton 80px  --></section>
-            <section class="menu-items"></section>
+        <section class="menu">            
+            <div class="menu-bg">
+                <div class="menu-text">
+                    <h1 class="menu-title">онлайн тренировки любой сложности</h1>
+                    <p class="menu-item-text">&gt; 15  тренировок</span>
+                    <p class="menu-item-text-sport">в области спортивной физиологии и нутрициологии</p>
+                        <a class="menu-button"   href="#">Узнать подробнее</a>
+                    <a class="menu-arroy" href="#"></a>
+                    <div class="menu-bg-mobil"></div>
+                </div>
+            </div>      
+        </section>
+        <div class="container">            
+            <section class="menu-items">
+                <div class="menu-item-one">
+                    <h3>Ближайшие события</h3>
+                </div>
+            </section>
             <section class="menu-items"></section>
         </div>    
         <section class="menu-items">Подпишитесь на рассылку</section>
