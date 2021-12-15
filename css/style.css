@@ -4,13 +4,14 @@ body {
 }
 
 .container {
-    max-width: 1325px;
+    max-width: 1140px;
     margin: 0 auto;        
 }
 .wrapper {
     /* max-width: 360px; */ 
 }
 .header {
+    max-width: 1817px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,8 +180,114 @@ body {
 .menu-bg-mobil {
     display: none;
 }
-/* border: 1px solid #2B3541; */
+.menu-h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+}
+.menu-greeds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.menu-greed-1nt {
+    position: relative;
+    background-image: url(../img/@2x/maraphon@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% -20px; */
+    padding: 30px 77px 453px 30px;
+}
+.menu-greed-2nt {
+    position: relative;
+    background-image: url(../img/@2x/Vebinar-1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% -20px; */
+    padding: 30px 77px 453px 30px;
+}
+.menu-greed-3nt {
+    position: relative;
+    background-image: url(../img/@2x/Vebinar2@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% -20px; */
+    padding: 30px 77px 453px 30px;
+}
+.menu-greed-1nt:hover {
+    background-image: url(../img/@2x/maraphonhover@2x.png);
 
+}
+.menu-grid-data {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+}
+.menu-greed-marafon {
+    position: absolute;
+    background-color: #FBF138;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 150%;text-align: center;
+    color: #2B3541;
+    right: 0;
+    bottom: 0;
+}
+.menu-greed-sticker {
+    position: absolute;
+    background-color: #FBF138;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 150%;text-align: center;
+    color: #2B3541;
+    right: 0;
+    bottom: 0;
+}
+.menu-grid-title {
+    max-width: 260px;
+    color: #2B3541;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+/* footer */
+footer {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .footer-nav-flex {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+  }
+  .footer-ankor {
+    text-decoration: none;
+    color: green;
+  }
+  .footer-copyright {
+    display: flex;
+    
+    padding-left: 392px;
+    padding-right: 392px;
+    
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.3;  
+  }
+  
+  @media (max-width: 1142px) {
+    .footer-copyright {
+    padding-left: 150px;
+    padding-right: 150px;  
+    font-size: 14px;
+    }
+  }
 
 @media (max-width: 360px) {
     .menu {
