@@ -85,37 +85,68 @@
             <section class="training">                
                 <div class="training-titles">
                     <h3 class="training-title">Расписание тренировок</h3>
-                    <p class="training-date">22 - 28 июня</p>
+                    <p class="training-data">22 - 28 июня</p>
                 </div>
                 <div class="training-flex">
+                    <!-- functional-training -->
                     <div class="functional-training training-border">
                         <span class="training-date">22 июня, 10:00</span>
-                        <img class="functional-training-img" src="img/icons/body.svg" width="65px" height="65px"   alt="обнаженный торс мускулистого спортсмена">
-                        <p class="functional-training-text">Функциональный тренинг</p>
+                        <img class="functional-training-img" src="img/icons/body.svg" width="65px" height="65px"   alt="обнаженный торс спортсмена">
+                        <p class="training-text">Функциональный тренинг</p>
                     </div>
+                    <!-- power-mix -->
                     <div class="power-mix training-border training-active">
                         <span class="training-date training-active-data">23 июня, 10:00</span>
                         <img class="power-mix-img" src="img/icons/jump.svg" width="67px" height="107px" alt="скакалка">
-                        <p class="power-mix-text">Силовой микс</p>
+                        <p class="training-text">Силовой микс</p>
                         <p class="power-mix-span">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>                        
                     </div>
+                    <!-- body-sculpt -->
                     <div class="body-sculpt">
                         <div class="body-sculpt training-border">
                             <span class="training-date">24 июня, 10:00</span>
-                            <img class="body-sculpt-img" src="img/icons/bottle.svg" width="42px" height="85px"   alt="обнаженный торс мускулистого спортсмена">
-                            <p class="body-sculpt-text">Body sculpt</p>
+                            <img class="body-sculpt-img" src="img/icons/bottle.svg" width="42px" height="85px"   alt="бутылка">
+                            <p class="training-text">Body sculpt</p>
                         </div>
                     </div>
-                        <!-- ghjlj;tybt -->
-                    <div class="breathing-practices"></div> 
-                    <div class="l-a-b"></div>
-                    <div class="complex-warm-up"></div>
-
-
+                        <!-- breathing-practices -->
+                    <div class="breathing-practices training-border">
+                        <span class="training-date">25 июня, 11:00</span>
+                        <img class="breathing-practices-img" src="img/icons/heart.svg" width="65px" height="61px"   alt="сердце">
+                        <p class="training-text">Дыхательные практики</p>
+                    </div> 
+                    <!-- l-a-b -->
+                    <div class="l-a-b training-border">
+                        <span class="training-date">26 июня, 11:00</span>
+                        <img class="l-a-b-img" src="img/icons/dumbbell.svg" width="91px" height="51px"   alt="гантели">
+                        <p class="training-text">L.A.B.</p>
+                    </div>
+                    <div class="complex-warm-up training-border">
+                        <span class="training-date">27 июня, 10:00</span>
+                        <img class="complex-warm-img" src="img/icons/weight.svg" width="58px" height="66px"   alt="гиря">
+                        <p class="training-text">Комплексная разминка</p>
+                    </div>
                 </div>
             </section>
         </div>    
-        <section class="menu-items">Подпишитесь на рассылку</section>
+        <section class="mailing">
+            <div class="mailing-item">
+                <div class="mailing-image"></div>
+                <h3 class="mailing-title">Подпишитесь на рассылку</h3>
+                
+<form action="https://jsonplaceholder.typicode.com/posts" method="post">        
+                <div class="mailing-item-flex">
+                    <input class="mailing-input" type="email" name="mailing" placeholder="Ваш e-mail" required>
+                <button type="submit" class="mailing-button" name="mailing" href="#">ПОДПИСАТЬСЯ</button>
+                </div>
+                
+                <input type="checkbox" name="checkbox" id="mailing" required>
+                <label for="mailing">Согласен на обработку персональных данных</label> 
+            </form>
+            </div>
+            <!-- https://realadmin.ru/coding/valid-field-js.html проверка на е=маил -->
+
+            </section>
         <div class="container">
             <section class="menu-items"></section>
         </div> 

@@ -8,9 +8,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;        
 }
-.wrapper {
-    /* max-width: 360px; */ 
-}
+/* .wrapper {max-width: 360px;} */
 .header {
     max-width: 1817px;
     display: flex;
@@ -277,7 +275,7 @@ body {
 }
 .functional-training-img {
     padding-top: 55px;
-    padding-left: 31px;
+    padding-bottom: 40px;
 }
 .training-title {
     max-width: 356px;
@@ -285,7 +283,7 @@ body {
     font-size: 40px;
     line-height: 125%;
 }
-.training-date {
+.training-data {
     font-weight: bold;
     font-size: 28px;
     line-height: 125%;
@@ -299,11 +297,11 @@ body {
     box-sizing: border-box;
     gap: 20px 20px;
 }
-.functional-training-text {
+.training-text {
     font-weight: bold;
     font-size: 18px;
     line-height: 125%;
-    padding-top: 40px;
+    margin: 0;
 }
 .power-mix {
     padding: 20px 30px;    
@@ -318,8 +316,8 @@ body {
 }
 .training-border {
     padding: 20px 30px;
-    /* border: 1px solid transparent;     */
-    box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5);
+    border: 1px solid rgba(43, 53, 65, 0.5);
+    /* box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5); */
 }
 .training-date {
     display: block;
@@ -331,33 +329,92 @@ body {
 }
 .power-mix-img {
     padding-top: 95px;
-    padding-left: 31px;
+    padding-bottom: 40px;
+
 }
 .power-mix-span {
     font-size: 18px;
     line-height: 150%;
     padding-top: 20px;
+    margin: 0;
 }
 .body-sculpt-img {
     padding-top: 191px;
-    padding-left: 30px;
+    padding-bottom: 40px;
 }
-.body-sculpt-text {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 125%;
-    padding-top: 40px;
+
+.breathing-practices-img {
+    padding-top: 94px;
+    padding-bottom: 40px;
+}
+.l-a-b-img {
+    padding-top: 133px;
+    padding-bottom: 40px;
+}
+.complex-warm-img {
+    padding-top: 182px;
+    padding-bottom: 40px;
 }
 
 /* актив для js сегодня дата */
 .training-active {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .training-active-data {
     font-weight: 700;
 }
+.mailing {
+    background-color: #F3F3F3;
+    text-align: center;
+    margin-top: 160px;
+}
+.mailing-item {
+    max-width: 587px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.mailing-title {
+    color: #000;
+    z-index: 2;
+}
+
+.mailing-image {
+    position: absolute;
+    background-color: #FBF138;
+    height: 53px;
+    width: 53px;    
+    border-radius: 100%;
+    top: 87px;
+    left: 120px;
+    z-index: 1;
+}
+.mailing-input {
+    padding: 19px 250px 19px 19px;
+    font-size: 18px;
+    
+}
+.mailing-item-flex {
+    display: flex;
+    gap: 20px;
+}
+.mailing-button {
+    display: block;
+    padding: 20px 43px;
+    background-color: #FBF138;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* footer ---------------------------------------*/
 footer {
     margin: 0 auto;
