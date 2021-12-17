@@ -377,8 +377,14 @@ body {
     padding-bottom: 80px;
 }
 .mailing-title {
-    color: #000;
-    z-index: 2;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    background-color: #FBF138;
+    background-size: 53px 53px;       
+    border-radius: 100%;
+    top: 87px;
+    left: 120px;
 }
 
 .mailing-image {
@@ -414,7 +420,22 @@ body {
     border: none;
     cursor: pointer;
 }
-
+.mailing-label {
+    font-size: 11px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.5;
+    text-align: left;
+}
+.company-blok {
+    padding-top: 160px;
+    padding-bottom: 170px;
+}
+.company-text {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+}
 /* footer ---------------------------------------*/
 footer {
     margin: 0 auto;
