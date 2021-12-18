@@ -136,26 +136,36 @@
                 
 <form action="https://jsonplaceholder.typicode.com/posts" method="post">        
                 <div class="mailing-item-flex">
-                    <input class="mailing-input" type="email" name="mailing" placeholder="Ваш e-mail" required>
+                    <input class="mailing-input" type="email" name="mailing" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" title="text@text.2-4 символа" placeholder="Ваш e-mail" required>
                 <button type="submit" class="mailing-button" name="mailing" href="#">ПОДПИСАТЬСЯ</button>
                 </div>
+                <div class="mailing-argee">
+                    <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
+                <label for="thing" class="mailing-label">
+                    <p class="mailing-text">Согласен на обработку <a class="mailing-person"  href="#" target="_blank">персональных данных</a></p> 
+                </label>
+                </div>       
                 
-                <input type="checkbox" name="checkbox" id="mailing" required>
-                <label class="mailing-label" for="mailing">Согласен на обработку персональных данных</label> 
+
             </form>
             </div>
+            
+
             <!-- https://realadmin.ru/coding/valid-field-js.html проверка на е=маил -->
 
             </section>
+            
             <section class="company">
                 <div class="container">
                     <div class="company-blok">
                         <div class="company-flex">
                             <div class="company-flex-text">
                                 <h3 class="company-title">О компании</h3>
-                                <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                                <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                                <a class="company-button" href="#">Записаться</a>
                             </div>
-                            <div class="company-flex-img">                                
+                            <div class="company-flex-img">
+                                <img src="img/@2x/trainer@2x.png" width="581px" height="335px"  alt="тренер">                 
                             </div>          
                         </div>
                     </div>                    
@@ -166,6 +176,10 @@
         <section class="menu-items">Записаться</section>
         
     </main>
+
+    <label for="tel">Номер телефона</label>
+        <br>
+        <input type="tel" name="tel" id="tel" placeholder="+7 911 111 1111" required>
     <footer>
         <div>
             <div class="footer-logo">logo

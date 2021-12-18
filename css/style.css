@@ -361,6 +361,7 @@ body {
     font-weight: 700;
 }
 .mailing {
+    max-height: 100%;
     position: relative;
     background-color: #F3F3F3;
     margin-top: 160px;
@@ -408,9 +409,15 @@ body {
     z-index: 1;
 }
 .mailing-input {
-    padding: 19px 250px 19px 19px;
+    max-width: 372px;
+    padding-left: 19px;
     font-size: 18px;
     border: none;
+    cursor: pointer;
+}
+.mailing-input:hover {
+    background-color: #F3F3F3;
+    
 }
 .mailing-item-flex {
     display: flex;
@@ -430,21 +437,91 @@ body {
     border: none;
     cursor: pointer;
 }
+/* согласие на обработку данных */
+.mailing-argee{
+    padding-top: 13px;    
+}
+.mailing-checkbox {
+    display:none;
+}
 .mailing-label {
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.mailing-checkbox + .mailing-label {
+    background-image: url(../img/icons/check-box-empty.svg);
+    background-size: 18px 18px;       
+    background-repeat: no-repeat;
+    display:inline-block;
+    padding: 2px 0 0 0px;
+}
+.mailing-checkbox:checked + .mailing-label {
+    background: url(../img/icons/check_box.svg);
+    background-repeat: no-repeat;        
+    display:inline-block;
+    padding: 2px 0 0 0px;
+}
+.mailing-text {    
     font-size: 11px;
     line-height: 150%;
-    color: #2B3541;
-    opacity: 0.5;
-    text-align: left;
+    color: rgba(43, 53, 65, 0.5);
+    padding: 0 23px;
+    margin: 0;
+}
+.mailing-person {
+    text-decoration-line: underline;
+    color: rgba(43, 53, 65, 0.5);
+}
+.mailing-person:hover {
+    color: rgba(43, 53, 65, 1);
+    
+}
+.company {
+    margin-top: 160px;
 }
 .company-blok {
     padding-top: 160px;
     padding-bottom: 170px;
 }
-.company-text {
+
+/* о компании */
+.company-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 77px;
+}
+.company-flex-img {
+    background-image: url(../img/@2x/trainer@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.company-title {
     font-weight: bold;
     font-size: 40px;
     line-height: 125%;
+}
+.company-text {
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 34px;
+}
+.company-button {
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2B3541;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+.company-button:hover {
+    color: #FBF138;
+    background-color: #2B3541;
 }
 /* footer ---------------------------------------*/
 footer {
