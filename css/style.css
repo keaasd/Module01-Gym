@@ -183,30 +183,66 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.menu-greed-1nt {
+.menu-greed-item-maraphon {
     position: relative;
-    background-image: url(../img/@2x/maraphon@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: 100% -20px; */
-    padding: 30px 77px 200px 30px;
+    max-width: 367px;
+    max-height: 600px;
 }
-.menu-greed-2nt {
-    position: relative;
-    background-image: url(../img/@2x/Vebinar-1@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: 100% -20px; */
-    padding: 30px 77px 453px 30px;
+.menu-greed-item-maraphon:hover .menu-grid-overlay {
+    opacity: 1;
+    transition: 0.2s;
 }
-.menu-greed-3nt {
-    position: relative;
-    background-image: url(../img/@2x/Vebinar2@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: 100% -20px; */
-    padding: 30px 77px 453px 30px;
+
+.menu-grid-cover {    
+    width: 367px;
+    height: 600px;
 }
+.menu-grid-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 367px;
+    height: 100%;
+    z-index: -1;
+}
+
+.menu-grid-overlay {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.6) 0%, rgba(253, 249, 182, 0) 100%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+.menu-grid-maraphon-text {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+.menu-grid-btn {
+    max-width: 221px;
+    padding: 20px 37px;
+    background-color: #2B3541;
+    color: #FBF138;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0;
+}
+.menu-greed-item-maraphon:hover .menu-grid-btn {
+    background-color: #2B3541;
+    color: #FBF138;
+    opacity: 1;
+    transition: 0.2s;
+}
+
 .menu-greed-1nt:hover {
     background-image: url(../img/@2x/maraphonhover@2x.png);
     transition: 0.2s;
@@ -215,26 +251,23 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
+    color: #2B3541;
+    opacity: 0.6;
 }
-.menu-greed-marafon {
-    position: absolute;
-    background-color: #FBF138;
-    padding: 10px 20px;
-    font-size: 18px;
-    line-height: 150%;text-align: center;
-    right: 0;
-    bottom: 0;
-}
-.menu-greed-sticker {
+.menu-grid-maraphon-mrf {
     position: absolute;
     background-color: #FBF138;
     padding: 10px 20px;
     font-size: 18px;
     line-height: 150%;
-    text-align: center;
     right: 0;
     bottom: 0;
 }
+.menu-greed-item-maraphon:hover .menu-grid-maraphon-mrf {
+    opacity: 0;
+    transition: 0.2s;
+}
+
 .menu-grid-title {
     max-width: 260px;
     font-weight: 700;
@@ -244,40 +277,27 @@ body {
     padding-bottom: 40px;
     margin: 0;
 }
-.menu-greed-aktiv {
-    max-width: 221px;
-    padding: 20px 37px;
-    color: transparent;
-    background: transparent;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.menu-greed-aktiv:hover {
-    background-color: #2B3541;
-    color: #FBF138;
-    transition: 0.2s;
-}
+
 .training {
     margin-top: 80px;
     max-width: 1143px;
 }
 .functional-training {
     padding: 20px 30px;    
-    max-height: 250px;
-    max-width: 367px;
-    
+    /* max-height: 250px; */
+    max-width: 367px;    
 }
-
+.training-border {
+    padding: 20px 30px;
+    border: 1px solid rgba(43, 53, 65, 0.5);
+    /* box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5); */
+}
 .training-titles {
     display: flex;
     justify-content: space-between;
 }
-.functional-training-img {
-    padding-top: 55px;
+.training-image {
+    /* padding-top: 55px; */
     padding-bottom: 40px;
 }
 .training-title {
@@ -295,7 +315,7 @@ body {
 .training-flex {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     max-height: 841px;
     box-sizing: border-box;
     gap: 20px 20px;
@@ -305,10 +325,28 @@ body {
     font-size: 18px;
     line-height: 125%;
     margin: 0;
+    padding-bottom: 20px;
+}
+.menu-text-span {
+    font-size: 18px;
+    line-height: 150%;
+    padding-top: 20px;
+    margin: 0;  
+}
+
+.menu-text-hidden {
+    margin-bottom: 20px;
+    height: 0em;
+    opacity: 0;
+}
+.functional-training:hover .menu-text-hidden {
+    opacity: 1;
+    height: 4em;
+    transition: 1s;
 }
 .power-mix {
     padding: 20px 30px;    
-    max-height: 433px;
+    /* max-height: 433px; */
     max-width: 367px;
 }
 .power-mix-text {
@@ -317,11 +355,7 @@ body {
     line-height: 125%;
     padding-top: 40px;
 }
-.training-border {
-    padding: 20px 30px;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    /* box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5); */
-}
+
 .training-date {
     display: block;
     text-align: right;
@@ -335,12 +369,7 @@ body {
     padding-bottom: 40px;
 
 }
-.power-mix-span {
-    font-size: 18px;
-    line-height: 150%;
-    padding-top: 20px;
-    margin: 0;
-}
+
 .body-sculpt-img {
     padding-top: 191px;
     padding-bottom: 40px;
@@ -363,6 +392,7 @@ body {
 .training-active {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border: none;
 }
 .training-active-data {
     font-weight: 700;
@@ -534,6 +564,7 @@ body {
 .company-button:hover {
     color: #FBF138;
     background-color: #2B3541;
+    transition: 0.2s;
 }
 /* footer ---------------------------------------*/
 footer {
@@ -617,6 +648,7 @@ footer {
     }
     .header-logo:hover {
         width: 79px;
+        transition: 0.2s;
     }
     /* навигация */
     .menu-bg {
@@ -656,6 +688,7 @@ footer {
     .menu-button:hover {
         color: #FBF138;
         background-color: #2B3541;
+        transition: 0.2s;
     }
     .menu-arroy {
         display: none;
