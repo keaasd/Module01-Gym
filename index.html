@@ -54,14 +54,14 @@
                         </div>                        
                     </div>
                     
-                    <a class="menu-arroy" href="#"></a>
+                    <a class="menu-arroy" href="#menu"></a>
                     <div class="menu-bg-mobil"></div>
                 </div>
             </div>      
         </section>
         <!-- второй блок -->
         <div class="container">            
-            <h3 class="menu-h3">Ближайшие события</h3>
+            <h3 class="menu-titles" id="menu">Ближайшие события</h3>
             <section class="menu-greeds">
                 <!-- Марафон выносливости -->
                 <div class="menu-greed-item-maraphon">
@@ -105,66 +105,70 @@
             </section>
             <!-- Расписание тренировок -->
             <section class="training">                
-                <div class="training-titles">
-                    <h3 class="training-title">Расписание тренировок</h3>
-                    <p class="training-data">22 - 28 июня</p>
-                </div>
-                <div class="training-flex">
-                    <!-- functional-training -->
-                    <div class="functional-training training-border training-active">
-                        <span class="training-date">22 июня, 10:00</span>
-                        <img class="training-image" src="img/icons/body.svg" width="65px" height="65px"   alt="торс спортсмена">
-                        <p class="training-text">Функциональный тренинг</p>
-                        <div class="menu-text-hidden">
-                            <span class="menu-text-span">Помогает развить в мышцах силу, гибкость и тонус, которые необходимы для полноценной повседневной жизни.</span>
+                <div class="container">
+                    <div class="training-nedelya">
+                        <div class="training-titles">
+                            <h3 class="training-title">Расписание тренировок</h3>
+                            <p class="training-data">22 - 28 июня</p>
                         </div>
-                    </div>
-                    <!-- power-mix -->
-                    <div class="functional-training training-border ">
-                        <span class="training-date training-active-data">23 июня, 10:00</span>
-                        <img class="training-image" src="img/icons/jump.svg" width="67px" height="107px" alt="скакалка">
-                        <p class="training-text">Силовой микс</p>
-                        <div class="menu-text-hidden">
-                            <span class="menu-text-span">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</span>
-                        </div>
-
-                        
-                    </div>
-                    <!-- body-sculpt -->
-                    <div class="functional-training training-border">
-                            <span class="training-date">24 июня, 10:00</span>
-                            <img class="training-image" src="img/icons/bottle.svg" width="42px" height="85px"   alt="бутылка">
-                            <p class="training-text">Body sculpt</p>
-                            <div class="menu-text-hidden">
-                                <span class="menu-text-span">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений.</span>
+                        <div class="training-flex">
+                            <!-- functional-training -->
+                            <div class="functional-training training-border ">
+                                <span class="training-date">22 июня, 10:00</span>
+                                <img class="training-image" src="img/icons/body.svg" width="65px" height="65px"   alt="торс спортсмена">
+                                <p class="training-text">Функциональный тренинг</p>
+                                <div class="menu-text-hidden">
+                                    <span class="menu-text-span">Помогает развить в мышцах силу, гибкость и тонус, которые необходимы для полноценной повседневной жизни.</span>
+                                </div>
                             </div>
-                        </div>
-                        
-                    
-                        <!-- breathing-practices -->
-                    <div class="functional-training training-border">
-                        <span class="training-date">25 июня, 11:00</span>
-                        <img class="training-image" src="img/icons/heart.svg" width="65px" height="61px"   alt="сердце">
-                        <p class="training-text">Дыхательные практики</p>
-                        <div class="menu-text-hidden">
-                            <span class="menu-text-span">Поможет прояснить ум и избавить организм от гормонов стресса.</span>
-                        </div>
-                    </div> 
-                    <!-- l-a-b -->
-                    <div class="functional-training training-border">
-                        <span class="training-date">26 июня, 11:00</span>
-                        <img class="training-image" src="img/icons/dumbbell.svg" width="91px" height="51px"   alt="гантели">
-                        <p class="training-text">L.A.B.</p>
-                        <div class="menu-text-hidden">
-                            <span class="menu-text-span">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса. Отличный помощник в развитии силы, выносливости, а также в снижении веса!</span>
-                        </div>
-                    </div>
-                    <div class="functional-training training-border">
-                        <span class="training-date">27 июня, 10:00</span>
-                        <img class="training-image" src="img/icons/weight.svg" width="58px" height="66px"   alt="гиря">
-                        <p class="training-text">Комплексная разминка</p>
-                        <div class="menu-text-hidden">
-                            <span class="menu-text-span">Подготовка тела перед физической нагрузкой.</span>
+                            <!-- power-mix -->
+                            <div class="functional-training training-border training-active">
+                                <span class="training-date training-active-data">23 июня, 10:00</span>
+                                <div class="training-image-flex">
+                                    <img class="training-image" src="img/icons/jump.svg" width="67px" height="107px" alt="скакалка">
+                                <p class="training-text">Силовой микс</p>
+                                <div class="menu-text-hidden">
+                                    <span class="menu-text-span">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</span>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- body-sculpt -->
+                            <div class="functional-training training-border">
+                                    <span class="training-date">24 июня, 10:00</span>
+                                    <img class="training-image" src="img/icons/bottle.svg" width="42px" height="85px"   alt="бутылка">
+                                    <p class="training-text">Body sculpt</p>
+                                    <div class="menu-text-hidden">
+                                        <span class="menu-text-span">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений.</span>
+                                    </div>
+                                </div>
+                                
+                            
+                                <!-- breathing-practices -->
+                            <div class="functional-training training-border">
+                                <span class="training-date">25 июня, 11:00</span>
+                                <img class="training-image" src="img/icons/heart.svg" width="65px" height="61px"   alt="сердце">
+                                <p class="training-text">Дыхательные практики</p>
+                                <div class="menu-text-hidden">
+                                    <span class="menu-text-span">Поможет прояснить ум и избавить организм от гормонов стресса.</span>
+                                </div>
+                            </div> 
+                            <!-- l-a-b -->
+                            <div class="functional-training training-border">
+                                <span class="training-date">26 июня, 11:00</span>
+                                <img class="training-image" src="img/icons/dumbbell.svg" width="91px" height="51px"   alt="гантели">
+                                <p class="training-text">L.A.B.</p>
+                                <div class="menu-text-hidden">
+                                    <span class="menu-text-span">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.</span>
+                                </div>
+                            </div>
+                            <div class="functional-training training-border">
+                                <span class="training-date">27 июня, 10:00</span>
+                                <img class="training-image" src="img/icons/weight.svg" width="58px" height="66px"   alt="гиря">
+                                <p class="training-text">Комплексная разминка</p>
+                                <div class="menu-text-hidden">
+                                    <span class="menu-text-span">Подготовка тела перед физической нагрузкой.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,34 +208,63 @@
                                 <img src="img/@2x/trainer@2x.png" width="581px" height="335px"  alt="тренер">                 
                             </div>          
                         </div>
-                    </div>                    
+                    </div>
+                    <div>
+                        <ul class="company-blok-2">
+                            <li>
+                                <p class="company-blok-2-title">Экономия времени</p>
+                                <p class="company-blok-2-text">Не нужно тратить время на дорогу</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Индивидуальный подход</p>
+                                <p class="company-blok-2-text">Внимание тренера пренадлежит только вам</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Экономия денег</p>
+                                <p class="company-blok-2-text">Средняя цена одной тренировки - 700₽</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Опытный персонал</p>
+                                <p class="company-blok-2-text">Стаж работы у наших тренеров от 5 лет</p>
+                            </li>                        
+                        </ul>
+                    </div>                       
                 </div> 
-        </section>
-        
-        <section class="menu-items"></section>
-        <section class="menu-items">Записаться</section>
-        
+        </section>        
     </main>
 
     <label for="tel">Номер телефона</label>
         <br>
         <input type="tel" name="tel" id="tel" placeholder="+7 911 111 1111" required>
+    
     <footer>
-        <div>
-            <div class="footer-logo">logo
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-nav">
+                    <div class="header-logo">
+                    </div>                
+                    <ul class="footer-nav-flex">
+                        <li><a class="footer-ankor" href="#">Мероприятия</a></li>
+                        <li><a class="footer-ankor" href="#">Расписание</a></li>
+                        <li><a class="footer-ankor" href="#">О&nbsp;компании</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts-email">
+                        <a class="footer-contacts-a" href="mailto:info@freefit.com">info@freefit.com</a>                    
+                    </div>
+                    <ul class="footer-social">
+                        <li> <a class="footer-social-in" href="#"></a></li>       
+                        <li> <a class="footer-social-fb" href="#"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav">
-                <ul class="footer-nav-flex">
-                    <li><a class="footer-ankor"  href="#">Мероприятия</a></li>
-                    <li><a class="footer-ankor" href="#">Расписание</a></li>
-                    <li><a class="footer-ankor" href="#">О компании</a></li>
-                </ul>
+            <div class="footer-copyright">
+                <p>&copy; 2020, Все права защищены</p>        
+                <p class="footer-frontend-blok">Сделано в рамках курса учебной платформы <a class="frontend-blok"  href="#" target="_blank">Frontend Blok</a></p>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>&copy; 2020, Все права защищены</p>        
-            <p>Сделано в рамках курса учебной платформы <span>Frontend Blok</span></p>
-        </div>
+        
     </footer>
 </div>
 </body>
