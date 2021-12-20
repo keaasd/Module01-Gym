@@ -285,12 +285,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 30px;    
-    /* max-height: 250px; */
-    max-width: 367px;
-    min-height: 281px;
-}
-.training-border {
+    padding: 0px 30px;   
     padding: 20px 30px;
     border: 1px solid rgba(43, 53, 65, 0.5);
     /* box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5); */
@@ -318,24 +313,38 @@ body {
 .training-flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: 250px 60px 95px 301px; */
+    grid-template-rows: 250px 41px 73px 281px;
+
     grid-auto-flow: column;
     gap: 20px;
 }
-.training-flex div:nth-child(1){
-    height: 250px;
+.training-flex div:nth-child(1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
 }
-.training-flex div:nth-child(3){
-    height: 402px;
+.training-flex div:nth-child(2) {
+    grid-column: 1 / 1;
+    grid-row: 2 / 5;
 }
-.training-flex div:nth-child(4){
-    height: 286px;
+
+.training-flex div:nth-child(3) {
+    
+    grid-column: 2 / 2;
+   grid-row: 1 / 4;
+}
+
+.training-flex div:nth-child(4) {
+    grid-column: 2 / 2;
+   grid-row: 4;
 }
 .training-flex div:nth-child(5){
-    height: 309px;
+    grid-column: 3 / 3;
+   grid-row: 1 / 2;
 }
 .training-flex div:nth-child(6){
-    height: 374px;
+    grid-column: 3 / 3;
+   grid-row: 3 / 5;
 }
 .training-text {
     font-weight: bold;
@@ -352,14 +361,10 @@ body {
     padding-bottom: 0;
     margin: 0;  
 }
-.training-active .menu-text-hidden {
-    display: block;
-    /* opacity: 1; */
-}
 .menu-text-hidden {
     margin-top: 0;
     padding-top: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     display: none;
     /* height: 0em; */
     /* opacity: 0; */
@@ -415,10 +420,11 @@ body {
 }
 
 /* актив для js сегодня дата */
-.training-active {
+.training-action {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
+    height: 100%;
 }
 .training-active-data {
     font-weight: 700;
@@ -429,6 +435,9 @@ body {
     background-color: #F3F3F3;
     margin-top: 160px;
     z-index: 2;
+}
+.mailing-form {
+    padding-left: 23px;
 }
 .mailing-item {
     position: relative;
@@ -444,13 +453,13 @@ body {
     line-height: 49px;
     text-align: center;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .mailing-title::before {    
     position: absolute;
     content: " ";
     top: -17px;
-    left: -35px;
+    left: -4px;
     height: 53px;
     width: 53px;
     background-color: #FBF138;  
@@ -474,6 +483,7 @@ body {
 .mailing-input {
     max-width: 372px;
     padding-left: 19px;
+    padding-right: 95px;
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -507,7 +517,7 @@ body {
 } 
 /* согласие на обработку данных */
 .mailing-argee{
-    padding-top: 13px;    
+    padding-top: 11px;    
 }
 .mailing-checkbox {
     display:none;
@@ -546,11 +556,11 @@ body {
     transition: 0.2s;
 }
 .company {
-    margin-top: 160px;
+    margin-top: 4px;
 }
 .company-blok {
     padding-top: 160px;
-    padding-bottom: 170px;
+    padding-bottom: 45px;
 }
 
 /* о компании */
@@ -564,11 +574,16 @@ body {
     font-weight: bold;
     font-size: 40px;
     line-height: 125%;
+    padding-top: 0;
+    padding-bottom: 19px;
+    margin: 0;
 }
 .company-text {
     font-size: 18px;
     line-height: 150%;
-    padding-bottom: 34px;
+    padding-bottom: 53px;
+    padding-top: 0;
+    margin: 0;
 }
 .company-button {
     padding: 20px 50px;
@@ -614,6 +629,7 @@ footer {
     padding-top: 58px;
     padding-bottom: 21px;
     z-index: 0;
+    margin-top: 127px;
 }
 .footer-flex {
     display: flex;
@@ -624,15 +640,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 61%;
+    flex-basis: 56%;
+    max-width: 631px;
+    gap: 39px;
+}
+.footer-nav .header-logo {
+    padding-right: 39px;
 }
 .footer-nav-flex {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    gap: 90px;
+    gap: 40px;
     padding-left: 0;
-    flex-basis: 1%;
+    flex-basis: 75%;
 }
 .footer-social {
     min-width: 84px;
@@ -697,6 +718,8 @@ footer {
 .footer-ankor {
     color: #2B3541;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 150%;
 }
 .footer-copyright {
     display: flex;    
@@ -705,17 +728,21 @@ footer {
     line-height: 150%;
     color: rgba(43, 53, 65, 0.5);
 }
+.footer-copyright p {
+    padding-top: 0;
+    margin-top: 0;
+}
 .footer-contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
-      /* padding: 8px 0; */
+    min-width: 292px;
 }
 .footer-contacts-email {
     padding: 10px 0;
     align-items: center;
 }
-
+.footer-frontend-blok
 .frontend-blok {
     text-decoration: underline;
     color: rgba(43, 53, 65, 0.5);
