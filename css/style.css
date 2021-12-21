@@ -30,7 +30,7 @@ body {
 }
 .header-logo:hover { 
     width: 98px;
-    transition: 0.2s;    
+    transition: 1s;    
 }
 .header-burger {
     display: none;
@@ -60,7 +60,7 @@ body {
 .nav-items:hover {
     border-bottom: 1px solid #2B3541;
     padding-bottom: 10px;
-    transition: 0.2s;
+    transition: 1s;
 }
 .header-social-fb {
     display: block;
@@ -73,7 +73,7 @@ body {
 .header-social-fb:hover {
     width: 38px;
     height: 38px;
-    transition: 0.2s;
+    transition: 1s;
 }
 .header-social-in {
     display: block;
@@ -86,7 +86,7 @@ body {
 .header-social-in:hover {
     width: 38px;
     height: 38px;
-    transition: 0.2s;
+    transition: 1s;
 }
 .menu-items {
     margin-bottom: 80px;
@@ -157,7 +157,7 @@ body {
 .menu-button:hover {
     color: #FBF138;
     background-color: #2B3541;
-    transition: 0.2s;
+    transition: 1s;
 }
 .menu-arroy {    
     position: absolute;
@@ -190,7 +190,7 @@ body {
 }
 .menu-greed-item-maraphon:hover .menu-grid-overlay {
     opacity: 1;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .menu-grid-cover {    
@@ -240,12 +240,12 @@ body {
     background-color: #2B3541;
     color: #FBF138;
     opacity: 1;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .menu-greed-1nt:hover {
     background-image: url(../img/@2x/maraphonhover@2x.png);
-    transition: 0.2s;
+    transition: 1s;
 }
 .menu-grid-data {
     font-weight: 700;
@@ -265,7 +265,7 @@ body {
 }
 .menu-greed-item-maraphon:hover .menu-grid-maraphon-mrf {
     opacity: 0;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .menu-grid-title {
@@ -282,6 +282,7 @@ body {
     margin-top: 118px;
 }
 .functional-training {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -352,27 +353,32 @@ body {
     line-height: 125%;
     margin: 0;
     padding-top: 40px;
-    /* padding-bottom: 20px; */
+    padding-bottom: 0;
 }
 .menu-text-span {
     font-size: 18px;
     line-height: 150%;
     padding-top: 20px;
-    padding-bottom: 0;
     margin: 0;  
 }
 .menu-text-hidden {
-    margin-top: 0;
-    padding-top: 0;
-    /* margin-bottom: 20px; */
-    display: none;
-    /* height: 0em; */
-    /* opacity: 0; */
+    position: absolute;
+    /* padding-top: 40px; */
+    /* margin-top: 40px; */
+    /* display: none; */
+    visibility: collapse;
 }
+
 .functional-training:hover .menu-text-hidden {
-    display: block;
-    /* opacity: 1; */
-    /* height: 4em; */
+    /* display: block; */
+    position: relative;
+    visibility: visible;
+    padding-top: 20px;
+    margin-top: 0;
+    transition: 1s;
+}
+.functional-training:hover .paddng {
+    padding-top: 8px;
     transition: 1s;
 }
 .power-mix {
@@ -486,11 +492,10 @@ body {
     padding-right: 95px;
     font-size: 18px;
     border: none;
-    cursor: pointer;
 }
 .mailing-input:hover {
     background-color: #F3F3F3;
-    transition: 0.2s;
+    transition: 1s;
 }
 .mailing-item-flex {
     display: flex;
@@ -513,7 +518,7 @@ body {
 .mailing-button:hover {
     background-color: #2B3541;    
     color: #FBF138;
-    transition: 0.2s;
+    transition: 1s;
 } 
 /* согласие на обработку данных */
 .mailing-argee{
@@ -553,7 +558,7 @@ body {
 }
 .mailing-person:hover {
     color: rgba(43, 53, 65, 1);
-    transition: 0.2s;
+    transition: 1s;
 }
 .company {
     margin-top: 4px;
@@ -601,7 +606,7 @@ body {
 .company-button:hover {
     color: #FBF138;
     background-color: #2B3541;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .company-blok-2 {
@@ -696,7 +701,7 @@ footer {
 .footer-social-fb:hover {
     width: 34px;
     height: 34px;
-    transition: 0.2s;
+    transition: 1s;
     padding: 0;
 }
 .footer-social-in {
@@ -711,7 +716,7 @@ footer {
 .footer-social-in:hover {
     width: 34px;
     height: 34px;
-    transition: 0.2s;
+    transition: 1s;
     padding: 0;
 }
 
@@ -749,7 +754,7 @@ footer {
 }
 .frontend-blok:hover {
     color: rgba(43, 53, 65, 1);
-    transition: 0.2s;
+    transition: 1s;
 }
 
 
@@ -809,7 +814,7 @@ footer {
     }
     .header-logo:hover {
         width: 79px;
-        transition: 0.2s;
+        transition: 1s;
     }
     /* навигация */
     .menu-bg {
@@ -849,7 +854,7 @@ footer {
     .menu-button:hover {
         color: #FBF138;
         background-color: #2B3541;
-        transition: 0.2s;
+        transition: 1s;
     }
     .menu-arroy {
         display: none;
