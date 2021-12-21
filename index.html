@@ -39,7 +39,7 @@
             </header>    
         
     
-    <!-- ---- меню ----  -->
+    <!-- === меню === -->
     <main>
         <section class="menu">            
             <div class="menu-bg">
@@ -116,7 +116,7 @@
                             <div class="functional-training">
                                 <span class="training-date">22 июня, 10:00</span>
                                 <div class="training-block">
-                                    <img class="training-image" src="img/icons/body.svg" width="65px" height="65px"   alt="торс спортсмена">
+                                    <img class="training-image" src="img/icons/body.svg" width="65" height="65"   alt="торс спортсмена">
                                     <p class="training-text paddng">Функциональный тренинг</p>
                                     <div class="menu-text-hidden">
                                         <span class="menu-text-span">Развивает в мышцах силу, гибкость и тонус.</span>
@@ -126,10 +126,10 @@
                                 
                             </div>
                             <!-- 2  power-mix -->
-                            <div class="functional-training ">
+                            <div class="functional-training">
                                 <span class="training-date training-active-data">23 июня, 10:00</span>
                                 <div class="training-block">
-                                    <img class="training-image" src="img/icons/jump.svg" width="67px" height="107px" alt="скакалка">
+                                    <img class="training-image" src="img/icons/jump.svg" width="67" height="107" alt="скакалка">
                                     <p class="training-text">Силовой микс</p>
                                     <div class="menu-text-hidden">
                                         <span class="menu-text-span">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</span>                                
@@ -140,8 +140,8 @@
                             <div class="functional-training">
                                     <span class="training-date">24 июня, 10:00</span>
                                     <div class="training-block">
-                                        <img class="training-image" src="img/icons/bottle.svg" width="42px" height="85px"   alt="бутылка">
-                                        <p class="training-text ">Body sculpt</p>
+                                        <img class="training-image" src="img/icons/bottle.svg" width="42" height="85" alt="бутылка">
+                                        <p class="training-text">Body sculpt</p>
                                         <div class="menu-text-hidden">
                                             <span class="menu-text-span">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений.</span>
                                         </div>
@@ -151,7 +151,7 @@
                             <div class="functional-training">
                                 <span class="training-date">25 июня, 11:00</span>
                                 <div class="training-block">
-                                    <img class="training-image" src="img/icons/heart.svg" width="65px" height="61px"   alt="сердце">
+                                    <img class="training-image" src="img/icons/heart.svg" width="65" height="61"   alt="сердце">
                                     <p class="training-text paddng">Дыхательные практики</p>
                                     <div class="menu-text-hidden">
                                         <span class="menu-text-span">Поможет прояснить ум и избавить организм от гормонов стресса.</span>
@@ -162,8 +162,8 @@
                             <div class="functional-training training-action">
                                 <span class="training-date">26 июня, 11:00</span>
                                 <div class="training-block">
-                                    <img class="training-image" src="img/icons/dumbbell.svg" width="91px" height="51px"   alt="гантели">
-                                    <p class="training-text ">L.A.B.</p> <!-- paddng -->
+                                    <img class="training-image" src="img/icons/dumbbell.svg" width="91" height="51"   alt="гантели">
+                                    <p class="training-text">L.A.B.</p> <!-- paddng -->
                                     <div class="menu-text-hidden">
                                         <span class="menu-text-span">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.</span>
                                     </div>
@@ -173,7 +173,7 @@
                             <div class="functional-training">
                                 <span class="training-date">27 июня, 10:00</span>
                                 <div class="training-block">
-                                    <img class="training-image" src="img/icons/weight.svg" width="58px" height="66px"   alt="гиря">
+                                    <img class="training-image" src="img/icons/weight.svg" width="58" height="66"   alt="гиря">
                                     <p class="training-text">Комплексная разминка</p>
                                     <div class="menu-text-hidden">
                                         <span class="menu-text-span">Подготовка тела перед физической нагрузкой.</span>
@@ -191,7 +191,7 @@
                     <h3 class="mailing-title">Подпишитесь на рассылку</h3>
                     <!-- <span class="mailing-image-bg"></span> -->
                 <!-- </div> -->
-                <form class="mailing-form" action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="post" required>        
+                <form class="mailing-form" action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="post">        
                     <div class="mailing-item-flex">
                         <input class="mailing-input" type="email" name="mailing"  title="text@text.2-4 символа" placeholder="Ваш e-mail" required>
                         <!-- pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" -->
@@ -199,8 +199,8 @@
                     </div>
                     <div class="mailing-argee">
                         <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
-                    <label for="thing" class="mailing-label">
-                        <p class="mailing-text">Согласен на обработку <a class="mailing-person"  href="#" target="_blank">персональных данных</a></p> 
+                    <label for="thing" class="mailing-label" required>
+                        Согласен на обработку <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
                     </label>
                     </div>
                 </form>
@@ -217,7 +217,7 @@
                                 <a class="company-button" href="#">Записаться</a>
                             </div>
                             <div class="company-flex-img">
-                                <img src="img/@2x/trainer@2x.png" width="581px" height="335px"  alt="тренер">                 
+                                <img src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
                             </div>          
                         </div>
                     </div>
@@ -275,6 +275,41 @@
         </div>
         
     </footer>
+</div>
+<div class="popup">
+    <div class="popup-title">
+        <h2>Заявка на участие
+            «Марафон выносливости»</h2>
+    </div>
+    <div class="popup-text">
+        <p>Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+    </div>
+    <input type="email" name="" id="" required>
+    <input type="tel" name="" id="" required>
+    <a href="#">Отправить</a>
+</div>
+<div class="modal-window" id="modal">
+    <div class="modal">
+        <div class="wrap">
+            <div class="header-modal">
+                <div class="header-modal-logo"></div>
+                <div class="header-modal-close"></div>
+            </div>
+            <ul class="modal-nav">
+                <li><a href="#" class="modal-nav-a">Мероприятия</a></li>
+                <li><span class="modal-border"></span></li>
+                <li><a href="#" class="modal-nav-a">Расписание</a></li>
+                <li><span class="modal-border"></span></li>
+                <li><a href="#" class="modal-nav-a">О&nbsp;компании</a></li>
+            </ul>
+            <ul class="modal-item">
+                <li><a href="#" class="modal-social-in"></a></li>
+                <li><a href="#" class="modal-social-fb"></a></li>
+            </ul>
+            <button class="modal-btn" href="#">Узнать подробнее</button>
+        </div>
+        <div class="modal-btn-bg"></div>
+    </div>
 </div>
 </body>
 </html>
