@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <script defer src="js/modal.js"></script>
     <script defer src="js/main.js"></script>
     <title>Document</title>
 </head>
@@ -62,6 +62,25 @@
         <!-- второй блок -->
         <div class="container">            
             <h3 class="menu-titles" id="menu">Ближайшие события</h3>
+            <div class="pupup-relativ"></div>
+            <div class="wrap-popup" id="modal-popup">    
+                <div class="popup">
+                    <button onclick="closeModal()" class="popup-close"></button>
+                    <div class="popup-title">
+                        <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
+                        <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+                    </div>
+                    <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                        <div class="input-container">            
+                            <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
+                        </div>
+                        <div class="input-container">            
+                            <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
+                        </div>
+                        <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
+                    </form>    
+                </div>
+            </div>
             <section class="menu-greeds">
                 <!-- Марафон выносливости -->
                 <div class="menu-greed-item-maraphon">
@@ -72,7 +91,7 @@
                             <span class="menu-grid-data">29.06 - 4.07</span>
                             <h3 class="menu-grid-title">Марафон выносливости</h3>
                             <span class="menu-grid-maraphon-mrf">марафон</span>
-                            <a href="#" class="menu-grid-btn">Учавствовать</a>
+                            <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn">Учавствовать</button>
                         </div>
                     </div>
                 </div>
@@ -276,24 +295,13 @@
         
     </footer>
 </div>
-<div class="popup">
-    <div class="popup-title">
-        <h2>Заявка на участие
-            «Марафон выносливости»</h2>
-    </div>
-    <div class="popup-text">
-        <p>Заполните все поля, и мы пришлем информацию в ближайшее время</p>
-    </div>
-    <input type="email" name="" id="" required>
-    <input type="tel" name="" id="" required>
-    <a href="#">Отправить</a>
-</div>
+
 <div class="modal-window" id="modal">
     <div class="modal">
         <div class="wrap">
             <div class="header-modal">
                 <div class="header-modal-logo"></div>
-                <div class="header-modal-close"></div>
+                <button onclick="closeModal()" class="header-modal-close"></button>
             </div>
             <ul class="modal-nav">
                 <li><a href="#" class="modal-nav-a">Мероприятия</a></li>
