@@ -166,6 +166,7 @@ body {
     bottom: 19px;
     width: 52px;
     height: 55px;
+    transition: 0.3s;
 }
 .menu-bg-mobil {
     display: none;
@@ -228,6 +229,7 @@ body {
     padding: 20px 37px;
     background-color: #2B3541;
     color: #FBF138;
+    border: none;
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
@@ -235,6 +237,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     opacity: 0;
+    cursor: pointer;
 }
 .menu-greed-item-maraphon:hover .menu-grid-btn {
     background-color: #2B3541;
@@ -492,6 +495,7 @@ body {
     padding-right: 95px;
     font-size: 18px;
     border: none;
+    outline: none;
 }
 .mailing-input:hover {
     background-color: #F3F3F3;
@@ -889,6 +893,9 @@ footer {
     height: 19px;
     z-index: 4;
 }
+.popup-close:hover {
+    border-radius: 50%;
+}
 .popup-title {
     position: relative;
     text-align: center;
@@ -937,6 +944,7 @@ footer {
     color: #2B3541;
     font-size: 18px;
     padding: 19px 213px 19px 25px;
+    outline: none;
     /* opacity: 0.3; */
 }
 .popup-mail:hover, .popup-tel:hover {
@@ -950,6 +958,7 @@ background: rgba(243, 243, 243, 1);
     font-size: 18px;
     padding: 19px 213px 19px 25px;
     margin-top: 20px;
+    outline: none;
     /* opacity: 0.3; */
 }
 .pupup-btn {

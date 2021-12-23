@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="android-chrome-icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">    
+    <link rel="android-chrome-icon" type="image/png" sizes="152x152" href="img/favicon/android-chrome-512x512.png">
+    <link rel="android-chrome-icon" type="image/png" sizes="150x150" href="img/favicon/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script defer src="js/modal.js"></script>
     <script defer src="js/main.js"></script>
     <title>Document</title>
@@ -24,9 +35,9 @@
                 <!--нав десктоп отключаем-->
                 <nav class="header-navigation">
                     <ul class="header-nav">
-                        <li> <a class="nav-items" href="#">Мероприятия</a></li>
-                        <li> <a class="nav-items" href="#">Расписание</a></li>
-                        <li> <a class="nav-items" href="#">О&nbsp;компании</a></li>
+                        <li> <a class="nav-items" href="#menu">Мероприятия</a></li>
+                        <li> <a class="nav-items" href="#training">Расписание</a></li>
+                        <li> <a class="nav-items" href="#aboutCompany">О&nbsp;компании</a></li>
                     </ul>
                 </nav>
             </div>
@@ -127,7 +138,7 @@
                 <div class="container">
                     <div class="training-nedelya">
                         <div class="training-titles">
-                            <h3 class="training-title">Расписание тренировок</h3>
+                            <h3 class="training-title" id="training">Расписание тренировок</h3>
                             <p class="training-data">22 - 28 июня</p>
                         </div>
                         <div class="training-flex">
@@ -231,9 +242,9 @@
                     <div class="company-blok">
                         <div class="company-flex">
                             <div class="company-flex-text">
-                                <h3 class="company-title">О компании</h3>
+                                <h3 class="company-title" id="aboutCompany">О компании</h3>
                                 <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
-                                <a class="company-button" href="#">Записаться</a>
+                                <a class="company-button" onclick="openModal()">Записаться</a>
                             </div>
                             <div class="company-flex-img">
                                 <img src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
@@ -272,9 +283,9 @@
                     <div class="header-logo">
                     </div>                
                     <ul class="footer-nav-flex">
-                        <li><a class="footer-ankor" href="#">Мероприятия</a></li>
-                        <li><a class="footer-ankor" href="#">Расписание</a></li>
-                        <li><a class="footer-ankor" href="#">О&nbsp;компании</a></li>
+                        <li><a class="footer-ankor" href="#menu">Мероприятия</a></li>
+                        <li><a class="footer-ankor" href="#training">Расписание</a></li>
+                        <li><a class="footer-ankor" href="#aboutCompany">О&nbsp;компании</a></li>
                     </ul>
                 </div>
                 <div class="footer-contacts">
@@ -304,11 +315,11 @@
                 <button onclick="closeModal()" class="header-modal-close"></button>
             </div>
             <ul class="modal-nav">
-                <li><a href="#" class="modal-nav-a">Мероприятия</a></li>
+                <li><a href="#menu" class="modal-nav-a">Мероприятия</a></li>
                 <li><span class="modal-border"></span></li>
-                <li><a href="#" class="modal-nav-a">Расписание</a></li>
+                <li><a href="#training" class="modal-nav-a">Расписание</a></li>
                 <li><span class="modal-border"></span></li>
-                <li><a href="#" class="modal-nav-a">О&nbsp;компании</a></li>
+                <li><a href="#aboutCompany" class="modal-nav-a">О&nbsp;компании</a></li>
             </ul>
             <ul class="modal-item">
                 <li><a href="#" class="modal-social-in"></a></li>
