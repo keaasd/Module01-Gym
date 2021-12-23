@@ -6,7 +6,17 @@
     box-sizing: border-box;
     gap: 20px 20px;
 }
-
+.menu-grid-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 367px;
+    height: 100%;
+    z-index: -1;
+}
 .container {
     max-width: 1143px;
     margin: 0 auto;
