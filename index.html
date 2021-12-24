@@ -57,9 +57,12 @@
                 <div class="menu-text">
                     <h1 class="menu-title">онлайн тренировки любой сложности</h1>                    
                     <div class="menu-title-flex">
-                        <p class="menu-item-text">&gt; 15</p>
-                        <div class="menu-title-p">
+                        <div class="menu-title-flex-group">
+                            <p class="menu-item-text">&gt;&nbsp;15</p>
                             <p class="menu-item-text">тренировок</p>
+                        </div>
+                        <div class="menu-title-p">
+                            
                             <p class="menu-item-text-sport">в области спортивной физиологии и нутрициологии</p>
                             <a class="menu-button"   href="#">Узнать подробнее</a>
                         </div>                        
@@ -73,25 +76,7 @@
         <!-- второй блок -->
         <div class="container">            
             <h3 class="menu-titles" id="menu">Ближайшие события</h3>
-            <div class="pupup-relativ"></div>
-            <div class="wrap-popup" id="modal-popup">    
-                <div class="popup">
-                    <button onclick="closeModal()" class="popup-close"></button>
-                    <div class="popup-title">
-                        <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
-                        <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
-                    </div>
-                    <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-                        <div class="input-container">            
-                            <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
-                        </div>
-                        <div class="input-container">            
-                            <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
-                        </div>
-                        <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
-                    </form>    
-                </div>
-            </div>
+            
             <section class="menu-greeds">
                 <!-- Марафон выносливости -->
                 <div class="menu-greed-item-maraphon">
@@ -251,12 +236,30 @@
                     <div class="company-flex-img">
                         <img src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
                     </div>
+                    <ul class="company-blok-2 hidden-text">
+                        <li>
+                            <p class="company-blok-2-title">Экономия времени</p>
+                            <p class="company-blok-2-text">Не нужно тратить время на дорогу</p>
+                        </li>
+                        <li>
+                            <p class="company-blok-2-title">Индивидуальный подход</p>
+                            <p class="company-blok-2-text">Внимание тренера пренадлежит только вам</p>
+                        </li>
+                        <li>
+                            <p class="company-blok-2-title">Экономия денег</p>
+                            <p class="company-blok-2-text">Средняя цена одной тренировки - 700₽</p>
+                        </li>
+                        <li>
+                            <p class="company-blok-2-title">Опытный персонал</p>
+                            <p class="company-blok-2-text">Стаж работы у наших тренеров от 5 лет</p>
+                        </li>                        
+                    </ul>
                 </div>
             </div>
                 
                 <div class="container">    
                     <div>
-                        <ul class="company-blok-2">
+                        <ul class="company-blok-2 hidden-mobil">
                             <li>
                                 <p class="company-blok-2-title">Экономия времени</p>
                                 <p class="company-blok-2-text">Не нужно тратить время на дорогу</p>
@@ -333,6 +336,25 @@
         </div>
         <div class="modal-btn-bg"></div>
     </div>
+    <div class="pupup-relativ"></div>
+            <div class="wrap-popup" id="modal-popup">    
+                <div class="popup">
+                    <button onclick="closeModal()" class="popup-close"></button>
+                    <div class="popup-title">
+                        <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
+                        <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+                    </div>
+                    <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                        <div class="input-container">            
+                            <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
+                        </div>
+                        <div class="input-container">            
+                            <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
+                        </div>
+                        <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
+                    </form>    
+                </div>
+            </div>
 </div>
 </body>
 </html>

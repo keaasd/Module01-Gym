@@ -120,14 +120,19 @@ body {
     margin-bottom: 0;
 }
 .menu-title-flex {
-    display: flex;
+    /* display: flex; */
     gap: 19px;
+}
+.menu-title-flex-group {
+    display: flex;
+    padding-left: 10px;
 }
 .menu-item-text {
     font-size: 40px;
     line-height: 125%;
     padding-top: 41px;
     padding-bottom: 0px;
+    padding-right: 16px;
     margin: 0;    
 }
 .menu-item-text-sport {
@@ -138,6 +143,10 @@ body {
     padding-top: 21px;
     padding-bottom: 35px;
     margin: 0;
+}
+.menu-title-p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .menu-button {
     display: block;
@@ -152,6 +161,7 @@ body {
     background-color: #FBF138;
     color: #2B3541;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.1);    
+    letter-spacing: 0.03em;
 }
 .menu-button:hover {
     color: #FBF138;
@@ -193,12 +203,6 @@ body {
     opacity: 1;
     transition: 1s;
 }
-
-.menu-grid-cover {    
-    /* width: 367px; */
-    /* height: 600px; */
-}
-
 .menu-grid-img-1 {
     position: absolute;
     background-image: url(../img/@2x/maraphon@2x.png);
@@ -647,6 +651,9 @@ body {
     gap: 67px;
     list-style-type: none;
     padding-left: 0;
+}
+.hidden-text {
+    display: none;
 }
 .company-blok-2-title {
     font-weight: bold;
@@ -1110,8 +1117,9 @@ background: rgba(243, 243, 243, 1);
         padding-right: 0px;
         padding-left: 0px;
         margin-bottom: 0px;
+        margin-top: 0;
         text-align: center;
-    }
+    }    
     .header {
         padding: 30px 10px 60px;
         
@@ -1153,37 +1161,49 @@ background: rgba(243, 243, 243, 1);
         width: 79px;
         transition: 1s;
     }
+    .header-items {
+        flex-basis: 47.3%;
+    }
     /* навигация */
     .menu-bg {
         background-image: none;
-        padding: 0 10px;
+        padding: 0;
+        margin-right: 0;
+        margin-top: 0;
+        height: auto;
     }
     
     .menu-title {
         max-width: 358px;        
         font-size: 26px;
         margin: 0;
-    }
-    .menu-text {
         text-align: left;
+        padding-left: 10px;
     }
+    .menu-text {        
+        max-width: 360px;
+        padding-top: 0;
+        padding-left: 0;
+    }    
     .menu-item-text {
         font-size: 26px;
-        padding-top: 40px;
+        padding-top: 44px;
         padding-bottom: 16px;    
         padding-left: 0;
+        padding-right: 19px;
     }
     .menu-item-text-sport {
         max-width: 255px;
         font-weight: 400;
         font-size: 16px;
-        padding-left: 0px;
+        padding: 0;
+        text-align: left;
     }
     .menu-button {
         /* display: block; */
         max-width: 340px;
         text-decoration: none;
-        padding: 17px 72px;
+        padding: 20px 72px;
         font-weight: bold;
         font-size: 16px;
         margin: 40px auto;
@@ -1193,18 +1213,63 @@ background: rgba(243, 243, 243, 1);
         background-color: #2B3541;
         transition: 1s;
     }
-    .company-flex-text {
-        padding-left: 10px;
-        padding-right: 10px;
+    
+    .mailing-item {
+        position: relative;
+        padding-top: 57px;
+        padding-bottom: 145px;
     }
-
+    .mailing-item-flex {
+        display: block;
+    }
+    .mailing-argee {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mailing-button {
+        position: absolute;
+        padding: 20px 110px;
+        bottom: 0;
+        margin: 0 0 40px;
+    }
+    .mailing-form {
+        padding-left: 0px;
+    }
+    .mailing-title {
+        position: relative;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31.69px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+    .mailing-title::before {
+        top: -10px;
+        left: 41px;
+        height: 31px;
+        width: 31px;
+    }
+    .mailing-input {
+        max-width: 360px;
+        padding: 19px 56px 19px 25px;
+        font-size: 18px;
+        margin: 0px 10px;
+    }
     .company {
         position: relative;
+        margin-top: 80px;
     }
     .company-button {
         padding: 20px 118px;
         position: absolute;
-        bottom: 0;
+        bottom: 274px;
+        margin: 0 auto;
+    }
+    .company-blok {
+        padding-top: 0;
+        padding-bottom: 0px;
+        max-width: 360px;
         margin: 0 auto;
     }
     .menu-arroy {
@@ -1213,12 +1278,21 @@ background: rgba(243, 243, 243, 1);
     .menu-bg-mobil {
         display: block;
         background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
-        background-image: url(../img/@1x/image-1-girl.png);
+        background-image: url(../img/@2x/Image-1-screen@2x.png);
         background-size: 100% 100%;
+        background-repeat: no-repeat;
         height: 310px;
         /* width: 340px; */
-        padding-right: 10px;
-    } 
+        padding-left: 10px;
+        padding-right: 10px;        
+    }
+    .menu-titles {
+        font-size: 26px;
+        line-height: 125%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-top: 52px;
+    }
     .modal-window {
         /* display: block; */
         opacity: 1;
@@ -1271,39 +1345,62 @@ background: rgba(243, 243, 243, 1);
         text-align: center;
         font-size: 10px;
     }
-    .company-flex {
+    .hidden-text {
         display: block;
     }
+    .company-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    gap: 0px;
+    }
     .company-flex-img {
-        margin-top: 40px;
+        margin-top: 145px;
+        order: 3;
     }
     .company-flex-img img {
         width: 100%;
         height: auto;
     }
+    .company-flex-text {
+        order: 1;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .company-title {
         font-weight: bold;
         font-size: 26px;
         line-height: 32px;
-        padding-top: 0;
-        padding-bottom: 16px;
+        padding: 0 10px 16px;
         margin: 0;
     }
     .company-text {
         font-size: 16px;
         line-height: 150%;
-        padding-bottom: 53px;
-        padding-top: 0;
+        padding: 0 10px;
         margin: 0;
     }
     .company-blok-2 {
+        max-width: 223px;
         display: block;
+        padding-top: 0;
+        padding-left: 10px;
+        order: 2;
     }
     .company-blok-2-title {
         line-height: 19.2px;
     }
     .company-blok-2 p {
         font-size: 16px;
+        padding: 0;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+    .company-blok-2 .company-blok-2-text {
+        padding-bottom: 23px;
+    }
+    .hidden-mobil {
+        display: none;
     }
 @media (max-width: 320px) {
     .modal-btn {
