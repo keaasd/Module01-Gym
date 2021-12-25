@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <header class="header"><!-- flex -->
             <div class="header-items">
                 <a class="header-logo" href="#"></a>
@@ -47,13 +47,15 @@
                     <li> <a class="header-social-in" href="#"></a></li>       
                     <li> <a class="header-social-fb" href="#"></a></li>
                 </ul>               
-            </header>    
-        
-    
+            </header>            
+    </div>
     <!-- === меню === -->
     <main>
-        <section class="menu">            
-            <div class="menu-bg">
+        <div class="container"> 
+            <section class="menu">
+                <div class="menu-visual">
+                    <img class="menu-bg" src="img/@2x/Image-1-screen@2x.png" width="996" height="852"    alt="в спортивном костюме девушка бежит в право">
+                </div>
                 <div class="menu-text">
                     <h1 class="menu-title">онлайн тренировки любой сложности</h1>                    
                     <div class="menu-title-flex">
@@ -68,11 +70,11 @@
                         </div>                        
                     </div>
                     
-                    <a class="menu-arroy" href="#menu"></a>
                     <div class="menu-bg-mobil"></div>
-                </div>
-            </div>      
-        </section>
+                </div>                
+                <a class="menu-arroy" href="#menu"></a>
+            </section>
+        </div>  
         <!-- второй блок -->
         <div class="container">            
             <h3 class="menu-titles" id="menu">Ближайшие события</h3>
@@ -218,7 +220,7 @@
                     <div class="mailing-argee">
                         <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
                     <label for="thing" class="mailing-label" required>
-                        Согласен на обработку <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
+                        Согласен с обработкой <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
                     </label>
                     </div>
                 </form>
@@ -238,6 +240,7 @@
                     </div>
                     <ul class="company-blok-2 hidden-text">
                         <li>
+                            <div class="company-describ"></div>
                             <p class="company-blok-2-title">Экономия времени</p>
                             <p class="company-blok-2-text">Не нужно тратить время на дорогу</p>
                         </li>

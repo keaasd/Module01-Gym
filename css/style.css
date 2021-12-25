@@ -11,13 +11,13 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 54px 2.6% 0px;
+    padding-top: 49px;
 }
 .header-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 44.3%;  
+    gap: 6vw;
 }
 .header-logo { 
     display: block;   
@@ -33,6 +33,15 @@ body {
 }
 .header-burger {
     display: none;
+    background-image: url(../img/icons/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 29px;
+    height: 22px;
+    margin-left: 57px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .header-social {
     display: flex;
@@ -44,7 +53,7 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    gap: 55.6px;
+    gap: 54px;
     padding-left: 0;
 }
 .nav-items {
@@ -93,21 +102,20 @@ body {
 .menu {
     position: relative;
     margin-bottom: 112px;
+    padding-bottom: 239px;
+    margin-top: 10px;
 }
-.menu-bg {
-    position: relative;
-    background-image: url(../img/@2x/Image-1-screen@2x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% -20px;
+.menu-visual {
+    position: absolute;
     height: 852px;
-    margin-right: 205px;
-    margin-top: 30px;    
+    width: 100%;
+    z-index: -1;
+    right: -17vw;
 }
+
 .menu-text {
     max-width: 676px;
-    padding-top: 178px;
-    padding-left: 389px;
+    padding-top: 196px;
 }
 .menu-title {
     max-width: 676px;
@@ -125,28 +133,25 @@ body {
 }
 .menu-title-flex-group {
     display: flex;
-    padding-left: 10px;
+    gap: 21px;
 }
 .menu-item-text {
     font-size: 40px;
     line-height: 125%;
     padding-top: 41px;
     padding-bottom: 0px;
-    padding-right: 16px;
     margin: 0;    
 }
 .menu-item-text-sport {
     max-width: 300px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 150%;
     padding-top: 21px;
     padding-bottom: 35px;
     margin: 0;
 }
 .menu-title-p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6vw;
 }
 .menu-button {
     display: block;
@@ -171,11 +176,14 @@ body {
 .menu-arroy {    
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
-    left: 478px;
-    bottom: 19px;
+    left: 0;
+    bottom: 0;
     width: 52px;
     height: 55px;
     transition: 0.3s;
+}
+.company-describ {
+    text-align: end;
 }
 .menu-bg-mobil {
     display: none;
@@ -186,7 +194,9 @@ body {
     line-height: 125%;
     padding-top: 30px;
     padding-bottom: 40px;
-    margin: 0;
+    /* margin-top: 130px; */
+    /* margin-bottom: 0; */
+    margin: 130px 0 0;
 }
 .menu-greeds {
     display: grid;
@@ -652,6 +662,9 @@ body {
     list-style-type: none;
     padding-left: 0;
 }
+.company-blok-2 li {
+    flex-basis: content;
+}
 .hidden-text {
     display: none;
 }
@@ -1021,23 +1034,13 @@ background: rgba(243, 243, 243, 1);
 }
 
   /* @media ------------------------------- */
-@media (max-width: 1366px) {
-    .wrapper {
-        max-width: 1366px;
-        margin: 0 auto;
+@media (min-width: 1550px) {
+    .header-items {        
+        gap: 20vw;
     }
-    .header-items {
-        flex-basis: 52.3%;
-    }
+    
 }
-@media (max-width: 1142px) {
-    .header-items {
-        flex-basis: 69.3%;
-    }
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+@media (max-width: 1142px) {    
     .footer-copyright {
     font-size: 14px;
     }
@@ -1102,7 +1105,60 @@ background: rgba(243, 243, 243, 1);
         display: block;
     }
 }
+@media (max-width: 567px) {
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+    .header-burger {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+    .container {
+        max-width: 547px;
+    }
+    .menu {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 10px;
+    }
+    .menu-visual {
+        display: none;
+    }
+    .menu-text {
+        padding-top: 1px;
+    }
+    .header-social-in {
+        width: 26px;
+        height: 26px;
+    }
+    .header-social-fb {
+        width: 26px;
+        height: 26px;
+    }
+    .header-social {
+        gap: 20px;
+    }
+    .menu-title {
+        font-size: 32px;
+    }
+    .menu-item-text {
+        font-size: 36px;
+        padding-top: 40px;
+    }
+    .menu-title-p {
+        padding-left: 0;
+    }
+    .menu-arroy {
+        display: none;
+    }
+    .menu-button {
+        padding: 20px 177px;
+    }
 
+}
 @media (max-width: 360px) {
     .wrapper {
         max-width: 100%;
