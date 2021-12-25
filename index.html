@@ -69,12 +69,14 @@
                             <a class="menu-button"   href="#">Узнать подробнее</a>
                         </div>                        
                     </div>
-                    
-                    <div class="menu-bg-mobil"></div>
-                </div>                
+                    <div class="menu-bg-mobil">
+                        <div class="menu-bg-mobil-fon1"></div>
+                        <div class="menu-bg-mobil-fon2"></div>
+                    </div>
+                </div>
                 <a class="menu-arroy" href="#menu"></a>
             </section>
-        </div>  
+        </div>
         <!-- второй блок -->
         <div class="container">            
             <h3 class="menu-titles" id="menu">Ближайшие события</h3>
@@ -90,7 +92,7 @@
                             <h3 class="menu-grid-title">Марафон выносливости</h3>
                             <span class="menu-grid-maraphon-mrf">марафон</span>
                             <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn">Учавствовать</button>
-                            <span class="menu-grid-btn-add"></span>
+                            <button class="menu-grid-btn-add"></button>
                         </div>
                     </div>
                 </div>
@@ -103,8 +105,8 @@
                             <span class="menu-grid-data">9.07</span>
                             <h3 class="menu-grid-title">Как стать тренером?</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <span class="menu-grid-btn-add"></span>
-                            <a href="#" class="menu-grid-btn" onclick="openModal()">Учавствовать</a>
+                            <button onclick="openModal()" class="menu-grid-btn-add"></button>
+                            <button href="#" class="menu-grid-btn" onclick="openModal()">Учавствовать</button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +119,7 @@
                             <span class="menu-grid-data">15.07</span>
                             <h3 class="menu-grid-title">Йога, как стиль жизни</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <span class="menu-grid-btn-add"></span>
+                            <button onclick="openModal()" class="menu-grid-btn-add"></button>
                             <a href="#" class="menu-grid-btn" onclick="openModal()">Учавствовать</a>
                         </div>
                     </div>
@@ -315,7 +317,6 @@
         </div>
         
     </footer>
-</div>
 
 <div class="modal-window" id="modal">
     <div class="modal">

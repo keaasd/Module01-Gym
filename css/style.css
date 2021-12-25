@@ -112,7 +112,12 @@ body {
     z-index: -1;
     right: -17vw;
 }
-
+.menu-bg-mobil-fon1 {
+    display: none;
+}
+.menu-bg-mobil-fon2 {
+    display: none;
+}
 .menu-text {
     max-width: 676px;
     padding-top: 196px;
@@ -186,7 +191,7 @@ body {
     text-align: end;
 }
 .menu-bg-mobil {
-    display: none;
+    display: none;    
 }
 .menu-titles {
     font-weight: 700;
@@ -313,6 +318,7 @@ body {
     width: 30px;
     right: 0;
     bottom: 0;
+    border: none;
 }
 .menu-grid-title {
     max-width: 260px;
@@ -1090,7 +1096,6 @@ background: rgba(243, 243, 243, 1);
     .menu-greeds .menu-greed-item-maraphon:nth-child(3) {
         grid-area: c;
         width: 100%;
-        border: 1px solid red;
         /* grid-column: 1 / 2; */
         /* grid-row: 2 / 2; */
     }
@@ -1127,6 +1132,7 @@ background: rgba(243, 243, 243, 1);
     .menu-visual {
         display: none;
     }
+    
     .menu-text {
         padding-top: 1px;
     }
@@ -1157,7 +1163,95 @@ background: rgba(243, 243, 243, 1);
     .menu-button {
         padding: 20px 177px;
     }
+    .menu-grid-maraphon-text {
+        padding: 20px;
+    }
+    .menu-bg-mobil {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
+        background-image: url(../img/@1x/image-1-girl.png);
+        background-repeat: no-repeat;
+        height: 310px;
+    }
+    .menu-bg-mobil-fon1 {
+        display: block;
+        background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 310px;
+        width: 213px;
+        right: 90px;
+        z-index: -1;
+    }
+    .menu-bg-mobil-fon2 {
+        display: block;
+        background: linear-gradient(90deg, rgba(253, 249, 182, 0.2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
+        /* background: linear-gradient(rgb(253, 249, 182) 100%, rgb(253, 249, 182) -100%); */        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 310px;
+        width: 117px;
+        right: 40px;
+        z-index: -1;
+    }
 
+    .menu-grid-img-3 {
+        background-image: url(../img/@1x/Vebinar2-mobile.png);
+    }
+    .menu-greeds {
+        grid-template-rows: 86vw 93vw;
+        grid-template-columns: 48% 48%;
+        grid-template-areas: "a b" "c c";
+        gap: 10px 10px;
+    }
+    .menu-titles {
+        font-size: 26px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-top: 130px;
+        margin-bottom: 0;
+        margin: 48px 0 0;
+    }
+    .menu-grid-data {
+        font-size: 12px;
+    }
+    .menu-grid-title {
+        max-width: 180px;
+        font-size: 20px;
+        padding-top: 16px;
+        }
+    .menu-grid-btn {
+        display: none;
+    }
+    .training-title {
+        max-width: 340px;
+        font-size: 26px;
+    }
+    .training-data {
+        font-size: 16px;
+        opacity: 0.7;
+    }
+    .training-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .training-date {
+        font-size: 16px;
+    }
+    .training-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 234px;
+    }
+    .menu-text-hidden {
+        padding-top: 16px;
+        margin-top: 0px;
+        left: 78px;
+        max-width: 244px;
+    }
 }
 @media (max-width: 360px) {
     .wrapper {
@@ -1331,17 +1425,7 @@ background: rgba(243, 243, 243, 1);
     .menu-arroy {
         display: none;
     }
-    .menu-bg-mobil {
-        display: block;
-        background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
-        background-image: url(../img/@2x/Image-1-screen@2x.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        height: 310px;
-        /* width: 340px; */
-        padding-left: 10px;
-        padding-right: 10px;        
-    }
+    
     .menu-titles {
         font-size: 26px;
         line-height: 125%;
@@ -1458,6 +1542,7 @@ background: rgba(243, 243, 243, 1);
     .hidden-mobil {
         display: none;
     }
+}
 @media (max-width: 320px) {
     .modal-btn {
         max-width: 320px;
