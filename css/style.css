@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 6vw;
+    flex-basis: 57.6%;
 }
 .header-logo { 
     display: block;   
@@ -104,13 +104,50 @@ body {
     margin-bottom: 112px;
     padding-bottom: 239px;
     margin-top: 10px;
+    display: flex;
 }
 .menu-visual {
-    position: absolute;
-    height: 852px;
+    display: flex;
+    max-width: 790px;
     width: 100%;
+    gap: 20px;
+    position: absolute;
+    top: 0;
     z-index: -1;
-    right: -17vw;
+    right: -75px;
+}
+.box-gradient-left {
+    display: block;
+    
+        background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 310px;
+        width: 213px;
+        right: 90px;
+        z-index: -1;
+        flex-basis: 70%;
+        height: 850px;
+}
+.box-gradient-right {
+    display: block;
+        background: linear-gradient(90deg, rgba(253, 249, 182, 0.2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
+        /* background: linear-gradient(rgb(253, 249, 182) 100%, rgb(253, 249, 182) -100%); */        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 310px;
+        width: 117px;
+        right: 40px;
+        z-index: -1;
+        flex-basis: 30%;
+        height: 850px;
+}
+.menu-bg {
+    position: absolute;
+    top: 0;
+    right: -5.7vw;
+    width: 996px;
+    height: 850px;
 }
 .menu-bg-mobil-fon1 {
     display: none;
@@ -156,7 +193,7 @@ body {
     margin: 0;
 }
 .menu-title-p {
-    padding-left: 6vw;
+    padding-left: 4.5vw;
 }
 .menu-button {
     display: block;
@@ -1040,10 +1077,10 @@ background: rgba(243, 243, 243, 1);
 }
 
   /* @media ------------------------------- */
-@media (min-width: 1550px) {
+/* @media (min-width: 1550px) {
     .header-items {        
         gap: 20vw;
-    }
+    } */
     
 }
 @media (max-width: 1142px) {    
