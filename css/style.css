@@ -1080,9 +1080,9 @@ background: rgba(243, 243, 243, 1);
 /* @media (min-width: 1550px) {
     .header-items {        
         gap: 20vw;
-    } */
+    } 
     
-}
+}*/
 @media (max-width: 1142px) {    
     .footer-copyright {
     font-size: 14px;
