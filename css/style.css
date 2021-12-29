@@ -2,7 +2,8 @@ body {
     font-family: Montserrat;
     color: #2B3541;
 }
-.container {
+.container {    
+    position: relative;
     max-width: 1143px;
     margin: 0 auto;        
 }
@@ -100,9 +101,6 @@ body {
     margin-bottom: 80px;
 }
 .menu {
-    position: relative;
-    margin-bottom: 112px;
-    padding-bottom: 239px;
     margin-top: 10px;
     display: flex;
 }
@@ -219,7 +217,7 @@ body {
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
     left: 0;
-    bottom: 0;
+    bottom: -240px;
     width: 52px;
     height: 55px;
     transition: 0.3s;
@@ -229,6 +227,9 @@ body {
 }
 .menu-bg-mobil {
     display: none;    
+}
+.events {
+    margin-top: 370px;
 }
 .menu-titles {
     font-weight: 700;
@@ -246,17 +247,8 @@ body {
     grid-template-rows: repeat(1, 600px);
     gap: 20px;
 }
-.menu-greed-item-maraphon {
+.menu-grid-box-marafon {
     position: relative;
-    /* max-width: 367px; */
-    /* max-height: 600px; */
-}
-.menu-greed-item-maraphon:hover .menu-grid-overlay {
-    opacity: 1;
-    transition: 1s;
-}
-.menu-grid-img-1 {
-    position: absolute;
     background-image: url(../img/@2x/maraphon@2x.png);
     background-repeat: no-repeat;
     display: block;
@@ -264,8 +256,21 @@ body {
     background-position: center;
     width: 100%;
     height: 100%;
-    z-index: -1;
 }
+.menu-grid-gradient {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+}
+.menu-grid-gradient:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+}
+.menu-grid-gradient:hover .menu-grid-btn {
+    opacity: 1;
+}
+
 .menu-grid-img-2 {
     position: absolute;
     background-image: url(../img/@2x/Vebinar-1@2x.png);
@@ -288,19 +293,30 @@ body {
     height: 100%;
     z-index: -1;    
 }
-.menu-grid-overlay {
-    position: absolute;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.6) 0%, rgba(253, 249, 182, 0) 100%);
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-}
+
 .menu-grid-maraphon-text {
     padding: 30px;
 }
-
-
+.menu-grid-box-veb1 {
+    position: relative;
+    background-image: url(../img/@2x/Vebinar-1@2x.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.menu-grid-box-veb2 {
+    position: relative;
+    background-image: url(../img/@2x/Vebinar2@2x.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
 .menu-grid-btn {
     max-width: 221px;
     padding: 20px 37px;
