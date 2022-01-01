@@ -63,7 +63,7 @@
                         <div class="menu-title-p">
                             
                             <p class="menu-item-text-sport">в области спортивной физиологии и нутрициологии</p>
-                            <a class="menu-button"   href="#">Узнать подробнее</a>
+                            <a class="menu-button" href="#training-btn">Узнать подробнее</a>
                         </div>                        
                     </div>
                     <div class="menu-bg-mobil">
@@ -129,7 +129,7 @@
                 <div class="container">
                     <div class="training-nedelya">
                         <div class="training-titles">
-                            <h3 class="training-title">Расписание тренировок</h3>
+                            <h3 class="training-title" id="training-btn">Расписание тренировок</h3>
                             <p class="training-data">22 - 28 июня</p>
                         </div>
                         <div class="training-flex" id="training">
@@ -228,9 +228,10 @@
             </div>
             <!-- https://realadmin.ru/coding/valid-field-js.html проверка на е=маил -->
         </section>            
-        <section class="company">                
-            <div class="company-blok">
-                <div class="company-flex">
+        <section class="company">
+            <div class="container">
+                <div class="company-blok">
+                    <div class="company-flex">
                     <div class="company-flex-text">
                         <h3 class="company-title" id="aboutCompany">О компании</h3>
                         <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
@@ -258,9 +259,9 @@
                             <p class="company-blok-2-text">Стаж работы у наших тренеров от 5 лет</p>
                         </li>                        
                     </ul>
-                </div>
+                    </div>
             </div>
-                
+            </div>    
                 <div class="container">    
                     <div>
                         <ul class="company-blok-2 hidden-mobil">
@@ -335,7 +336,7 @@
                 <li><a href="#" class="modal-social-in"></a></li>
                 <li><a href="#" class="modal-social-fb"></a></li>
             </ul>
-            <button class="modal-btn" href="#">Узнать подробнее</button>
+            <a class="modal-btn" href="#training-btn">Узнать подробнее</a>
         </div>
         <div class="modal-btn-bg"></div>
     </div>
@@ -350,9 +351,11 @@
                     <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                         <div class="input-container">            
                             <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
+                            <p class="popup-text-hidden">Некорректный адрес e-mail</p>
                         </div>
                         <div class="input-container">            
                             <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
+                            <p class="popup-text-hidden">Некорректный номер телефона</p>
                         </div>
                         <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
                     </form>    

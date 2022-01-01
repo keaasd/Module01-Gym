@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 49px;
+    padding-top: 36px;
 }
 .header-items {
     display: flex;
@@ -32,7 +32,7 @@ body {
 }
 .header-logo:hover { 
     width: 98px;
-    transition: 1s;    
+    transition: 0.2s;    
 }
 .header-burger {
     display: none;
@@ -51,6 +51,9 @@ body {
     list-style-type: none;
     gap: 30px;
     margin: auto 0;
+}
+.header-social li {
+    height: 38px;
 }
 .header-nav {
     display: flex;
@@ -71,7 +74,7 @@ body {
 .nav-items:hover {
     border-bottom: 1px solid #2B3541;
     padding-bottom: 10px;
-    transition: 1s;
+    transition: 0.2s;
 }
 .header-social-fb {
     display: block;
@@ -84,7 +87,7 @@ body {
 .header-social-fb:hover {
     width: 38px;
     height: 38px;
-    transition: 1s;
+    transition: 0.2s;
 }
 .header-social-in {
     display: block;
@@ -97,7 +100,7 @@ body {
 .header-social-in:hover {
     width: 38px;
     height: 38px;
-    transition: 1s;
+    transition: 0.2s;
 }
 .menu-items {
     margin-bottom: 80px;
@@ -114,7 +117,8 @@ body {
     position: absolute;
     top: 0;
     z-index: -1;
-    right: -75px;
+    right: -57px;   
+    /* right: -5%; */
 }
 .box-gradient-left {
     display: block;
@@ -157,7 +161,7 @@ body {
 }
 .menu-text {
     max-width: 676px;
-    padding-top: 196px;
+    padding-top: 197px;
 }
 .menu-title {
     max-width: 676px;
@@ -193,7 +197,7 @@ body {
     margin: 0;
 }
 .menu-title-p {
-    padding-left: 4.5vw;
+    padding-left: 93px;
 }
 .menu-button {
     display: block;
@@ -213,7 +217,7 @@ body {
 .menu-button:hover {
     color: #FBF138;
     background-color: #2B3541;
-    transition: 1s;
+    transition: 0.2s;
 }
 .menu-arroy {    
     position: absolute;
@@ -338,12 +342,12 @@ body {
     background-color: #2B3541;
     color: #FBF138;
     opacity: 1;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 .menu-greed-1nt:hover {
     background-image: url(../img/@2x/maraphonhover@2x.png);
-    transition: 1s;
+    transition: 0.2s;
 }
 .menu-grid-data {
     font-weight: 700;
@@ -363,7 +367,7 @@ body {
 }
 .menu-greed-item-maraphon:hover .menu-grid-maraphon-mrf {
     opacity: 0;
-    transition: 1s;
+    transition: 0.2s;
 }
 .menu-grid-btn-add {
     display: none;
@@ -422,7 +426,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: 250px 60px 95px 301px; */
-    grid-template-rows: 250px 41px 73px 281px;
+    grid-template-rows: 250px 40px 71px 283px;
 
     grid-auto-flow: column;
     gap: 20px;
@@ -482,11 +486,11 @@ body {
     opacity: 1;
     padding-top: 20px;
     margin-top: 0;
-    transition: 1s;
+    transition: 0.2s;
 }
 .functional-training:hover .paddng {
     padding-top: 8px;
-    transition: 1s;
+    transition: 0.2s;
 }
 .power-mix {
     padding: 20px 30px;    
@@ -593,16 +597,16 @@ body {
     z-index: 1;
 }
 .mailing-input {
-    max-width: 372px;
-    padding-left: 19px;
-    padding-right: 95px;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
     font-size: 18px;
     border: none;
     outline: none;
 }
 .mailing-input:hover {
     background-color: #F3F3F3;
-    transition: 1s;
+    transition: 0.2s;
 }
 .mailing-item-flex {
     display: flex;
@@ -625,7 +629,7 @@ body {
 .mailing-button:hover {
     background-color: #2B3541;    
     color: #FBF138;
-    transition: 1s;
+    transition: 0.2s;
 } 
 /* согласие на обработку данных */
 .mailing-argee{
@@ -660,7 +664,7 @@ body {
 }
 .mailing-person:hover {
     color: rgba(43, 53, 65, 1);
-    transition: 1s;
+    transition: 0.2s;
 }
 .company {
     margin-top: 4px;
@@ -712,7 +716,7 @@ body {
 .company-button:hover {
     color: #FBF138;
     background-color: #2B3541;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 .company-blok-2 {
@@ -743,10 +747,10 @@ footer {
     position: relative;
     margin: 0 auto;
     background: #F3F3F3;
-    padding-top: 58px;
+    padding-top: 33px;
     padding-bottom: 21px;
     z-index: 0;
-    margin-top: 127px;
+    margin-top: 151px;
 }
 .footer-flex {
     display: flex;
@@ -813,7 +817,7 @@ footer {
 .footer-social-fb:hover {
     width: 34px;
     height: 34px;
-    transition: 1s;
+    transition: 0.2s;
     padding: 0;
 }
 .footer-social-in {
@@ -828,7 +832,7 @@ footer {
 .footer-social-in:hover {
     width: 34px;
     height: 34px;
-    transition: 1s;
+    transition: 0.2s;
     padding: 0;
 }
 
@@ -866,7 +870,7 @@ footer {
 }
 .frontend-blok:hover {
     color: rgba(43, 53, 65, 1);
-    transition: 1s;
+    transition: 0.2s;
 }
 /* modal */
 .modal-window {
@@ -1050,6 +1054,9 @@ footer {
 .input-container {
     max-width: 500px;
 }
+.popup-text-hidden {
+    display: none;
+}
 .popup-mail {
     background-color: #fff;
     background-image: none;
@@ -1105,8 +1112,18 @@ background: rgba(243, 243, 243, 1);
     font-size: 14px;
     }
 }
-@media (max-width: 1024px) {
 
+@media (max-width:1112px) {
+    .menu-title {
+        max-width: 603px;
+        font-size: 3.7vw;
+        line-height: 125%;
+    }
+}
+@media (max-width: 1024px) {
+    .header-items {
+        flex-basis: 62.6%;
+    }
     .menu-greeds {
         grid-template-rows: repeat(1, 536px);
     }
@@ -1122,6 +1139,101 @@ background: rgba(243, 243, 243, 1);
         max-width: 768px;
         margin: 0 auto;
     }
+    .header {
+        padding-top: 25px;
+    }
+    .header-items {
+        flex-basis: 21.6%;
+    }
+    .menu-visual {
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+        background-image: url(../img/icons/burger.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 29px;
+        height: 22px;
+        margin-left: 57px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-text {
+        max-width: 357px;
+        padding-top: 28px;
+    }
+    .menu-title {
+        font-size: 26px;
+    }
+    .menu-item-text {
+        font-size: 26px;
+        padding-top: 42px;
+    }
+    .header-nav {
+        display: none;
+        /* нави отключаем */
+    }
+    .header-social {
+        gap: 20px;
+    }
+    .header-social-in {
+        width: 26px;
+        height: 26px;
+    }
+    .header-social-fb {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+    }
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+    .header-logo:hover {
+        width: 79px;
+        transition: 0.2s;
+    }
+    .training-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 114px;
+        grid-auto-rows: minmax(114px, auto);
+        grid-auto-flow: row;
+        gap: 20px;
+    }
+    
+.training-flex div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.training-flex div:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.training-flex div:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.training-flex div:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.training-flex div:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+.training-flex div:nth-child(6){
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+.training-block {
+    display: flex;
+}
     .menu-greeds {
         /* display: flex; */
         grid-template-columns: none;
@@ -1129,7 +1241,6 @@ background: rgba(243, 243, 243, 1);
         grid-template-areas: 
         "a b" 
         "c c";
-        /* grid-template-columns: 1fr 1fr; */
         /* grid-template-rows: repeat(2, 2fr); */
         gap: 10px;
     }
@@ -1363,7 +1474,7 @@ background: rgba(243, 243, 243, 1);
     }
     .header-logo:hover {
         width: 79px;
-        transition: 1s;
+        transition: 0.2s;
     }
     .header-items {
         flex-basis: 47.3%;
@@ -1415,7 +1526,7 @@ background: rgba(243, 243, 243, 1);
     .menu-button:hover {
         color: #FBF138;
         background-color: #2B3541;
-        transition: 1s;
+        transition: 0.2s;
     }
     
     .mailing-item {
