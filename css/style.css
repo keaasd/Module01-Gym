@@ -121,17 +121,14 @@ body {
     /* right: -5%; */
 }
 .box-gradient-left {
-    display: block;
-    
-        background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        height: 310px;
-        width: 213px;
-        right: 90px;
-        z-index: -1;
-        flex-basis: 70%;
-        height: 850px;
+    display: block;    
+    background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 213px;
+    z-index: -1;
+    flex-basis: 70%;
+    height: 850px;
 }
 .box-gradient-right {
     display: block;
@@ -1114,6 +1111,9 @@ background: rgba(243, 243, 243, 1);
 }
 
 @media (max-width:1112px) {
+    .header-logo {
+        margin-right: 30px;
+    }
     .menu-title {
         max-width: 603px;
         font-size: 3.7vw;
@@ -1121,6 +1121,57 @@ background: rgba(243, 243, 243, 1);
     }
 }
 @media (max-width: 1024px) {
+    .menu-bg {
+        right: -4.7vw;
+    width: 546px;
+    height: 467px;
+    }
+    .menu-visual {
+        max-width: 433px;
+        top: 0;
+        z-index: -1;
+        right: auto;
+        left: 398px;
+    }
+    .box-gradient-left {
+        height: 467px;
+    }
+    .box-gradient-right {
+        height: 467px;
+    }
+    .menu-text {
+        max-width: 520px;
+        padding-top: 90px;
+        padding-left: 105px;
+    }
+    .menu-title {
+        font-size: 30px;
+    }
+    .menu-title-p {
+        padding-left: 0;
+    }
+    .menu-arroy {
+        left: 121px;
+        bottom: -65px;
+    }
+    .events {
+        margin-top: 0px;
+    }
+    .menu-titles {
+        font-size: 32px;
+        line-height: 75%;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        margin: 125px 0 0px;
+    }
+    .menu-item-text {
+        font-size: 28px;
+        padding-top: 14px;
+    }
+    .menu-item-text-sport {
+        font-size: 18px;
+        padding-bottom: 35px;
+    }
     .header-items {
         flex-basis: 62.6%;
     }
@@ -1128,9 +1179,21 @@ background: rgba(243, 243, 243, 1);
         grid-template-rows: repeat(1, 536px);
     }
     .menu-grid-title {
-        font-size: 25px;
-        line-height: 125%;
+        font-size: 20px;
         padding-top: 10px;
+    }
+    .training-title {
+        font-size: 32px;
+    }
+    .company-flex-img img {
+        width: 470px;
+        height: 272px;
+    }
+    .container {
+        max-width: 1024px;
+    }
+    .company-title {
+        font-size: 30px;
     }
 }
 
@@ -1273,6 +1336,20 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-grid-btn-add {
         display: block;
+    }
+}
+@media (max-width: 918px) {
+    .menu-text-span {
+        font-size: 16px;
+        line-height: 140%;
+        padding-top: 18px;
+        margin: 0;
+    }
+    .functional-training {
+        padding: 15px 15px;
+    }
+    .training-text {
+        font-size: 17px;
     }
 }
 @media (max-width: 567px) {
