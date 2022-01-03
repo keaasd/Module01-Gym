@@ -1,6 +1,7 @@
 body {
     font-family: Montserrat;
     color: #2B3541;
+    background: #FEFCFE;
 }
 .container {    
     position: relative;
@@ -248,9 +249,10 @@ body {
 }
 .menu-greeds {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 600px);
     gap: 20px;
+    height: 600px;
+    grid-template-areas:
+    "a b c";
 }
 .menu-grid-box-marafon {
     position: relative;
@@ -261,6 +263,7 @@ body {
     background-position: center;
     width: 100%;
     height: 100%;
+    grid-area: a;
 }
 .menu-grid-gradient {
     background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
@@ -311,6 +314,7 @@ body {
     background-position: center;
     width: 100%;
     height: 100%;
+    grid-area: b;
 }
 .menu-grid-box-veb2 {
     position: relative;
@@ -321,6 +325,7 @@ body {
     background-position: center;
     width: 100%;
     height: 100%;
+    grid-area: c;
 }
 .menu-grid-btn {
     max-width: 221px;
@@ -400,6 +405,11 @@ body {
     padding: 20px 30px;
     border: 1px solid rgba(43, 53, 65, 0.5);
     /* box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0.5); */
+}
+.functional-training:hover {
+    border: none;
+    background:rgba(243, 243, 243, 0.5);
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
 .training-titles {
     display: flex;
@@ -540,6 +550,17 @@ body {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
+}
+.training-action:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+}
+.training-action .menu-text-hidden {
+    position: relative;
+    opacity: 1;
+    padding-top: 20px;
+    margin-top: 0;
+    transition: 0.2s;
 }
 .training-active-data {
     font-weight: 700;
@@ -692,6 +713,19 @@ body {
     padding-bottom: 19px;
     margin: 0;
 }
+.company-flex-img {
+    position: relative;
+}
+.company-flex-img:after {
+    content: "";
+	display: block;    
+    width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0.45) 100%);
+} 
 .company-text {
     font-size: 18px;
     line-height: 150%;
@@ -1178,10 +1212,10 @@ background: rgba(243, 243, 243, 1);
         flex-basis: 62.6%;
     }
     .menu-greeds {
-        grid-template-rows: repeat(1, 536px);
+        height: 58.7vw;
     }
     .menu-grid-title {
-        font-size: 20px;
+        font-size: 23px;
         padding-top: 10px;
     }
     .training-title {
@@ -1198,7 +1232,19 @@ background: rgba(243, 243, 243, 1);
         font-size: 30px;
     }
 }
-
+@media (min-width: 769px) and (max-width: 890px) {
+    .menu-grid-title {
+        font-size: 20px;
+    }
+    .menu-grid-maraphon-text {
+        padding: 20px;
+    }
+    .menu-grid-btn {
+        max-width: 208px;
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+}
 @media (max-width: 768px) {
     .wrapper {
         max-width: 768px;
@@ -1261,6 +1307,15 @@ background: rgba(243, 243, 243, 1);
         width: 79px;
         transition: 0.2s;
     }
+    .menu-grid-box-marafon {
+        grid-area: a;
+    }
+    .menu-grid-box-veb1 {
+        grid-area: b;
+    }
+    .menu-grid-box-veb2 {
+        grid-area: c;
+    }
     .training-flex {
         display: grid;
         grid-template-columns: 1fr;
@@ -1300,13 +1355,9 @@ background: rgba(243, 243, 243, 1);
     display: flex;
 }
     .menu-greeds {
-        /* display: flex; */
-        grid-template-columns: none;
-        grid-template-rows: auto 1fr;
         grid-template-areas: 
         "a b" 
         "c c";
-        /* grid-template-rows: repeat(2, 2fr); */
         gap: 10px;
     }
     .menu-greed-item-maraphon {
@@ -1440,9 +1491,6 @@ background: rgba(243, 243, 243, 1);
         z-index: -1;
     }
 
-    .menu-grid-img-3 {
-        background-image: url(../img/@1x/Vebinar2-mobile.png);
-    }
     .menu-greeds {
         grid-template-rows: 86vw 93vw;
         grid-template-columns: 48% 48%;
