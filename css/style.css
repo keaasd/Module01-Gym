@@ -1304,12 +1304,15 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-grid-box-marafon {
         grid-area: a;
+        height: 600px;
     }
     .menu-grid-box-veb1 {
         grid-area: b;
     }
     .menu-grid-box-veb2 {
         grid-area: c;
+        background-image: url(../img/@2x/Vebinar2-mobile.png);
+        height: 600px;
     }
     .training-flex {
         display: grid;
@@ -1354,6 +1357,9 @@ background: rgba(243, 243, 243, 1);
         "a b" 
         "c c";
         gap: 10px;
+        height: auto;
+        max-width: 600px;
+        margin: 0 auto;
     }
     .menu-greed-item-maraphon {
         max-width: 100%;
