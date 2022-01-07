@@ -1227,6 +1227,20 @@ background: rgba(243, 243, 243, 1);
         font-size: 30px;
     }
 }
+@media (max-width: 918px) {
+    .menu-text-span {
+        font-size: 16px;
+        line-height: 140%;
+        padding-top: 18px;
+        margin: 0;
+    }
+    .functional-training {
+        padding: 15px 15px;
+    }
+    .training-text {
+        font-size: 17px;
+    }
+}
 @media (min-width: 769px) and (max-width: 890px) {
     .menu-grid-title {
         font-size: 20px;
@@ -1315,13 +1329,16 @@ background: rgba(243, 243, 243, 1);
         height: 600px;
     }
     .training-flex {
+        display: block;
+    }
+    /* .training-flex {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 114px;
         grid-auto-rows: minmax(114px, auto);
         grid-auto-flow: row;
         gap: 20px;
-    }
+    } */
     
 .training-flex div:nth-child(1) {
     grid-column: 1 / 2;
@@ -1349,8 +1366,27 @@ background: rgba(243, 243, 243, 1);
     grid-column: 1 / 2;
     grid-row: 6 / 7;
 }
+    .functional-training {
+        position: relative;
+        padding: 20px;
+        margin-bottom: 17px;
+        min-height: 114px;
+        justify-content: space-evenly;
+    }
+    .training-text {
+        font-size: 16px;
+        line-height: 125%;
+        margin: 0;
+        padding-top: 0;
+    }
 .training-block {
-    display: flex;
+    display: block;
+    padding-left: 126px;
+}
+.training-image {
+    position: absolute;
+    left: 24px;
+    top: 31%;
 }
     .menu-greeds {
         grid-template-areas: 
@@ -1391,19 +1427,13 @@ background: rgba(243, 243, 243, 1);
     .menu-grid-btn-add {
         display: block;
     }
-}
-@media (max-width: 918px) {
     .menu-text-span {
-        font-size: 16px;
-        line-height: 140%;
-        padding-top: 18px;
-        margin: 0;
+        /* font-size: 18px; */
+        /* line-height: 150%; */
+        max-width: 370px;
     }
-    .functional-training {
-        padding: 15px 15px;
-    }
-    .training-text {
-        font-size: 17px;
+    .footer-contacts-email {
+        margin-left: 30px;
     }
 }
 @media (max-width: 567px) {
