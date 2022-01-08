@@ -793,9 +793,9 @@ footer {
     max-width: 631px;
     gap: 39px;
 }
-.footer-nav .header-logo {
+/* .footer-nav .header-logo {
     padding-right: 39px;
-}
+} */
 .footer-nav-flex {
     display: flex;
     justify-content: space-between;
@@ -805,10 +805,11 @@ footer {
     flex-basis: 75%;
 }
 .footer-social {
-    min-width: 84px;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    padding-left: 0;
+    gap: 10px;
 }
 .footer-contacts-a {
     display: block;
@@ -840,7 +841,6 @@ footer {
     background-size: contain;
     width: 28px;
     height: 28px;
-    padding: 8px 0;
 }
 .footer-social-fb:hover {
     width: 34px;
@@ -855,7 +855,6 @@ footer {
     background-size: contain;
     width: 28px;
     height: 28px;
-    padding: 8px 0;
 }
 .footer-social-in:hover {
     width: 34px;
@@ -1255,6 +1254,9 @@ background: rgba(243, 243, 243, 1);
     }
 }
 @media (max-width: 768px) {
+    .container {
+        max-width: 767px;
+    }
     .wrapper {
         max-width: 768px;
         margin: 0 auto;
@@ -1309,6 +1311,7 @@ background: rgba(243, 243, 243, 1);
         text-align: center;
     }
     .header-logo {
+        margin-right: 40px;
         width: 78px;
         height: 24px;
     }
@@ -1370,18 +1373,20 @@ background: rgba(243, 243, 243, 1);
         position: relative;
         padding: 20px;
         margin-bottom: 17px;
-        min-height: 114px;
-        justify-content: space-evenly;
+        min-height: 135px;
+        justify-content: flex-start;
     }
     .training-text {
         font-size: 16px;
         line-height: 125%;
         margin: 0;
-        padding-top: 0;
+        padding-top: 4%;
     }
 .training-block {
     display: block;
     padding-left: 126px;
+    flex: 74 85 105px;
+    align-items: center;
 }
 .training-image {
     position: absolute;
@@ -1432,8 +1437,37 @@ background: rgba(243, 243, 243, 1);
         /* line-height: 150%; */
         max-width: 370px;
     }
+    .company-blok-2 {
+        flex-wrap: wrap;
+        max-width: 758px;
+        gap: 12px;
+    }
+    .company-blok-2 li {
+        max-width: 325px;
+    }
+
     .footer-contacts-email {
         margin-left: 30px;
+    }
+    .footer-nav {
+        gap: 0;
+    }
+    .footer-nav-flex {
+        gap: 25px;
+        flex-basis: 75%;
+    }
+    .footer-social-in, .footer-social-fb {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-nav {
+        gap: 0px;
+    }    
+    .footer-social {
+        gap: 10px;
+    }
+    .footer-contacts {
+        min-width: 255px;
     }
 }
 @media (max-width: 567px) {
@@ -1575,6 +1609,7 @@ background: rgba(243, 243, 243, 1);
         left: 78px;
         max-width: 244px;
     }
+    
 }
 @media (max-width: 360px) {
     .wrapper {
