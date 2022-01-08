@@ -586,7 +586,8 @@ body {
     margin: 0;
     padding-bottom: 40px;
 }
-.mailing-title::before {    
+.mailing-title::before {
+    display: inline-block;    
     position: absolute;
     content: " ";
     top: -17px;
@@ -697,7 +698,7 @@ body {
 .company-flex {
     display: flex;
     justify-content: space-between;
-    gap: 77px;
+    /* gap: 77px; */
 }
 
 .company-title {
@@ -710,16 +711,27 @@ body {
 }
 .company-flex-img {
     position: relative;
+    width: auto;
+    height: 336px;
+    margin-left: 5%;
 }
+.company-flex-img-bg {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: auto;
+} 
 .company-flex-img:after {
     content: "";
 	display: block;    
+    width: 100%;
     width: 100%;
 	height: 100%;    
 	position: absolute;
 	top: 0;      
 	left: 0;   
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0.45) 100%);
+    z-index: 2;
 } 
 .company-text {
     font-size: 18px;
@@ -1215,15 +1227,30 @@ background: rgba(243, 243, 243, 1);
     .training-title {
         font-size: 32px;
     }
-    .company-flex-img img {
-        width: 470px;
-        height: 272px;
-    }
+    /* .company-flex-img {
+        height: 28vw;
+    } */
     .container {
         max-width: 1024px;
     }
     .company-title {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 983px) {
+    .company-flex-img-bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 110%;
+    }
+    .company-flex-img {
+        width: 180%;
+        overflow: hidden;
     }
 }
 @media (max-width: 918px) {
@@ -1530,7 +1557,7 @@ background: rgba(243, 243, 243, 1);
         display: flex;
         justify-content: space-between;
         background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
-        background-image: url(../img/@1x/image-1-girl.png);
+        background-image: url(../img/@2x/image-1-girl.png);
         background-repeat: no-repeat;
         height: 310px;
     }
