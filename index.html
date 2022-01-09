@@ -60,8 +60,7 @@
                             <p class="menu-item-text">&gt;&nbsp;15</p>
                             <p class="menu-item-text">тренировок</p>
                         </div>
-                        <div class="menu-title-p">
-                            
+                        <div class="menu-title-p">                            
                             <p class="menu-item-text-sport">в области спортивной физиологии и нутрициологии</p>
                             <a class="menu-button" href="#training-btn">Узнать подробнее</a>
                         </div>                        
@@ -94,7 +93,7 @@
                             <h3 class="menu-grid-title">Марафон выносливости</h3>
                             <span class="menu-grid-maraphon-mrf">марафон</span>
                             <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn">Учавствовать</button>
-                            <button class="menu-grid-btn-add"></button>
+                            <button onclick="openModal()" href="#modal-popup" class="menu-grid-btn-add"></button>
                         </div>
                     </div>
                 </div>
@@ -105,8 +104,8 @@
                             <span class="menu-grid-data">9.07</span>
                             <h3 class="menu-grid-title">Как стать тренером?</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <button onclick="openModal()" class="menu-grid-btn-add"></button>
-                            <button href="#" class="menu-grid-btn" onclick="openModal()">Учавствовать</button>
+                            <button onclick="openModal()" class="menu-grid-btn-add" href="#modal-popup"></button>
+                            <button onclick="openModal()" class="menu-grid-btn" href="#modal-popup">Учавствовать</button>
                         </div>
                     </div>
                 </div>
@@ -117,8 +116,8 @@
                             <span class="menu-grid-data">15.07</span>
                             <h3 class="menu-grid-title">Йога, как стиль жизни</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <button onclick="openModal()" class="menu-grid-btn-add"></button>
-                            <button href="#" class="menu-grid-btn" onclick="openModal()">Учавствовать</button>
+                            <button onclick="openModal()" class="menu-grid-btn-add" href="#modal-popup"></button>
+                            <button onclick="openModal()" class="menu-grid-btn" href="#modal-popup">Учавствовать</button>
                         </div>
                     </div>
                 </div>        
@@ -202,15 +201,15 @@
                 <!-- </div> -->
                 <form class="mailing-form" action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="post" enctype="multipart/form-data">        
                     <div class="mailing-item-flex">
-                        <input class="mailing-input" type="email" name="mailing"  title="Например, username@mail.ru" placeholder="Ваш e-mail" required>
-                        <!-- pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" -->
-                    <button type="submit" class="mailing-button" name="mailing">ПОДПИСАТЬСЯ</button>
-                    </div>
-                    <div class="mailing-argee">
-                        <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
-                    <label for="thing" class="mailing-label" required>
-                        Согласен с обработкой <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
-                    </label>
+                        <div class="mailing-argee">
+                            <input class="mailing-input" type="email" name="mailing"  title="Например, username@mail.ru" placeholder="Ваш e-mail" required>
+                            <!-- pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" -->
+                            <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
+                            <label for="thing" class="mailing-label" required>
+                                Согласен с обработкой <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="mailing-button" name="mailing">ПОДПИСАТЬСЯ</button>                    
                     </div>
                 </form>
             </div>
@@ -224,41 +223,13 @@
                             <h3 class="company-title" id="aboutCompany">О компании</h3>
                             <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
                             <a class="company-button mobile-hidden-desctop" onclick="openModal()">Записаться</a>
-                        </div>
-                    <div class="company-flex-img">
-                        <img class="company-flex-img-bg" src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
-                    </div>
-                    <ul class="company-blok-2 hidden-text">
-                        <li>
-                            <div class="company-describ"></div>
-                            <p class="company-blok-2-title">Экономия времени</p>
-                            <p class="company-blok-2-text">Не нужно тратить время на&nbsp;дорогу</p>
-                        </li>
-                        <li>
-                            <p class="company-blok-2-title">Индивидуальный подход</p>
-                            <p class="company-blok-2-text">Внимание тренера пренадлежит только вам</p>
-                        </li>
-                        <li>
-                            <p class="company-blok-2-title">Экономия денег</p>
-                            <p class="company-blok-2-text">Средняя цена одной тренировки - 700₽</p>
-                        </li>
-                        <li>
-                            <p class="company-blok-2-title">Опытный персонал</p>
-                            <p class="company-blok-2-text">Стаж работы у наших тренеров от&nbsp;5&nbsp;лет</p>
-                        </li>                        
-                    </ul>
-                    <div class="company-mobile">
-                        <div class="company-flex-mobile-bg"></div>
-                    </div>
-
-                    
-                    </div>
-            </div>
-            </div>    
-                <div class="container">    
-                    <div>
-                        <ul class="company-blok-2 hidden-mobil">
+                            <div class="company-flex-img">
+                                <img class="company-flex-img-bg" src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
+                            </div>                        
+                        </div>                    
+                        <ul class="company-blok-2">
                             <li>
+                                <div class="company-describ"></div>
                                 <p class="company-blok-2-title">Экономия времени</p>
                                 <p class="company-blok-2-text">Не нужно тратить время на&nbsp;дорогу</p>
                             </li>
@@ -275,9 +246,14 @@
                                 <p class="company-blok-2-text">Стаж работы у наших тренеров от&nbsp;5&nbsp;лет</p>
                             </li>                        
                         </ul>
-                        <a class="company-button mobile-hidden" onclick="openModal()">Записаться</a>
-                    </div>                       
-                </div> 
+                        <div class="mobile-hidden">
+                            <a class="company-button " onclick="openModal()">Записаться</a>
+                            <div class="company-img"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </section>        
     </main>
 
@@ -306,7 +282,7 @@
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2020, Все права защищены</p>        
-                <p class="footer-frontend-blok">Сделано в рамках курса учебной платформы <a class="frontend-blok"  href="#" target="_blank">Frontend Blok</a></p>
+                <p class="footer-frontend-blok">Сделано в рамках курса учебной платформы <a class="frontend-blok"  href="https://cabinet.annblok.ru/" target="_blank">Annblok</a></p>
             </div>
         </div>
         
