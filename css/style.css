@@ -674,8 +674,9 @@ body {
     padding: 2px 0 0 23px;
 }
 .mailing-checkbox:checked + .mailing-label {
+    /* background-color: #2B3541; */
     background: url(../img/icons/check_box.svg);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;    
 }
 
 .mailing-person {
@@ -1563,7 +1564,7 @@ background: rgba(243, 243, 243, 1);
         order: 3;
     }
     .mobile-hidden {
-        display: block;
+        display: inline;
     }
     .company-flex {
         display: flex;
