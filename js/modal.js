@@ -1,12 +1,12 @@
 
 function openModal() {
     document.getElementById("modal").style.top = "0px";
-    // document.getElementById("modal-popup").style.top = "1200px";
+    document.getElementById("modal-popup").style.top = "1200px";
 }
 
 function closeModal() {
     document.getElementById("modal").style.top = "-500px";
-    // document.getElementById("modal-popup").style.top = "-700px";
+    document.getElementById("modal-popup").style.top = "-700px";
 }
 
 // let popup = document.querySelector(".popup")

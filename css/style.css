@@ -247,6 +247,9 @@ body {
     /* margin-bottom: 0; */
     margin: 130px 0 0;
 }
+.menu-arroy {
+    opacity: 0;
+}
 .menu-greeds {
     display: grid;
     gap: 20px;
@@ -382,6 +385,7 @@ body {
     right: 0;
     bottom: 0;
     border: none;
+    cursor: pointer;
 }
 .menu-grid-title {
     max-width: 260px;
@@ -914,7 +918,6 @@ footer {
 /* modal */
 .modal-window {
     background-color: #F3F3F3;
-    display: none;
     position: absolute;
 }
 .wrap {
@@ -1011,13 +1014,7 @@ footer {
     text-decoration: none;
     border: none;
 }
-.modal-btn-bg {
-    position: absolute;
-    background: rgba(43, 53, 65, 0.4);
-    width: 100%;
-    height: 135px;
-    bottom: 0;
-}
+
 
 /* popup */
 
@@ -1294,10 +1291,45 @@ background: rgba(243, 243, 243, 1);
     .header-items {
         flex-basis: 21.6%;
     }
-    .menu-visual {
-        display: none;
+    .menu {
+        flex-wrap: wrap;
     }
-
+    .menu-visual {
+        position: relative;
+        max-width: 768px;
+        top: 40px;
+        z-index: -1;
+        right: 2px;
+        left: 0;
+        gap: 2%;
+        height: 602px;
+    }
+    
+    .menu-bg {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+    .box-gradient-left {
+        height: 100%;
+    }
+    .box-gradient-right {
+        height: 100%;
+    }
+    .menu-titles {
+        margin: 107px 0 0;
+    }
+    .training {
+        margin-top: 54px;
+    }
+    .mailing {
+        margin-top: 36px;
+    }
+    .company-blok {
+        padding-top: 75px;
+        padding-bottom: 10px;
+    }
     .header-burger {
         display: block;
         background-image: url(../img/icons/burger.svg);
@@ -1456,6 +1488,9 @@ background: rgba(243, 243, 243, 1);
         right: auto;
         font-size: 12px;
     }
+    .menu-grid-btn {
+        display: none;
+    }
     .menu-grid-btn-add {
         display: block;
     }
@@ -1484,13 +1519,17 @@ background: rgba(243, 243, 243, 1);
     .company-mobile {
         position: relative;
     }
+    .mobile-hidden-desctop {
+        display: none;
+    }
     .company-flex-mobile-bg {
+        position: absolute;
         background-image: url(../img/@2x/trainer@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
         height: 426px;
-        width: 100%;        
+        width: 100%;
     }
     .company-flex-mobile-bg:after {
         content: "";
@@ -1505,8 +1544,7 @@ background: rgba(243, 243, 243, 1);
         z-index: 2;
     } 
     .company-button {
-        position: absolute;
-        bottom: 502px;
+        bottom: 437px;
         padding: 20px 52px;
         font-weight: bold;
         font-size: 16px;
@@ -1523,8 +1561,13 @@ background: rgba(243, 243, 243, 1);
     .company-flex {
         display: flex;
         justify-content: start;
-        gap: 77px;
+        gap: 10px;
         flex-direction: column;
+    }
+    .company-text {
+        font-size: 18px;
+        line-height: 150%;
+        padding-bottom: 0;
     }
     .hidden-text {
         display: block;
@@ -1613,15 +1656,15 @@ background: rgba(243, 243, 243, 1);
     .menu-grid-maraphon-text {
         padding: 20px;
     }
-    .menu-bg-mobil {
+    /* .menu-bg-mobil {
         display: flex;
         justify-content: space-between;
         background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
         background-image: url(../img/@2x/image-1-girl.png);
         background-repeat: no-repeat;
         height: 310px;
-    }
-    .menu-bg-mobil-fon1 {
+    } */
+    /* .menu-bg-mobil-fon1 {
         display: block;
         background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
         background-size: 100% 100%;
@@ -1630,8 +1673,8 @@ background: rgba(243, 243, 243, 1);
         width: 213px;
         right: 90px;
         z-index: -1;
-    }
-    .menu-bg-mobil-fon2 {
+    } */
+    /* .menu-bg-mobil-fon2 {
         display: block;
         background: linear-gradient(90deg, rgba(253, 249, 182, 0.2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
         /* background: linear-gradient(rgb(253, 249, 182) 100%, rgb(253, 249, 182) -100%); */        
@@ -1641,21 +1684,13 @@ background: rgba(243, 243, 243, 1);
         width: 117px;
         right: 40px;
         z-index: -1;
-    }
+    } */
 
     .menu-greeds {
         grid-template-rows: 86vw 93vw;
         grid-template-columns: 48% 48%;
         grid-template-areas: "a b" "c c";
         gap: 10px 10px;
-    }
-    .menu-titles {
-        font-size: 26px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        margin-top: 130px;
-        margin-bottom: 0;
-        margin: 48px 0 0;
     }
     .menu-grid-data {
         font-size: 12px;
@@ -1879,7 +1914,7 @@ background: rgba(243, 243, 243, 1);
         margin-top: 52px;
     }
     .modal-window {
-        /* display: block; */
+        display: block;
         opacity: 1;
     }
     .header-modal-close {

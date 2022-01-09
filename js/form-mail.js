@@ -18,18 +18,3 @@ function ValidPhone() {
     document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+output;
     return valid;
 }  
- 
-</script>
-
-</head>
-
-<body>
-<p id="message" >Пожалуйста, заполните все поля формы!</p> 
-
-E-mail: <input id="email" name="email" type="text" size="20" /><br /> 
-
-Телефон: <input id="phone" name="phone" type="text" size="20" /><br /> 
-<input name="button" type="submit" value="Проверить" onClick="ValidMail(); ValidPhone();" />
-</body>
-
-</html>
