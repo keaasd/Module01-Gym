@@ -27,11 +27,9 @@
     <div class="container">
         <header class="header"><!-- flex -->
             <div class="header-items">
-                <a class="header-logo" href="#"></a>
-                
+                <a class="header-logo" href="#"></a>                
                 <!--нав бургера отключаем\ отключаем-->
-                <button class="header-burger" onclick="openModal()"></button><!-- flex -->
-                    
+                <button class="header-burger" onclick="openModal()"></button><!-- flex -->                
                 <!--нав десктоп отключаем-->
                 <nav class="header-navigation">
                     <ul class="header-nav">
@@ -47,7 +45,8 @@
                     <li> <a class="header-social-in" href="#"></a></li>       
                     <li> <a class="header-social-fb" href="#"></a></li>
                 </ul>               
-            </header>            
+        </header>
+
     </div>
     <!-- === меню === -->
     <main>
@@ -196,7 +195,7 @@
         <section class="mailing">
             <div class="mailing-item">
                 <!-- <div class="mailing-image"> -->
-                    <h3 class="mailing-title">Подпишитесь на рассылку</h3>
+                    <h3 class="mailing-title">Подпишитесь на&nbsp;рассылку</h3>
                     <!-- <span class="mailing-image-bg"></span> -->
                 <!-- </div> -->
                 <form class="mailing-form" action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="post" enctype="multipart/form-data">        
@@ -284,51 +283,51 @@
                 <p>&copy; 2020, Все права защищены</p>        
                 <p class="footer-frontend-blok">Сделано в рамках курса учебной платформы <a class="frontend-blok"  href="https://cabinet.annblok.ru/" target="_blank">Annblok</a></p>
             </div>
-        </div>
-        
+        </div>        
     </footer>
-
-<div class="modal-window" id="modal">
-    <div class="modal">
-        <div class="wrap">
-            <div class="header-modal">
-                <div class="header-modal-logo"></div>
-                <button onclick="closeModal()" class="header-modal-close"></button>
+    <!-- Mobile pop up -->
+    <div class="modal-window" id="modal">
+        <div class="modal">
+            <div class="wrap">
+                <div class="header-modal">
+                    <div class="header-modal-logo"></div>
+                    <button onclick="closeModal()" class="header-modal-close"></button>
+                </div>
+                <ul class="modal-nav">
+                    <li><a href="#menu" class="modal-nav-a">Мероприятия</a></li>
+                    <li><span class="modal-border"></span></li>
+                    <li><a href="#training" class="modal-nav-a">Расписание</a></li>
+                    <li><span class="modal-border"></span></li>
+                    <li><a href="#aboutCompany" class="modal-nav-a">О&nbsp;компании</a></li>
+                </ul>
+                <ul class="modal-item">
+                    <li><a href="#" class="modal-social-in"></a></li>
+                    <li><a href="#" class="modal-social-fb"></a></li>
+                </ul>
             </div>
-            <ul class="modal-nav">
-                <li><a href="#menu" class="modal-nav-a">Мероприятия</a></li>
-                <li><span class="modal-border"></span></li>
-                <li><a href="#training" class="modal-nav-a">Расписание</a></li>
-                <li><span class="modal-border"></span></li>
-                <li><a href="#aboutCompany" class="modal-nav-a">О&nbsp;компании</a></li>
-            </ul>
-            <ul class="modal-item">
-                <li><a href="#" class="modal-social-in"></a></li>
-                <li><a href="#" class="modal-social-fb"></a></li>
-            </ul>
         </div>
     </div>
-    <div class="pupup-relativ"></div>
-            <div class="wrap-popup" id="modal-popup">    
-                <div class="popup">
-                    <button onclick="closeModal()" class="popup-close"></button>
-                    <div class="popup-title">
-                        <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
-                        <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
-                    </div>
-                    <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-                        <div class="input-container">            
-                            <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
-                            <p class="popup-text-hidden">Некорректный адрес e-mail</p>
-                        </div>
-                        <div class="input-container">            
-                            <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
-                            <p class="popup-text-hidden">Некорректный номер телефона</p>
-                        </div>
-                        <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
-                    </form>    
-                </div>
+    <!-- pop up marafhon     -->
+    <div class="wrap-popup" id="modal-popup">    
+        <div class="popup">
+            <button onclick="closeModal()" class="popup-close"></button>
+            <div class="popup-title">
+                <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
+                <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
             </div>
-</div>
+            <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <div class="input-container">            
+                    <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
+                    <p class="popup-text-hidden">Некорректный адрес e-mail</p>
+                </div>
+                <div class="input-container">            
+                    <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
+                    <p class="popup-text-hidden">Некорректный номер телефона</p>
+                </div>
+                <button class="pupup-btn" type="submit" title="" name="popup">Отправить</button>
+            </form>    
+        </div>
+    </div>
+
 </body>
 </html>
