@@ -491,7 +491,7 @@ body {
 }
 .functional-training:hover .menu-text-span {
     max-height: 500px;    
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .power-mix {
@@ -1307,7 +1307,7 @@ background: rgba(243, 243, 243, 1);
         margin: 0 auto;
     }
     .header {
-        padding-top: 25px;
+        padding-top: 31px;
     }
     .header-items {
         flex-basis: 21.6%;
@@ -1401,10 +1401,6 @@ background: rgba(243, 243, 243, 1);
     .header-logo:hover {
         width: 79px;
         transition: 0.2s;
-    }
-    .menu-grid-box-marafon {
-        grid-area: a;
-        height: 600px;
     }
     .menu-grid-box-veb1 {
         grid-area: b;
@@ -1522,6 +1518,9 @@ background: rgba(243, 243, 243, 1);
         /* font-size: 18px; */
         /* line-height: 150%; */
         max-width: 370px;
+    }
+    .functional-training:hover .menu-text-span {
+        padding-top: 16px;
     }
     .company-blok-2 {
         display: flex;
@@ -1650,6 +1649,7 @@ background: rgba(243, 243, 243, 1);
     .header-logo {
         width: 78px;
         height: 24px;
+        margin-right: 0px;
     }
     .header-burger {
         display: block;
@@ -1659,14 +1659,15 @@ background: rgba(243, 243, 243, 1);
     }
     .container {
         max-width: 547px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .menu {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        margin-top: 10px;
+        margin-top: 41px;
     }
     .menu-visual {
-        height: 437px;
+        height: 310px;
+        /* height: 437px; */
     }
     
     .menu-text {
@@ -1688,10 +1689,24 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-title {
         max-width: 358px;
+        line-height: 126%;
     }
     .menu-item-text {
-        font-size: 36px;
-        padding-top: 40px;
+        font-size: 26px;
+        padding-top: 44px;
+    }
+    .menu-title-flex-group {
+        gap: 19px;
+    }
+    .menu-item-text-sport {
+        font-size: 16px;
+        padding-bottom: 40px;
+        padding-top: 17px;
+    }
+    .menu-bg {
+        width: auto;
+        height: 100%;
+        right: 18%;
     }
     .menu-title-p {
         padding-left: 0;
@@ -1706,28 +1721,13 @@ background: rgba(243, 243, 243, 1);
         max-width: 601px;
     }
     .menu-grid-maraphon-text {
-        padding: 20px;
+        padding-top: 12px;
+        padding-left: 20px;
     }
-    /* .menu-bg-mobil {
-        display: flex;
-        justify-content: space-between;
-        background: linear-gradient(180deg, #FDF9B6 100%, #FDF9B6 -100%);
-        background-image: url(../img/@2x/image-1-girl.png);
-        background-repeat: no-repeat;
-        height: 310px;
-    } */
-    /* .menu-bg-mobil-fon1 {
-        display: block;
-        background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        height: 310px;
-        width: 213px;
-        right: 90px;
-        z-index: -1;
-    } */
-  
-
+    
+    .menu-titles {
+        font-size: 26px;
+    }
     .menu-greeds {
         grid-template-rows: 86vw 93vw;
         grid-template-columns: 48% 48%;
@@ -1739,9 +1739,9 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-grid-title {
         max-width: 180px;
-        font-size: 20px;
-        padding-top: 16px;
-        }
+        font-size: 16px;
+        padding-top: 9px;
+    }
     .menu-grid-btn {
         display: none;
     }
