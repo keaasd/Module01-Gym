@@ -1930,6 +1930,7 @@ background: rgba(243, 243, 243, 1);
     .menu-grid-title {
         max-width: 129px;
     }
+}
 @media (max-width: 320px) {
     .modal-btn {
         max-width: 320px;
