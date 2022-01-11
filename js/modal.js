@@ -1,10 +1,7 @@
 
 function openModal() {
     document.getElementById("modal").style.top = "0px";
-    
-    
-    
-    document.getElementById("modal-popup").style.top = "1200px";
+    document.getElementById("modal-popup").style.top = "1589px";
 }
 
 function closeModal() {

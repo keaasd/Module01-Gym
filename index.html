@@ -29,7 +29,7 @@
             <div class="header-items">
                 <a class="header-logo" href="#"></a>                
                 <!--нав бургера отключаем\ отключаем-->
-                <button class="header-burger" onclick="openModal()"></button><!-- flex -->                
+                <button class="header-burger" aria-label="открыть контакты" onclick="openModal()"></button><!-- flex -->                
                 <!--нав десктоп отключаем-->
                 <nav class="header-navigation">
                     <ul class="header-nav">
@@ -91,7 +91,7 @@
                             <span class="menu-grid-data">29.06 - 4.07</span>
                             <h3 class="menu-grid-title">Марафон выносливости</h3>
                             <span class="menu-grid-maraphon-mrf">марафон</span>
-                            <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn">Учавствовать</button>
+                            <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn present__order-btn">Учавствовать</button>
                             <button onclick="openModal()" href="#modal-popup" class="menu-grid-btn-add"></button>
                         </div>
                     </div>
@@ -308,7 +308,7 @@
         </div>
     </div>
     <!-- pop up marafhon     -->
-    <div class="wrap-popup" id="modal-popup">    
+    <div class="wrap-popup page__overlay page__overlay_modal" id="modal-popup">    
         <div class="popup">
             <button onclick="closeModal()" class="popup-close"></button>
             <div class="popup-title">
@@ -318,9 +318,7 @@
             <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                 <div class="input-container">            
                     <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
-                    <p class="popup-text-hidden">Некорректный адрес e-mail</p>
-                </div>
-                <div class="input-container">            
+                    <p class="popup-text-hidden">Некорректный адрес e-mail</p>                
                     <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
                     <p class="popup-text-hidden">Некорректный номер телефона</p>
                 </div>

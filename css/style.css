@@ -124,8 +124,9 @@ body {
     position: absolute;
     top: 0;
     z-index: -1;
-    right: -57px;   
-    /* right: -5%; */
+    right: 8px;
+    right: -5%;
+    position: absolute;
 }
 .box-gradient-left {
     display: block;    
@@ -1042,17 +1043,18 @@ footer {
 /* popup */
 .wrap-popup {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
     background-color: rgba(43, 53, 65, 0.4);
     top: -9999px;
-    transition: 0.4s;
+    transition: 0.4s;    
+    width: 83%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 .popup {
-    background-color: #F3F3F3;
-    max-width: 600px;
-    height: 577px;
-    left: calc(50% - 300px);
+    position: relative;
+    background-color: #F3F3F3;    
+    padding-bottom: 80px;
+    padding-top: 60px;
 }
 .popup-close {
     display: block;
@@ -1072,17 +1074,16 @@ footer {
     border-radius: 50%;
 }
 .popup-title {
-    position: absolute;
-    text-align: center;
-    padding: 60px 98px 0;
+    max-width: 403px;
     margin: 0 auto;
+    text-align: center;
 }
 .popup-text {
     font-weight: bold;
     font-size: 28px;
     line-height: 125%;
     padding-top: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 .popup-text::before {
     content: " ";
@@ -1103,14 +1104,9 @@ footer {
     margin: 0;
 }
 .popup-form {
-    max-width: 500px;
-    padding-top: 40px;
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    margin: 0 auto;
-}
-.input-container {
-    max-width: 500px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 40px 0 auto;
 }
 .popup-text-hidden {
     display: none;
@@ -1121,9 +1117,12 @@ footer {
     border: none;
     color: #2B3541;
     font-size: 18px;
-    padding: 19px 213px 19px 25px;
+    width: 100%;
+    height: 65px;
     outline: none;
-    /* opacity: 0.3; */
+    padding-left: 25px;
+    max-width: 94%;
+    margin-bottom: 20px;
 }
 .popup-mail:hover, .popup-tel:hover {
 background: rgba(243, 243, 243, 1);
@@ -1134,21 +1133,23 @@ background: rgba(243, 243, 243, 1);
     border: none;
     color: #2B3541;
     font-size: 18px;
-    padding: 19px 213px 19px 25px;
-    margin-top: 20px;
+    width: 100%;
+    height: 65px;
     outline: none;
-    /* opacity: 0.3; */
+    padding-left: 25px;
+    max-width: 94%;
 }
 .pupup-btn {
     display: block;
-    margin: 40px auto;
-    padding: 20px 194px;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     background: #FBF138;
-    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    box-shadow: 0px 13px 24px rgba(56, 251, 170, 0.3);
     border: none;
     cursor: pointer;
 }
@@ -1178,7 +1179,21 @@ background: rgba(243, 243, 243, 1);
     font-size: 14px;
     }
 }
-
+@media (min-width: 1367px) and (max-width: 1515px) {
+    .menu-bg {
+        right: calc(50% + -483px);
+        width: 100%;
+        height: 718px;
+    }
+    .menu-visual {
+    right: 0;
+    }
+}
+@media (max-width:1366px) {
+    .menu-bg {
+        right: calc(50% + -418px);
+    }
+}
 @media (max-width:1112px) {
     .header-logo {
         margin-right: 30px;
@@ -1199,7 +1214,6 @@ background: rgba(243, 243, 243, 1);
     height: 467px;
     }
     .menu-visual {
-        max-width: 433px;
         top: 0;
         z-index: -1;
         right: auto;
@@ -1207,6 +1221,7 @@ background: rgba(243, 243, 243, 1);
     }
     .box-gradient-left {
         height: 467px;
+        flex-basis: 35%;
     }
     .box-gradient-right {
         height: 467px;
@@ -1344,7 +1359,14 @@ background: rgba(243, 243, 243, 1);
         gap: 2%;
         height: 602px;
     }
-    
+    .wrap-popup {
+        max-width: 100%;
+        width: 100%;
+    }
+    .popup {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .menu-bg {
         top: 0;
         right: 0;
@@ -1635,6 +1657,9 @@ background: rgba(243, 243, 243, 1);
     }
     .header-modal {
         padding-top: 26px;
+    }    
+    .popup-text {
+        max-width: 403px;
     }
     footer {
         margin-top: 68px;
@@ -1859,6 +1884,25 @@ background: rgba(243, 243, 243, 1);
         margin-top: 41px;
         height: 58vw;
     }    
+    .popup-form {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 28px 0 auto;
+    }
+    .popup-text {
+        font-size: 16px;
+        line-height: 19.2px;
+        max-width: 253px;
+    }
+    .popup {
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+    .popup-desc {
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 16px;
+    }
     footer {
         margin-top: 70px;
         padding-top: 0;
