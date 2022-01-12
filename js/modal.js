@@ -1,12 +1,12 @@
 
 function openModal(burg) {
-    document.getElementById("modal").style.top = "0px";
+    document.getElementById("modal").style.left = "0px";
 }
 // function openModal() {    
 //     document.getElementById("modal-popup").style.top = "1589px";
 // }
 function closeModal() {
-    document.getElementById("modal").style.top = "-1000px";
+    document.getElementById("modal").style.left = "-200%";
 }
 // попап окна
 let popupBg = document.querySelector('.popup__bg'); // Фон попап окна

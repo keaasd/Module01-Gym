@@ -42,7 +42,6 @@ body {
     background-size: contain;
     width: 29px;
     height: 22px;
-    margin-left: 57px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -878,6 +877,7 @@ footer {
 }
 .footer-social-fb:hover {
     transform: scale(1.2666);
+}
 .footer-social-in {
     display: block;
     background-image: url(../img/icons/ins.svg);
@@ -930,15 +930,16 @@ footer {
 .modal-window {
     position: absolute;
     width: 100%;
-    min-height: 1000px;
+    min-height: 100%;
     background-color: rgba(43, 53, 65, 0.4);
-    left: 0;
-    z-index: 1;
-    top: -1060px;
+    top: 0;
+    left: -200%;
     transition: 0.4s;
+    z-index: 2;
 }
 .modal {
     background-color: #F3F3F3;
+    max-width: 360px;
 }
 .wrap {
     max-width: 768px;
@@ -973,34 +974,23 @@ footer {
     padding: 0;
     margin: 0;
     list-style: none;
-}
-.modal-nav li:first-child {
-    padding-top: 40px;
-}
-.modal-nav li {
-    padding-top: 20px;
+    margin-top: 40px;
 }
 .modal-nav-a {
+    position: relative;
     text-decoration: none;
     font-size: 16px;
     line-height: 150%;
     color: #2B3541;
 }
 .modal-border::after {
-        display: block;
-        position: absolute;
-        content: "";
-        height: 1px;
-        width: 0;
-        transition: width .5s ease-in-out, left .5s ease-in-out;
-        left: 0%;
-        bottom: -10px;
-        display: block;
-    background-color: #2B3541;    
-    opacity: 0.2;
-    width: 100%;
-    height: 1px;
-    }
+    content: '';
+    border-bottom: 1px solid #2B3541;
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    opacity: .2;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
 }
 .modal-item {
     display: flex;
@@ -1387,7 +1377,7 @@ background: rgba(243, 243, 243, 1);
         margin: 0 auto;
     }
     .header {
-        padding-top: 31px;
+        margin-top: 30px;
     }
     .header-items {
         flex-basis: 21.6%;
@@ -1443,15 +1433,6 @@ background: rgba(243, 243, 243, 1);
     }
     .header-burger {
         display: block;
-        background-image: url(../img/icons/burger.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 29px;
-        height: 22px;
-        margin-left: 57px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
     .menu-text {
         max-width: 357px;
@@ -1481,7 +1462,7 @@ background: rgba(243, 243, 243, 1);
         text-align: center;
     }
     .header-logo {
-        margin-right: 40px;
+        margin-right: 57px;
         width: 78px;
         height: 24px;
         transition: all 0.2s;
@@ -1738,10 +1719,6 @@ background: rgba(243, 243, 243, 1);
     .header-logo {
         width: 78px;
         height: 24px;
-        margin-right: 0px;
-    }
-    .header-burger {
-        display: block;
     }
     .header-nav {
         display: none;
@@ -2017,10 +1994,6 @@ background: rgba(243, 243, 243, 1);
     .wrapper {
         max-width: 100%;
         margin: 0 auto;
-    }
-    .container {
-        max-width: 340px;
-        padding: 0;
     }
     .menu-title {
         max-width: 100%;
