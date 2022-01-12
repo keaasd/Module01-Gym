@@ -29,7 +29,7 @@
             <div class="header-items">
                 <a class="header-logo" href="#"></a>                
                 <!--нав бургера отключаем\ отключаем-->
-                <button class="header-burger" aria-label="открыть контакты" onclick="openModal()"></button><!-- flex -->                
+                <button class="header-burger" aria-label="открыть контакты" onclick="openModal('burgers')"></button><!-- flex -->                
                 <!--нав десктоп отключаем-->
                 <nav class="header-navigation">
                     <ul class="header-nav">
@@ -91,8 +91,8 @@
                             <span class="menu-grid-data">29.06 - 4.07</span>
                             <h3 class="menu-grid-title">Марафон выносливости</h3>
                             <span class="menu-grid-maraphon-mrf">марафон</span>
-                            <button type="button" onclick="openModal()" href="#modal-popup" class="menu-grid-btn present__order-btn">Учавствовать</button>
-                            <button onclick="openModal()" href="#modal-popup" class="menu-grid-btn-add"></button>
+                            <button type="button" href="#modal-popup" class="menu-grid-btn open-popup present__order-btn">Учавствовать</button>
+                            <button href="#modal-popup" class="menu-grid-btn-add open-popup"></button>
                         </div>
                     </div>
                 </div>
@@ -103,8 +103,8 @@
                             <span class="menu-grid-data">9.07</span>
                             <h3 class="menu-grid-title">Как стать тренером?</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <button onclick="openModal()" class="menu-grid-btn-add" href="#modal-popup"></button>
-                            <button onclick="openModal()" class="menu-grid-btn" href="#modal-popup">Учавствовать</button>
+                            <button class="menu-grid-btn-add open-popup" href="#modal-popup"></button>
+                            <button class="menu-grid-btn open-popup" href="#modal-popup">Учавствовать</button>
                         </div>
                     </div>
                 </div>
@@ -115,8 +115,8 @@
                             <span class="menu-grid-data">15.07</span>
                             <h3 class="menu-grid-title">Йога, как стиль жизни</h3>
                             <span class="menu-grid-maraphon-mrf">вебинар</span>
-                            <button onclick="openModal()" class="menu-grid-btn-add" href="#modal-popup"></button>
-                            <button onclick="openModal()" class="menu-grid-btn" href="#modal-popup">Учавствовать</button>
+                            <button class="menu-grid-btn-add open-popup" href="#modal-popup"></button>
+                            <button class="menu-grid-btn open-popup" href="#modal-popup">Учавствовать</button>
                         </div>
                     </div>
                 </div>        
@@ -221,7 +221,7 @@
                         <div class="company-flex-text">
                             <h3 class="company-title" id="aboutCompany">О компании</h3>
                             <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
-                            <a class="company-button mobile-hidden-desctop" onclick="openModal()">Записаться</a>
+                            <a class="company-button mobile-hidden-desctop">Записаться</a>
                             <div class="company-flex-img">
                                 <img class="company-flex-img-bg" src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
                             </div>                        
@@ -246,7 +246,7 @@
                             </li>                        
                         </ul>
                         <div class="mobile-hidden">
-                            <a class="company-button " onclick="openModal()">Записаться</a>
+                            <a class="company-button">Записаться</a>
                             <div class="company-img"></div>
                         </div>
                     </div>
@@ -308,9 +308,9 @@
         </div>
     </div>
     <!-- pop up marafhon     -->
-    <div class="wrap-popup page__overlay page__overlay_modal" id="modal-popup">    
+    <div class="popup__bg" id="modal-popup">    
         <div class="popup">
-            <button onclick="closeModal()" class="popup-close"></button>
+            <button onclick="closeModal()" class="popup-close close-popup"></button>
             <div class="popup-title">
                 <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
                 <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
