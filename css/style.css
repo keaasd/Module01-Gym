@@ -1209,21 +1209,6 @@ background: rgba(243, 243, 243, 1);
         left: 16vw;
     }
 }
-@media (max-width: 1298px) {
-    .menu-visual {
-        left: 14vw;
-    }
-}
-@media (max-width: 1210px) {
-    .menu-visual {
-        left: 12vw;
-    }
-}
-@media (max-width: 1150px) {
-    .menu-visual {
-        left: 10vw;
-    }
-}
 @media (max-width: 1122px) {
     .menu-visual {
         left: 65px;
