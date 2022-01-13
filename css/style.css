@@ -111,43 +111,36 @@ body {
 .menu {
     margin-top: 10px;
     display: flex;
+    position: relative;
 }
 .menu-visual {
     display: flex;
-    position: absolute;
-    max-width: 900px;
-    height: 850px;
+    max-width: 790px;
+    width: 100%;
     gap: 20px;
+    position: absolute;
     top: 0;
-    right: -58px;
-    z-index: -1;
+    right: -70px;
+    z-index: -1;    
+    height: 850px;
 }
 .box-gradient-left {
-    display: block;
     background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
-    background-repeat: repeat;
-    background-size: cover;
-    width: 535px;
+    flex-basis: 70%;
     z-index: -1;
 }
 .box-gradient-right {
-    display: block;
     background: linear-gradient(90deg, rgba(253, 249, 182, 0.2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 310px;
-    width: 235px;
-    right: 40px;
-    height: 100%;
     flex-basis: 30%;
     z-index: -1;
 }
 .menu-bg {
     position: absolute;
-    bottom: 0px;
-    right: -107px;
-    height: 869px;
-    width: 991px;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    left: -140px;
+    object-fit: cover;
 }
 .menu-bg-mobil-fon1 {
     display: none;
@@ -218,7 +211,7 @@ body {
 .menu-arroy {    
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
-    left: 16px;
+    left: 0;
     bottom: -240px;
     width: 52px;
     height: 55px;
@@ -1186,36 +1179,57 @@ background: rgba(243, 243, 243, 1);
 }
 
 
-@media (max-width: 1495px) {
+@media (max-width: 1516px) {
     .menu-visual {
-        left: 235px;
+        max-width: 790px;
+        right: -70px;
+        height: 56vw;
     }
 }
 @media (max-width: 1318px) {
     .menu-title {
         max-width: 676px;
         font-size: 3.6vw;
+    }   
+    .box-gradient-left {
+        flex-basis: 41vw;
     }
-    .menu-bg {
-        bottom: 32px;
-        width: 80vw;
-        height: 65vw;
-    }
+
+}
+@media (max-width:1124px)  {
     .menu-visual {
         display: flex;
-        position: absolute;
-        max-width: 900px;
-        height: 65vw;
-        left: 16vw;
+        gap: 20px;
+        height: 50vw;
+        max-width: 100%;
+        margin: 40px 0 auto;
+        position: relative;
+        right: 0;
     }
-}
-@media (max-width: 1122px) {
-    .menu-visual {
-        left: 65px;
-        top: 47px;
+    .box-gradient-left {
+        flex-basis: 41vw;
+        flex-grow: 1;
+        height: 100%;
+    }
+    .menu-bg {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+    }    
+    .menu {
+        display: block;
+    }
+    .menu-text {
+        max-width: 676px;
+        padding-top: 60px;
     }
 }
 @media (max-width:1112px) {
+
     .header-logo {
         margin-right: 30px;
     }
@@ -1231,25 +1245,7 @@ background: rgba(243, 243, 243, 1);
         position: relative;
     }
 }
-@media (max-width: 1024px) {
-    .menu-bg {
-        right: -4.7vw;
-    width: 546px;
-    height: 467px;
-    }
-    .menu-visual {
-        top: 0;
-        z-index: -1;
-        right: auto;
-        left: 398px;
-    }
-    .box-gradient-left {
-        height: 467px;
-        flex-basis: 35%;
-    }
-    .box-gradient-right {
-        height: 467px;
-    }
+@media (max-width: 1024px) {    
     .menu-text {
         max-width: 520px;
         padding-top: 90px;
