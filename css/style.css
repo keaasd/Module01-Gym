@@ -30,10 +30,8 @@ body {
     background-size: contain;
     width: 97px;
     height: 30px;
-    transition: all 0.2s;
-}
-.header-logo:hover { 
-    width: 98px;
+    transition: all 0.2s;    
+    margin-right: 30px;
 }
 .header-burger {
     display: none;
@@ -1182,8 +1180,13 @@ background: rgba(243, 243, 243, 1);
 @media (max-width: 1516px) {
     .menu-visual {
         max-width: 790px;
-        right: -70px;
+        right: -4%;     
         height: 56vw;
+    }
+}
+@media (max-width: 1366px) {
+    .menu-bg {
+        right: 2px;
     }
 }
 @media (max-width: 1318px) {
@@ -1196,63 +1199,43 @@ background: rgba(243, 243, 243, 1);
     }
 
 }
-@media (max-width:1124px)  {
+@media (max-width:1152px)  {
     .menu-visual {
-        display: flex;
-        gap: 20px;
-        height: 50vw;
-        max-width: 100%;
-        margin: 40px 0 auto;
-        position: relative;
-        right: 0;
+        top: 141px;
+        right: 1%;
+        height: 45vw;
     }
     .box-gradient-left {
         flex-basis: 41vw;
         flex-grow: 1;
         height: 100%;
     }
+    .box-gradient-left {
+        opacity: 0;
+    }
     .menu-bg {
-        width: auto;
-        height: 100%;
-        margin: 0 auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        object-fit: cover;
+        right: -286px;
     }    
     .menu {
         display: block;
     }
     .menu-text {
-        max-width: 676px;
+        max-width: 612px;
         padding-top: 60px;
     }
 }
 @media (max-width:1112px) {
-
-    .header-logo {
-        margin-right: 30px;
     }
     .company-flex-text {
         max-width: 420px;
     }
 }
-@media (max-width: 1074px) {
-    .menu {
-        display: block;
-    }
-    .menu-visual {
-        position: relative;
-    }
-}
 @media (max-width: 1024px) {    
     .menu-text {
         max-width: 520px;
-        padding-top: 90px;
-        padding-left: 105px;
     }
     .menu-title {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .menu-title-p {
         padding-left: 0;
@@ -1315,7 +1298,14 @@ background: rgba(243, 243, 243, 1);
         overflow: hidden;
     }
 }
-
+@media (max-width: 938px) {
+    .menu-visual {
+        position: relative;
+    }
+    .box-gradient-left {
+        opacity: 1;
+    }
+}
 @media (max-width: 918px) {
     .menu-text-span {
         font-size: 16px;
@@ -1390,6 +1380,7 @@ background: rgba(243, 243, 243, 1);
     .menu-bg {
         top: 0;
         right: 0;
+        left: 0;
         width: 100%;
         height: auto;
     }
