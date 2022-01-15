@@ -84,7 +84,7 @@ main {
 }
 .header-social-fb {
     display: block;
-    background-image: url(../img/icons/FB.svg);
+    background-image: url(../img/icons/fb.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px;
@@ -862,7 +862,7 @@ footer {
 }
 .footer-social-fb {
     display: block;
-    background-image: url(../img/icons/FB.svg);
+    background-image: url(../img/icons/fb.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 28px;
