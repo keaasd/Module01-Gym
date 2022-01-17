@@ -1513,6 +1513,7 @@ background: rgba(243, 243, 243, 1);
     }
     .functional-training:hover .menu-text-span {
         padding-top: 16px;
+        padding-bottom: 20px;
     }
     .company-blok-2 {
         display: flex;
