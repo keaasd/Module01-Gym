@@ -149,6 +149,7 @@ main {
     display: none;
 }
 .menu-text {
+    position: relative;
     max-width: 676px;
     padding-top: 255px;
     padding-top: 13vw;
@@ -188,6 +189,7 @@ main {
 }
 .menu-title-p {
     padding-left: 93px;
+    position: relative;
 }
 .menu-button {
     display: block;
@@ -213,7 +215,7 @@ main {
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
     left: 0;
-    bottom: -240px;
+    bottom: -12.7vw;
     width: 52px;
     height: 55px;
     transition: all 0.2s;
@@ -395,6 +397,7 @@ main {
     margin-top: 118px;
 }
 .functional-training {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -406,7 +409,7 @@ main {
     transition: all 0.2s;
 }
 .functional-training:hover {
-    border: 1px solid rgba(43, 53, 65, 0);
+    border: none;
     background:rgba(243, 243, 243, 0.5);
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
@@ -560,8 +563,10 @@ main {
 .training-active-data {
     font-weight: 700;
 }
+/* добавить класс в сегодняшний день */
 .training-active-data-text {
     max-height: 500px;
+    padding-top: 20px;
 }
 .mailing {
     max-height: 100%;
@@ -933,7 +938,7 @@ footer {
 }
 .modal {
     background-color: #F3F3F3;
-    max-width: 360px;
+    max-width: 768px;
 }
 .wrap {
     max-width: 768px;
@@ -1041,27 +1046,22 @@ footer {
     height: 100vh;
     background-color: rgba(2, 10, 19, 0.4);    
     transition: 0.5s all;
-    /* position: absolute; */    
-    /* top: -9999px;
-    transition: 0.4s;    
-    width: 83%;
-    left:50%;
-    transform:translate(-50%, -50%); */
+    z-index: 5;
 }
 .popup__bg.active { 
     opacity: 1;
     pointer-events: all;
     transition: 0.5s all;
 }
-.popup {
+.popup {   
+    max-width: calc(30.612vw * 2);
     background-color: #F3F3F3;    
     padding-bottom: 80px;
     padding-top: 60px;
     position: absolute;
-    top: 50%;
+    top: 29%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);   
-    width: 400px;
+    transform: translate(-50%, -50%) scale(0); 
     transition: 0.5s all;
 }
 .popup.active {
@@ -1201,19 +1201,15 @@ background: rgba(243, 243, 243, 1);
     .menu-text {
         max-width: 725px;
     }
-    .menu-arroy {
-        left: 121px;
-        bottom: -65px;
-    }
     .events {
-        margin-top: 334px;
+        margin-top: 192px;
     }
     .menu-titles {
         font-size: 32px;
         line-height: 75%;
-        padding-top: 20px;
+        padding-top: 0;
         padding-bottom: 25px;
-        margin: 125px 0 0px;
+        margin: 0;
     }
     .menu-item-text {
         font-size: 28px;
@@ -1261,14 +1257,11 @@ background: rgba(243, 243, 243, 1);
 }
 @media (max-width: 938px) {
     .menu-visual {
-        top: 148px;
+        top: 130px;
     }
     .menu-text {
-        max-width: 676px;
+        max-width: 77vw;
         padding-top: 60px;
-    }
-    .box-gradient-left {
-        opacity: 0;
     }
     .events {
         margin-top: 36vw;
@@ -1328,14 +1321,7 @@ background: rgba(243, 243, 243, 1);
         display: none;
     }
     .menu-visual {
-        position: relative;
-        max-width: 768px;
-        top: 40px;
-        z-index: -1;
-        right: 2px;
-        left: 0;
-        gap: 2%;
-        height: 602px;
+        top: 117px;
     }
     .wrap-popup {
         max-width: 100%;
@@ -1345,24 +1331,14 @@ background: rgba(243, 243, 243, 1);
         padding-left: 10px;
         padding-right: 10px;
     }
-    .menu-girl {
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-    }
     .box-gradient-left {
         opacity: 1;
     }
     .box-gradient-right {
         height: 100%;
     }
-    .menu-titles {
-        margin: 107px 0 0;
-    }
     .training {
-        margin-top: 54px;
+        margin-top: 51px;
     }
     .mailing {
         margin-top: 36px;
@@ -1375,7 +1351,7 @@ background: rgba(243, 243, 243, 1);
         display: block;
     }
     .menu-text {
-        max-width: 357px;
+        max-width: 59vw;
         padding-top: 61px;
     }
     .menu-title-p {
@@ -1385,7 +1361,7 @@ background: rgba(243, 243, 243, 1);
         font-size: 16px;
     }
     .menu-title {
-        font-size: 26px;
+        /* font-size: 7.1vw; */
     }
     .menu-item-text {
         font-size: 26px;
@@ -1675,7 +1651,7 @@ background: rgba(243, 243, 243, 1);
         padding-right: 10px;
     }
     .menu {
-        margin-top: 41px;
+        margin-top: 57px;
     }
     .menu-visual {
         height: 310px;
@@ -1700,8 +1676,8 @@ background: rgba(243, 243, 243, 1);
         gap: 20px;
     }
     .menu-title {
-        max-width: 358px;
         line-height: 126%;
+        font-size: 7.1vw;          
     }
     .menu-item-text {
         font-size: 26px;
@@ -1712,22 +1688,29 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-item-text-sport {
         font-size: 16px;
-        padding-bottom: 40px;
+        padding-bottom: 38px;
         padding-top: 17px;
     }
     .menu-girl {
-        width: auto;
-        height: 100%;
-        left: calc(20px + 50%);
-
-        left: 50%;
-        top: 54%;
+        left: 52%;
+        top: 55%;
         transform: translate(-50%,-50%);
         -o-object-fit: contain;
         object-fit: contain;
         width: 95vw;
         height: 100%;
         z-index: -1;
+    }
+    
+    .menu-visual {
+        position: relative;
+        max-width: 768px;
+        top: 40px;
+        z-index: -1;
+        right: 2px;
+        left: 0;
+        gap: 2%;
+        height: 87vw;
     }
     .menu-title-p {
         padding-left: 0;
@@ -1747,7 +1730,7 @@ background: rgba(243, 243, 243, 1);
     }
     
     .menu-titles {
-        font-size: 26px;
+        font-size: 7.2vw;
     }
     .menu-grid-box-veb2 {
         height: 100%;
@@ -1757,15 +1740,23 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-grid-title {
         max-width: 180px;
-        font-size: 16px;
+        font-size: 4.5vw;
         padding-top: 9px;
+    }
+    .menu-grid-box-marafon {
+        background-size: 142% auto;
+        background-position: center 41%;
+    }
+    .menu-grid-box-veb1 {
+        background-size: 142% auto;
+        background-position: center 100%;
     }
     .menu-grid-btn {
         display: none;
     }
     .training-title {
         max-width: 231px;
-        font-size: 26px;
+        font-size: 7.2vw;
         margin-bottom: 19px;
     }
     .training-data {
