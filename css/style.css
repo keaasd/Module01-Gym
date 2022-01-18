@@ -1243,7 +1243,8 @@ background: rgba(243, 243, 243, 1);
         font-size: 32px;
     }
     .popup {
-        top: 21%;
+        /* top: 21%; */
+        opacity: 0;
     }
     .container {
         max-width: 1024px;
@@ -1682,7 +1683,7 @@ background: rgba(243, 243, 243, 1);
         /* height: 437px; */
     }
     .popup {
-        top: 267vw;
+        /* top: 267vw; */
     }
     .menu-text {
         padding-top: 1px;
@@ -1977,7 +1978,7 @@ background: rgba(243, 243, 243, 1);
         max-width: 129px;
     }
     .popup {
-        top: 336vw;
+        /* top: 336vw; */
     }
     .popup-text::before {
         left: 25vw;
