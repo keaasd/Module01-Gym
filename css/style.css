@@ -1084,9 +1084,7 @@ footer {
     width: 20px;
     height: 19px;
     z-index: 4;
-}
-.close-popup:hover {
-    border-radius: 50%;
+    transition: 0.3s;
 }
 .popup-title {
     max-width: 403px;
@@ -1182,7 +1180,11 @@ background: rgba(243, 243, 243, 1);
     margin-top: 58px;
 }
 
-
+@media (any-hover: hover) {
+    .close-popup:hover {
+        transform: rotate(720deg);
+    }
+}
 @media (max-width: 1780px) {
     .menu-visual {
         max-width: 44vw;
