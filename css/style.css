@@ -32,7 +32,7 @@ main {
     background-size: contain;
     width: 97px;
     height: 30px;
-    transition: all 0.2s;    
+    transition: 0.2s;    
     margin-right: 30px;
 }
 .header-burger {
@@ -67,19 +67,18 @@ main {
     text-decoration: none;
     color: #2B3541;
 }
-.nav-items::after {
+.nav-items::after, .footer-ankor::after, .footer-contacts-a::after {
     display: block;
-    position: absolute;
+    position: relative;
     content: "";
     height: 1px;
     width: 0;
     background-color:  #2B3541;
-    transition: width .5s ease-in-out, left .5s ease-in-out;
+    transition: width .2s ease-in-out, left .5s ease-in-out;
     left: 0%;
     bottom: -10px;
 }
-
-.nav-items:hover::after {
+.nav-items:hover::after, .footer-ankor:hover::after, .footer-contacts-a:hover::after {
     width: 100%;
 }
 .header-social-fb {
@@ -89,7 +88,7 @@ main {
     background-size: contain;
     width: 30px;
     height: 30px;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .header-social-fb:hover {
     transform: scale(1.2666);
@@ -101,7 +100,7 @@ main {
     background-size: contain;
     width: 30px;
     height: 30px;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .header-social-in:hover {
     transform: scale(1.2666);
@@ -205,7 +204,7 @@ main {
     color: #2B3541;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.1);    
     letter-spacing: 0.03em;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-button:hover {
     color: #FBF138;
@@ -218,7 +217,7 @@ main {
     bottom: -12.7vw;
     width: 52px;
     height: 55px;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-arroy:hover {
     transform: scale(1.2);
@@ -248,7 +247,7 @@ main {
     height: 600px;
     grid-template-areas:
     "a b c";
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-grid-box-marafon {
     position: relative;
@@ -260,14 +259,14 @@ main {
     width: 100%;
     height: 100%;
     grid-area: a;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-grid-gradient {
     background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-grid-gradient:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
@@ -312,7 +311,7 @@ main {
     width: 100%;
     height: 100%;
     grid-area: b;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-grid-box-veb2 {
     position: relative;
@@ -324,7 +323,7 @@ main {
     width: 100%;
     height: 100%;
     grid-area: c;
-    transition: all 0.2s;
+    transition: 0.2s;
 
 }
 .menu-grid-btn {
@@ -341,7 +340,7 @@ main {
     text-decoration: none;
     opacity: 0;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu-greed-item-maraphon:hover .menu-grid-btn {
     background-color: #2B3541;
@@ -367,9 +366,15 @@ main {
     line-height: 150%;
     right: 0;
     bottom: 0;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
-.menu-greed-item-maraphon:hover .menu-grid-maraphon-mrf {
+.menu-grid-box-marafon:hover .menu-grid-maraphon-mrf {
+    opacity: 0;
+}
+.menu-grid-box-veb2:hover .menu-grid-maraphon-mrf {
+    opacity: 0;
+}
+.menu-grid-box-veb1:hover .menu-grid-maraphon-mrf {
     opacity: 0;
 }
 .menu-grid-btn-add {
@@ -388,9 +393,9 @@ main {
     font-weight: 700;
     font-size: 28px;
     line-height: 125%;
-    padding-top: 19px;
-    padding-bottom: 40px;
-    margin: 0;
+    padding: 0;
+    margin-top: 19px;
+    margin-bottom: 40px;
 }
 
 .training {
@@ -406,7 +411,7 @@ main {
     padding: 20px 30px;
     border: 1px solid rgba(43, 53, 65, 0.5);
     box-shadow: 0.5px 0 0 2px rgba(43, 53, 65, 0);
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .functional-training:hover {
     border: none;
@@ -476,7 +481,7 @@ main {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 0;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .functional-training:hover .training-text {
     padding-top: 10px;
@@ -488,7 +493,7 @@ main {
     max-height: 0;
     transition: 0.3s linear;
     margin: 0;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .functional-training:hover .menu-text-hidden {
     /* display: block; */
@@ -544,21 +549,21 @@ main {
 }
 
 /* актив для js сегодня дата */
-.training-action {
+.functional-training.active {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
 }
-.training-action:hover {
+.functional-training.active:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
-.training-action .menu-text-hidden {
+.active .menu-text-hidden {
     position: relative;
     opacity: 1;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-top: 0;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .training-active-data {
     font-weight: 700;
@@ -650,7 +655,7 @@ main {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .mailing-button:hover {
     background-color: #2B3541;    
@@ -690,7 +695,7 @@ main {
 .mailing-person {
     text-decoration-line: underline;
     color: rgba(43, 53, 65, 0.5);
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .mailing-person:hover {
     color: rgba(43, 53, 65, 1);
@@ -715,8 +720,7 @@ main {
     font-size: 40px;
     line-height: 125%;
     padding-top: 0;
-    padding-bottom: 20px;
-    margin: 0;
+    margin-bottom: 20px;
 }
 .company-flex-text {
     max-width: 483px;
@@ -749,9 +753,8 @@ main {
 .company-text {
     font-size: 18px;
     line-height: 150%;
-    padding-bottom: 55px;
-    padding-top: 0;
-    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
 }
 .company-button {
     padding: 23px 52px;
@@ -765,7 +768,7 @@ main {
     color: #2B3541;
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .company-button:hover {
     color: #FBF138;
@@ -850,6 +853,7 @@ footer {
     line-height: 150%;
     text-align: center;
     margin: 0;
+    text-decoration: none;
 }
 .footer-contacts-a::before {    
     content: " ";
@@ -863,7 +867,7 @@ footer {
     width: 25px;    
     cursor: pointer;
     z-index: -1;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .footer-social-fb {
     display: block;
@@ -872,7 +876,8 @@ footer {
     background-size: contain;
     width: 28px;
     height: 28px;
-    transition: all 0.2s;
+    transform: scale(1);
+    transition: 0.2s;
 }
 .footer-social-fb:hover {
     transform: scale(1.2666);
@@ -884,6 +889,8 @@ footer {
     background-size: contain;
     width: 28px;
     height: 28px;
+    transform: scale(1);
+    transition: 0.2s;
 }
 .footer-social-in:hover {
     transform: scale(1.2666);
@@ -920,7 +927,7 @@ footer {
 .frontend-blok {
     text-decoration: underline;
     color: rgba(43, 53, 65, 0.5);
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .frontend-blok:hover {
     color: rgba(43, 53, 65, 1);
@@ -1165,7 +1172,7 @@ background: rgba(243, 243, 243, 1);
     box-shadow: 0px 13px 24px rgba(56, 251, 170, 0.3);
     border: none;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .pupup-btn:hover {
     background-color: #2B3541;
@@ -1233,7 +1240,8 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-grid-title {
         font-size: 23px;
-        padding-top: 10px;
+        padding-top: 0;
+        margin-top: 10px;
     }
     .training-title {
         font-size: 32px;
@@ -1396,10 +1404,12 @@ background: rgba(243, 243, 243, 1);
         margin-right: 57px;
         width: 78px;
         height: 24px;
-        transition: all 0.2s;
-    }
-    .header-logo:hover {
-        width: 79px;
+    }    
+    .footer-nav .header-logo {
+        padding: 0;
+        margin: 0 auto;
+        width: 97px;
+        height: 30px;
     }
     .menu-grid-box-veb1 {
         grid-area: b;
@@ -1633,11 +1643,13 @@ background: rgba(243, 243, 243, 1);
     footer {
         margin-top: 68px;
     }
-    .footer-contacts-email {
-        margin-left: 30px;
+    .footer-flex {
+        display: block;
     }
     .footer-nav {
         gap: 0;
+        display: block;
+        max-width: 100%;
     }
     .footer-nav-flex {
         gap: 25px;
@@ -1647,11 +1659,13 @@ background: rgba(243, 243, 243, 1);
         width: 27px;
         height: 27px;
     }
-    .footer-nav {
-        gap: 0px;
-    }    
     .footer-social {
         gap: 10px;
+    }    
+    .footer-copyright {
+        display: block;
+        text-align: center;
+        font-size: 10px;
     }
 }
 @media (max-width: 567px) {
@@ -1839,7 +1853,7 @@ background: rgba(243, 243, 243, 1);
     }
     .company-title {
         font-size: 26px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
     .company-text {
         font-size: 16px;
@@ -1895,20 +1909,7 @@ background: rgba(243, 243, 243, 1);
         padding-top: 0;
         padding-bottom: 40px;
         background: #FFFFFF;
-    }
-    .footer-flex {
-        display: block;
-    }
-    .footer-nav {
-        display: block;
-        max-width: 100%;
-    }
-    .footer-nav .header-logo {
-        padding: 0;
-        margin: 0 auto;
-        width: 97px;
-        height: 30px;
-    }
+    }    
     .footer-nav-flex {
         gap: 0;
         margin-top: 40px;
@@ -1920,9 +1921,6 @@ background: rgba(243, 243, 243, 1);
     }
     .footer-ankor {
         font-size: 12px;
-    }
-    .footer-contacts-email {
-        margin-left: 0;
     }
     .footer-contacts-a {
         font-size: 12px;
@@ -1944,11 +1942,6 @@ background: rgba(243, 243, 243, 1);
     .footer-social-fb {
         width: 27px;
         height: 27px;
-    }
-    .footer-copyright {
-        display: block;
-        text-align: center;
-        font-size: 10px;
     }
 }
 @media (max-width: 360px) {
