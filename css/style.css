@@ -666,19 +666,76 @@ main {
     line-height: 150%;
     color: rgba(43, 53, 65, 0.5); 
 }
-
-.mailing-checkbox + .mailing-label {
-    background-image: url(../img/icons/check-box-empty.svg);
-    background-size: 18px 18px;       
-    background-repeat: no-repeat;
-    display:inline-block;
+.mailing-checkbox:checked + label,
+.mailing-checkbox:not(:checked) + label {
+    position: relative;
     padding: 2px 0 0 23px;
+    cursor:pointer;
     margin-top: 11px;
 }
-.mailing-checkbox:checked + .mailing-label {
-    /* background-color: #2B3541; */
-    background: url(../img/icons/check_box.svg);
-    background-repeat: no-repeat;    
+
+.mailing-checkbox:checked,
+.mailing-checkbox:not(:checked) {
+    position: absolute;
+    left:-9999px;
+}
+
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.mailing-checkbox:checked + label::before {
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: #2B3541;
+    border-radius: 2px;
+    border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.mailing-checkbox:checked + label::after {
+    content:'';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 1;
+    left: 4px;
+    top: calc(50% - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/check_box.svg); 
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.mailing-checkbox:not(:checked) + label::before {
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.mailing-checkbox:not(:checked) + label::after {
+    content:'';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 0;
+    left: 4px;
+    top: calc(50% - 6px);
+    background-position: 0 -12px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/icons/check-box-empty.svg);
+}
+.radio:checked + label::before{
+    border-radius: 100%;
 }
 
 .mailing-person {
