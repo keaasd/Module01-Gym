@@ -262,6 +262,10 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;    
+    box-sizing: border-box;
+    padding: 30px;
     transition: 0.2s;
 }
 .menu-grid-gradient:hover {
@@ -292,9 +296,6 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;    
-}
-.menu-grid-maraphon-text {
-    padding: 30px;
 }
 .menu-grid-box-veb1 {
     position: relative;
@@ -556,6 +557,8 @@ main {
     position: relative;
     background-color: #F3F3F3;
     margin-top: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     z-index: 2;
 }
 .mailing-form {
@@ -565,8 +568,6 @@ main {
     position: relative;
     max-width: 646px;
     margin: 0 auto;    
-    padding-top: 80px;
-    padding-bottom: 114px;
 }
 .mailing-title {
     position: relative;
@@ -603,11 +604,13 @@ main {
 .mailing-input {
     display: block;
     width: 100%;
-    padding: 10px 0 10px 19px;
+    padding: 10px 19px;
     font-size: 18px;
     border: none;
     outline: none;
-    height: 70%;
+    height: 100%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
 }
 .mailing-input:hover {
     background-color: #F3F3F3;
@@ -639,11 +642,8 @@ main {
 /* согласие на обработку данных */
 .mailing-argee{
     width: 100%;
-    margin-right: 24px; 
+    margin-right: 7px;
     height: 65px;
-}
-.mailing-checkbox {
-    display:none;
 }
 .mailing-label {
     max-width: 600px;
@@ -990,7 +990,7 @@ footer {
 .header-modal-close { 
     background-color: transparent;
     background-image: url(../img/icons/close.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;    
     border: none;
     width: 20px;
@@ -1356,8 +1356,8 @@ background: rgba(243, 243, 243, 1);
     .menu-grid-title {
         font-size: 20px;
     }
-    .menu-grid-maraphon-text {
-        padding: 20px;
+    .menu-grid-gradient {
+        padding: 12px 20px;
     }
     .menu-grid-btn {
         max-width: 208px;
@@ -1503,19 +1503,47 @@ background: rgba(243, 243, 243, 1);
         padding-top: 4%;
     }
     .training-block {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-left: 126px;
         flex: 74 85 105px;
-        align-items: center;
-    }
-    .training-image {
+        align-items: start;
+    } 
+    .functional-training:nth-child(1) img {
         position: absolute;
-        left: 24px;
-        top: 31%;
+        left: 20px;
+        top: 48px;
     }
+    .functional-training:nth-child(2) img {
+        position: absolute;
+        left: 20px;
+        top: 53px;
+    }
+    .functional-training:nth-child(3) img {
+        position: absolute;
+        left: 20px;
+        top: 41px;
+    }
+    .functional-training:nth-child(4) img {
+        position: absolute;
+        left: 20px;
+        top: 54px;
+    }
+    .functional-training:nth-child(5) img {
+        position: absolute;
+        left: 20px;
+        top: 61px;
+    }
+    .functional-training:nth-child(6) img {
+        position: absolute;
+        left: 20px;
+        top: 52px;
+    }
+    
+
     .menu-greeds {
         grid-template-rows: 86vw 94vw;
-        grid-template-columns: 48% 48%;
+        grid-template-columns: 50% 48%;
         grid-template-areas: 
         "a b" 
         "c c";
@@ -1551,11 +1579,12 @@ background: rgba(243, 243, 243, 1);
         display: block;
     }
     .menu-text-span {
-        max-width: 370px;
+        margin-bottom: 18px;
     }
     .functional-training:hover .menu-text-span {
-        padding-top: 16px;
-        padding-bottom: 20px;
+        max-width: 370px;
+        padding-top: 0;
+        margin-top: 16px;
     }
     .company-blok-2 {
         display: flex;
@@ -1759,12 +1788,7 @@ background: rgba(243, 243, 243, 1);
         width: 100%;
         display: block;
         max-width: 601px;
-    }
-    .menu-grid-maraphon-text {
-        padding-top: 12px;
-        padding-left: 20px;
-    }
-    
+    }    
     .menu-titles {
         font-size: 7.2vw;
     }
@@ -1777,11 +1801,15 @@ background: rgba(243, 243, 243, 1);
     .menu-grid-title {
         max-width: 180px;
         font-size: 4.5vw;
-        padding-top: 9px;
+        padding-top: 0;
+        margin-top: 8px;
     }
     .menu-grid-box-marafon {
         background-size: 142% auto;
         background-position: center 41%;
+    }
+    .menu-grid-gradient {
+        padding: 13px 20px;
     }
     .menu-grid-box-veb1 {
         background-size: 142% auto;
@@ -1795,9 +1823,44 @@ background: rgba(243, 243, 243, 1);
         font-size: 7.2vw;
         margin-bottom: 19px;
     }
+    .training-active-data-text {
+        margin-bottom: 20px;
+    }
     .training-data {
         font-size: 16px;
         opacity: 0.7;
+    }
+    
+    .functional-training:nth-child(1) img {
+        width: 39px;
+        height: 39px;
+        left: 19px;
+        top: 56px;
+    }
+    .functional-training:nth-child(2) img {
+        width: 34px;
+        height: 53px;
+        top: 101px;
+    }
+    .functional-training:nth-child(3) img {
+        width: 23px;
+        height: 45px;
+        top: 51px;
+    }
+    .functional-training:nth-child(4) img {
+        width: 39px;
+        height: 37px;
+        top: 58px;
+    }
+    .functional-training:nth-child(5) img {
+        width: 46px;
+        height: 25px;
+        top: 65px;
+    }
+    .functional-training:nth-child(6) img {
+        width: 35px;
+        height: 40px;
+        top: 47px;
     }
     .training-flex {
         display: flex;
@@ -1818,16 +1881,24 @@ background: rgba(243, 243, 243, 1);
     }
     .training-text {
         font-size: 16px;
+        margin-top: 10px;
+    }
+    .functional-training:hover .training-text {
+        padding-top: 10px;
+        margin-top: 0;
     }
     .menu-text-span {
         font-size: 12px;
         line-height: 18px;
-        padding-top: 16px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        padding: 0px;
     }
-    .training-image {
-        left: 16px;
-        top: 23%;
-        max-width: 40px;
+    .functional-training.active {
+        min-height: 206px;
+    }
+    .text-2 {
+        margin-top: 44px;
     }
     .menu-text-hidden {
         padding-top: 16px;
