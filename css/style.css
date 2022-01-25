@@ -120,7 +120,7 @@ main {
     top: 27px;
     right: 16vw;
     z-index: -1;    
-    height: 44.3vw;
+    height: 849px;
 }
 .box-gradient-left {
     background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
@@ -138,7 +138,6 @@ main {
     margin: 0 auto;
     right: -5.6vw;
     object-fit: cover;
-    padding-right: 15px;
     bottom: 0;
 }
 .menu-bg-mobil-fon1 {
@@ -150,8 +149,7 @@ main {
 .menu-text {
     position: relative;
     max-width: 676px;
-    padding-top: 13vw;
-    height: 44.3vw;
+    padding-top: 254px;
     box-sizing: border-box;
 }
 .menu-title {
@@ -215,7 +213,7 @@ main {
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
     left: 0;
-    bottom: -21px;
+    bottom: -242px;
     width: 52px;
     height: 55px;
     transition: 0.2s;
@@ -1185,39 +1183,45 @@ background: rgba(243, 243, 243, 1);
 }
 @media (max-width: 1780px) {
     .menu-visual {
-        max-width: 44vw;
         right: 7%;
+        height: 778px;
+    }
+    .menu-arrow {
+        bottom: -155px;
     }
     .events {
-        margin-top: 18.4vw;
+        /* margin-top: 18.4vw; */
+    }
+    .menu-text {
+        /* max-width: 38vw; */
+        padding-top: 288px;
+    }
+    .menu-title {
+        font-size: 38px;
     }
 }
 
 @media (max-width:1112px) {
+    .menu-title-p {
+        padding-left: 0;
+    }
+    .menu-text {
+        max-width: 47vw;
+    }
+    .menu-title {
+        font-size: 34px;
+    }
     .company-flex-text {
         max-width: 420px;
     }
 }
 @media (max-width: 1024px) {    
-    .menu-title {
-        font-size: 4.3vw;
-    }
-    .menu-text {
-        max-width: 725px;
-    }
-    .events {
-        margin-top: 192px;
-    }
     .menu-titles {
         font-size: 32px;
         line-height: 75%;
         padding-top: 0;
         padding-bottom: 25px;
         margin: 0;
-    }
-    .menu-item-text {
-        font-size: 28px;
-        padding-top: 14px;
     }
     .menu-item-text-sport {
         font-size: 18px;
@@ -1257,16 +1261,42 @@ background: rgba(243, 243, 243, 1);
         overflow: hidden;
     }
 }
-@media (max-width: 938px) {
-    .menu-visual {
-        top: 130px;
-    }
+@media (max-width: 976px) {
     .menu-text {
-        max-width: 77vw;
-        padding-top: 60px;
+        max-width: 63vw;
+        padding-top: 70px;
     }
+    .menu-visual {
+        position: relative;
+        max-width: 100%;
+        top: 40px;
+        z-index: -1;
+        right: 2px;
+        left: 0;
+        gap: 2%;
+        height: 87vw;
+    }    
     .events {
-        margin-top: 22vw;
+        margin-top: 134px;
+    }
+    .menu {
+        flex-wrap: wrap;
+    }
+    .menu-girl {
+        position: absolute;
+        height: 90%;
+        margin: 0 auto;
+        right: 1.4vw;
+        object-fit: cover;
+        bottom: 0;
+    }
+    .menu-arrow {
+        display: none;
+    }
+}
+@media (max-width: 938px) {
+    .events {
+        margin-top: 134px;
     }
     .footer-contacts {
         gap: 3vw;
@@ -1325,14 +1355,11 @@ background: rgba(243, 243, 243, 1);
     .header-items {
         flex-basis: 21.6%;
     }
-    .menu {
-        flex-wrap: wrap;
-    }
     .menu-arrow {
         display: none;
     }
     .menu-visual {
-        top: 117px;
+        top: 40px;
     }
     .wrap-popup {
         max-width: 100%;
@@ -1362,7 +1389,7 @@ background: rgba(243, 243, 243, 1);
         display: block;
     }
     .menu-text {
-        max-width: 59vw;
+        max-width: 82.7%;
         padding-top: 61px;
     }
     .menu-title-p {
@@ -1676,8 +1703,7 @@ background: rgba(243, 243, 243, 1);
         margin-top: 57px;
     }
     .menu-visual {
-        height: 310px;
-        /* height: 437px; */
+        height: 77vw;
     }
     .menu-text {
         padding-top: 1px;
@@ -1714,25 +1740,14 @@ background: rgba(243, 243, 243, 1);
     }
     .menu-girl {
         left: 50%;
-        top: 57%;
+        top: 50%;
         transform: translate(-50%,-50%);
         -o-object-fit: contain;
         object-fit: contain;
-        width: 91vw;
+        width: 100%;
         height: 100%;
         z-index: -1;
         padding-right: 0;
-    }
-    
-    .menu-visual {
-        position: relative;
-        max-width: 768px;
-        top: 40px;
-        z-index: -1;
-        right: 2px;
-        left: 0;
-        gap: 2%;
-        height: 87vw;
     }
     .menu-title-p {
         padding-left: 0;
@@ -1792,6 +1807,7 @@ background: rgba(243, 243, 243, 1);
     }
     .training-date {
         font-size: 16px;
+        font-weight: 400;
     }
     .training-block {
         display: flex;
