@@ -475,6 +475,9 @@ main {
 .functional-training:hover .training-text {
     padding-top: 10px;
 }
+.active:hover .training-text {
+    padding-top: 40px;
+}
 .menu-text-span {
     font-size: 18px;
     line-height: 150%;
@@ -1373,6 +1376,9 @@ background: rgba(243, 243, 243, 1);
     }
     .company-flex-img {
         width: 46vw;
+    }
+    .button-up.visible {
+        opacity: 0;
     }
 }
 @media (min-width: 769px) and (max-width: 890px) {
