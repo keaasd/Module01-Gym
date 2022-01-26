@@ -78,9 +78,6 @@ main {
     left: 0%;
     bottom: -10px;
 }
-.nav-items:hover::after, .footer-ankor:hover::after, .footer-contacts-a:hover::after {
-    width: 100%;
-}
 .header-social-fb {
     display: block;
     background-image: url(../img/icons/fb.svg);
@@ -90,9 +87,6 @@ main {
     height: 30px;
     transition: 0.2s;
 }
-.header-social-fb:hover {
-    transform: scale(1.2666);
-}
 .header-social-in {
     display: block;
     background-image: url(../img/icons/ins.svg);
@@ -101,9 +95,6 @@ main {
     width: 30px;
     height: 30px;
     transition: 0.2s;
-}
-.header-social-in:hover {
-    transform: scale(1.2666);
 }
 .menu-items {
     margin-bottom: 80px;
@@ -204,10 +195,6 @@ main {
     letter-spacing: 0.03em;
     transition: 0.2s;
 }
-.menu-button:hover {
-    color: #FBF138;
-    background-color: #2B3541;
-}
 .menu-arrow {    
     position: absolute;
     background-image: url(../img/icons/Arrow.svg);
@@ -217,9 +204,6 @@ main {
     height: 55px;
     transition: 0.2s;
 }
-.menu-arrow:hover {
-    transform: scale(1.2);
-} 
 .company-describ {
     text-align: end;
 }
@@ -267,12 +251,6 @@ main {
     box-sizing: border-box;
     padding: 30px;
     transition: 0.2s;
-}
-.menu-grid-gradient:hover {
-    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
-}
-.menu-grid-gradient:hover .menu-grid-btn {
-    opacity: 1;
 }
 
 .menu-grid-img-2 {
@@ -337,14 +315,6 @@ main {
     cursor: pointer;
     transition: 0.2s;
 }
-.menu-greed-item-maraphon:hover .menu-grid-btn {
-    background-color: #2B3541;
-    color: #FBF138;
-    opacity: 1;
-}
-.menu-greed-1nt:hover {
-    background-image: url(../img/@2x/maraphonhover@2x.png);
-}
 .menu-grid-data {
     font-weight: 700;
     font-size: 18px;
@@ -361,15 +331,6 @@ main {
     right: 0;
     bottom: 0;
     transition: 0.2s;
-}
-.menu-grid-box-marafon:hover .menu-grid-maraphon-mrf {
-    opacity: 0;
-}
-.menu-grid-box-veb2:hover .menu-grid-maraphon-mrf {
-    opacity: 0;
-}
-.menu-grid-box-veb1:hover .menu-grid-maraphon-mrf {
-    opacity: 0;
 }
 .menu-grid-btn-add {
     display: none;
@@ -405,11 +366,6 @@ main {
     border: 1px solid rgba(43, 53, 65, 0.5);
     box-shadow: 0 0 0 2px rgba(43, 53, 65, 0);
     transition: 0.2s;
-}
-.functional-training:hover {
-    border: 1px solid transparent;
-    background:rgba(243, 243, 243, 0.5);
-    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
 .training-titles {
     display: flex;
@@ -472,12 +428,6 @@ main {
     padding-bottom: 0;
     transition: 0.2s;
 }
-.functional-training:hover .training-text {
-    padding-top: 10px;
-}
-.active:hover .training-text {
-    padding-top: 40px;
-}
 .menu-text-span {
     font-size: 18px;
     line-height: 150%;
@@ -486,13 +436,6 @@ main {
     transition: 0.3s linear;
     margin: 0;
     transition: 0.2s;
-}
-.functional-training:hover .menu-text-hidden {
-    position: relative;
-}
-.functional-training:hover .menu-text-span {
-    max-height: 500px;    
-    padding-top: 20px;
 }
 .power-mix {
     padding: 20px 30px;    
@@ -537,10 +480,6 @@ main {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
-}
-.functional-training.active:hover {
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
-    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
 .active .menu-text-hidden {
     position: relative;
@@ -615,9 +554,6 @@ main {
     margin-bottom: 12px;
     box-sizing: border-box;
 }
-.mailing-input:hover {
-    background-color: #F3F3F3;
-}
 .mailing-item-flex {
     display: flex;
     gap: 20px;
@@ -638,10 +574,6 @@ main {
     cursor: pointer;
     transition: 0.2s;
 }
-.mailing-button:hover {
-    background-color: #2B3541;    
-    color: #FBF138;
-} 
 /* согласие на обработку данных */
 .mailing-argee{
     width: 100%;
@@ -725,9 +657,6 @@ main {
     color: rgba(43, 53, 65, 0.5);
     transition: 0.2s;
 }
-.mailing-person:hover {
-    color: rgba(43, 53, 65, 1);
-}
 .company {
     margin-top: 4px;
 }
@@ -795,10 +724,6 @@ main {
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     transition: 0.2s;
-}
-.company-button:hover {
-    color: #FBF138;
-    background-color: #2B3541;
 }
 .mobile-hidden {
     display: none;
@@ -902,9 +827,6 @@ footer {
     transform: scale(1);
     transition: 0.2s;
 }
-.footer-social-fb:hover {
-    transform: scale(1.2666);
-}
 .footer-social-in {
     display: block;
     background-image: url(../img/icons/ins.svg);
@@ -914,9 +836,6 @@ footer {
     height: 28px;
     transform: scale(1);
     transition: 0.2s;
-}
-.footer-social-in:hover {
-    transform: scale(1.2666);
 }
 
 .footer-ankor {
@@ -951,9 +870,6 @@ footer {
     text-decoration: underline;
     color: rgba(43, 53, 65, 0.5);
     transition: 0.2s;
-}
-.frontend-blok:hover {
-    color: rgba(43, 53, 65, 1);
 }
 /* modal */
 .modal-window {
@@ -1165,9 +1081,6 @@ footer {
     max-width: 94%;
     margin-bottom: 20px;
 }
-.popup-mail:hover, .popup-tel:hover {
-background: rgba(243, 243, 243, 1);
-}
 .popup-tel {
     background-color: #fff;
     background-image: none;
@@ -1195,10 +1108,6 @@ background: rgba(243, 243, 243, 1);
     cursor: pointer;
     transition: 0.2s;
 }
-.pupup-btn:hover {
-    background-color: #2B3541;
-    color: #FBF138;
-}
 .company-img {
     background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../img/@2x/trainer@2x.png);
     width: 100%;
@@ -1220,10 +1129,6 @@ background: rgba(243, 243, 243, 1);
     transform: rotate(180deg);
     transition: 0.2s;
 }
-
-.button-up:hover {
-    transform: scale(1.2) rotate(180deg);
-}
 .button-up.hidden {
     opacity: 0;
 }
@@ -1233,6 +1138,100 @@ background: rgba(243, 243, 243, 1);
 @media (any-hover: hover) {
     .close-popup:hover {
         transform: rotate(720deg);
+    }
+    .nav-items:hover::after, .footer-ankor:hover::after, .footer-contacts-a:hover::after {
+        width: 100%;
+    }    
+    .header-social-fb:hover {
+        transform: scale(1.2666);
+    }           
+    .header-social-in:hover {
+        transform: scale(1.2666);
+    }    
+    .menu-button:hover {
+        color: #FBF138;
+        background-color: #2B3541;
+    }    
+    .menu-arrow:hover {
+        transform: scale(1.2);
+    } 
+    .menu-grid-gradient:hover {
+        background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+    }
+    .menu-grid-gradient:hover .menu-grid-btn {
+        opacity: 1;
+    }
+    .menu-greed-item-maraphon:hover .menu-grid-btn {
+        background-color: #2B3541;
+        color: #FBF138;
+        opacity: 1;
+    }
+    .menu-greed-1nt:hover {
+        background-image: url(../img/@2x/maraphonhover@2x.png);
+    }
+    .menu-grid-box-marafon:hover .menu-grid-maraphon-mrf {
+        opacity: 0;
+    }
+    .menu-grid-box-veb2:hover .menu-grid-maraphon-mrf {
+        opacity: 0;
+    }
+    .menu-grid-box-veb1:hover .menu-grid-maraphon-mrf {
+        opacity: 0;
+    }
+    .functional-training:hover {
+        border: 1px solid transparent;
+        background:rgba(243, 243, 243, 0.5);
+        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+    }    
+    .functional-training:hover .training-text {
+        padding-top: 10px;
+    }
+    .active:hover .training-text {
+        padding-top: 40px;
+    }    
+    .functional-training:hover .menu-text-hidden {
+        position: relative;
+    }
+    .functional-training:hover .menu-text-span {
+        max-height: 500px;    
+        padding-top: 20px;
+    }
+    .functional-training.active:hover {
+        background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
+        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+    }
+    .mailing-input:hover {
+        background-color: #F3F3F3;
+    }
+    .mailing-button:hover {
+        background-color: #2B3541;    
+        color: #FBF138;
+    } 
+    .mailing-person:hover {
+        color: rgba(43, 53, 65, 1);
+    }
+    .company-button:hover {
+        color: #FBF138;
+        background-color: #2B3541;
+    }
+    .footer-social-fb:hover {
+        transform: scale(1.2666);
+    }    
+    .footer-social-in:hover {
+        transform: scale(1.2666);
+    }    
+    .frontend-blok:hover {
+        color: rgba(43, 53, 65, 1);
+    }
+    .popup-mail:hover, .popup-tel:hover {
+    background: rgba(243, 243, 243, 1);
+    }
+    .pupup-btn:hover {
+        background-color: #2B3541;
+        color: #FBF138;
+    }    
+    .button-up:hover {
+        transform: scale(1.2) rotate(180deg);
     }
 }
 @media (max-width: 1780px) {
@@ -1913,7 +1912,6 @@ background: rgba(243, 243, 243, 1);
         margin-top: 10px;
     }
     .functional-training:hover .training-text {
-        padding-top: 10px;
         margin-top: 0;
     }
     .menu-text-span {
