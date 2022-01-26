@@ -394,6 +394,28 @@ main {
     grid-auto-flow: column;
     gap: 20px;
 }
+.functional-training:hover {
+    border: 1px solid transparent;
+    background:rgba(243, 243, 243, 0.5);
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+}    
+.functional-training:hover .training-text {
+    padding-top: 10px;
+}
+.active:hover .training-text {
+    padding-top: 40px;
+}    
+.functional-training:hover .menu-text-hidden {
+    position: relative;
+}
+.functional-training:hover .menu-text-span {
+    max-height: 500px;    
+    padding-top: 20px;
+}
+.functional-training.active:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+}
 .training-flex div:nth-child(1) {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
@@ -1177,28 +1199,6 @@ footer {
     }
     .menu-grid-box-veb1:hover .menu-grid-maraphon-mrf {
         opacity: 0;
-    }
-    .functional-training:hover {
-        border: 1px solid transparent;
-        background:rgba(243, 243, 243, 0.5);
-        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
-    }    
-    .functional-training:hover .training-text {
-        padding-top: 10px;
-    }
-    .active:hover .training-text {
-        padding-top: 40px;
-    }    
-    .functional-training:hover .menu-text-hidden {
-        position: relative;
-    }
-    .functional-training:hover .menu-text-span {
-        max-height: 500px;    
-        padding-top: 20px;
-    }
-    .functional-training.active:hover {
-        background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
-        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
     }
     .mailing-input:hover {
         background-color: #F3F3F3;
