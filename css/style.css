@@ -1530,6 +1530,9 @@ footer {
         margin: 0;
         padding-top: 4%;
     }
+    .text-2 {
+        padding-top: 40px;
+    }
     .training-block {
         display: flex;
         flex-direction: column;
