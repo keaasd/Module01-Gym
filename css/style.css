@@ -570,15 +570,15 @@ main {
     width: 100%;
     padding: 10px 19px;
     font-size: 18px;
-    border: none;
-    outline: none;
     height: 100%;
     margin-bottom: 12px;
     box-sizing: border-box;
     border: 1px solid transparent;
 }
 .mailing-input:focus {
+    outline: #FBF138;
     border: 1px solid #FBF138;
+    background: #FFFFFF;
 }
 .mailing-input:invalid {
     border: 1px solid #AE0303;
@@ -1207,9 +1207,6 @@ footer {
     .menu-grid-box-veb1:hover .menu-grid-maraphon-mrf {
         opacity: 0;
     }
-    .mailing-input:hover {
-        background-color: #F3F3F3;
-    }
     .mailing-button:hover {
         background-color: #2B3541;    
         color: #FBF138;
@@ -1620,7 +1617,6 @@ footer {
         margin-bottom: 18px;
     }
     .functional-training:hover .menu-text-span {
-        max-width: 370px;
         padding-top: 0;
         margin-top: 16px;
     }
@@ -2064,6 +2060,9 @@ footer {
     .menu-title {
         max-width: 100%;
         letter-spacing: 0.022em;
+    }
+    .training-title {
+        max-width: 50vw;
     }
     .menu-item-text-sport {
         max-width: 293px;
