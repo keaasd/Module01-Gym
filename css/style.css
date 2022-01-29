@@ -575,6 +575,13 @@ main {
     height: 100%;
     margin-bottom: 12px;
     box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.mailing-input:focus {
+    border: 1px solid #FBF138;
+}
+.mailing-input:invalid {
+    border: 1px solid #AE0303;
 }
 .mailing-item-flex {
     display: flex;
@@ -895,7 +902,7 @@ footer {
 }
 /* modal */
 .modal-window {
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 100%;
     background-color: rgba(43, 53, 65, 0.4);
