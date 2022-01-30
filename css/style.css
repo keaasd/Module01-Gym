@@ -137,7 +137,7 @@ main {
 .menu-bg-mobil-fon2 {
     display: none;
 }
-.menu-text {
+.menu-content {
     position: relative;
     max-width: 676px;
     padding-top: 254px;
@@ -154,7 +154,8 @@ main {
     font-size: 48px;
 }
 .menu-title-flex {
-    gap: 19px;
+    gap: 19px;    
+    margin-top: 41px;
 }
 .menu-title-flex-group {
     display: flex;
@@ -163,8 +164,6 @@ main {
 .menu-item-text {
     font-size: 40px;
     line-height: 125%;
-    padding-top: 41px;
-    padding-bottom: 0px;
     margin: 0;    
 }
 .menu-item-text-sport {
@@ -175,7 +174,7 @@ main {
     padding-bottom: 35px;
     margin: 0;
 }
-.menu-title-p {
+.menu-desc {
     padding-left: 93px;
     position: relative;
 }
@@ -224,7 +223,7 @@ main {
 .menu-greeds {
     display: grid;
     gap: 20px;
-    height: 600px;
+    grid-template-rows: 600px 1fr;
     grid-template-areas:
     "a b c";
     transition: 0.2s;
@@ -371,6 +370,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-top: 120px;
+    margin-bottom: 40px;
 }
 .training-image {
     padding-bottom: 0px;
@@ -380,11 +381,15 @@ main {
     font-weight: bold;
     font-size: 40px;
     line-height: 125%;
+    margin: 0;
+    padding-top: 20px; 
 }
 .training-data {
     font-weight: bold;
     font-size: 28px;
     line-height: 125%;
+    margin: 0;
+    padding: 0;
 }
 .training-flex {
     display: grid;
@@ -577,11 +582,10 @@ main {
 }
 .mailing-input:focus {
     outline: 1px solid #FBF138;
-    border: 1px solid #FBF138;
     background: #FFFFFF;
 }
-.mailing-input:invalid {
-    border: 1px solid #AE0303;
+.mailing-input:focus:invalid {
+    outline: 1px solid #AE0303;
 }
 .mailing-item-flex {
     display: flex;
@@ -1238,7 +1242,8 @@ footer {
         transform: scale(1.2) rotate(180deg);
     }
 }
-@media (max-width: 1780px) {
+@media (max-width: 1568px) {
+    
     .menu-visual {
         right: 7%;
         height: 778px;
@@ -1246,7 +1251,7 @@ footer {
     .menu-arrow {
         bottom: -155px;
     }
-    .menu-text {
+    .menu-content {
         padding-top: 288px;
     }
     .menu-title {
@@ -1255,10 +1260,10 @@ footer {
 }
 
 @media (max-width:1112px) {
-    .menu-title-p {
+    .menu-desc {
         padding-left: 0;
     }
-    .menu-text {
+    .menu-content {
         max-width: 47vw;
     }
     .menu-title {
@@ -1315,7 +1320,7 @@ footer {
     }
 }
 @media (max-width: 976px) {
-    .menu-text {
+    .menu-content {
         max-width: 63vw;
         padding-top: 70px;
     }
@@ -1444,11 +1449,11 @@ footer {
     .header-burger {
         display: block;
     }
-    .menu-text {
+    .menu-content {
         max-width: 82.7%;
         padding-top: 61px;
     }
-    .menu-title-p {
+    .menu-desc {
         padding-left: 0;
     }
     .menu-item-text-sport {
@@ -1767,7 +1772,7 @@ footer {
     .menu-visual {
         height: 77vw;
     }
-    .menu-text {
+    .menu-content {
         padding-top: 1px;
         max-width: 567px;
         padding-left: 0;
@@ -1811,7 +1816,7 @@ footer {
         z-index: -1;
         padding-right: 0;
     }
-    .menu-title-p {
+    .menu-desc {
         padding-left: 0;
     }
     .menu-arrow {
