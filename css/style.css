@@ -1276,10 +1276,7 @@ footer {
 }
 @media (max-width: 1024px) {    
     .menu-titles {
-        font-size: 32px;
-        line-height: 75%;
         padding-top: 0;
-        padding-bottom: 25px;
         margin: 0;
     }
     .menu-item-text-sport {
@@ -1290,7 +1287,7 @@ footer {
         flex-basis: 62.6%;
     }
     .menu-greeds {
-        height: 58.7vw;
+        grid-template-rows: 58.7vw 1fr;
     }
     .menu-grid-title {
         font-size: 23px;
