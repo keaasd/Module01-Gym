@@ -153,18 +153,16 @@ main {
     margin: 0;
     font-size: 48px;
 }
-.menu-title-flex {
-    gap: 19px;    
+.menu-subject {
     margin-top: 41px;
 }
-.menu-title-flex-group {
-    display: flex;
-    gap: 21px;
-}
-.menu-item-text {
+.menu-subtitle {
     font-size: 40px;
     line-height: 125%;
     margin: 0;    
+}
+.span-text {
+    margin-right: 21px;
 }
 .menu-item-text-sport {
     max-width: 300px;
@@ -370,7 +368,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 120px;
     margin-bottom: 40px;
 }
 .training-image {
@@ -415,7 +412,7 @@ main {
 }
 .functional-training:hover .menu-text-span {
     max-height: 500px;    
-    padding-top: 20px;
+    margin-top: 20px;
 }
 .functional-training.active:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
@@ -526,8 +523,6 @@ main {
     position: relative;
     background-color: #F3F3F3;
     margin-top: 160px;
-    padding-top: 80px;
-    padding-bottom: 80px;
     z-index: 2;
 }
 .mailing-form {
@@ -536,6 +531,8 @@ main {
 .mailing-item {
     position: relative;
     max-width: 646px;
+    padding-top: 81px;
+    padding-bottom: 114px;
     margin: 0 auto;    
 }
 .mailing-title {
@@ -551,7 +548,7 @@ main {
 .mailing-title::before {
     position: absolute;
     content: " ";
-    top: -17px;
+    top: -21px;
     left: -4px;
     height: 53px;
     width: 53px;
@@ -691,11 +688,10 @@ main {
     transition: 0.2s;
 }
 .company {
-    margin-top: 4px;
+    margin-top: 158px;
 }
-.company-blok {
-    padding-top: 156px;
-    padding-bottom: 45px;    
+.company-advantage {    
+    margin-top: 117px;
     max-width: 1143px;
     margin: 0 auto;    
 }
@@ -707,7 +703,7 @@ main {
     font-weight: bold;
     font-size: 40px;
     line-height: 125%;
-    padding-top: 0;
+    padding: 0;
     margin-bottom: 20px;
 }
 .company-flex-text {
@@ -762,23 +758,23 @@ main {
     display: none;
 }
 
-.company-blok-2 {
+.company-adv {
     display: flex;
     justify-content: space-between;
-    gap: 67px;
+    gap: 6%;
     list-style-type: none;
     padding-left: 0;
     margin-top: 142px;
 }
-.company-blok-2 li {
+.company-adv li {
     flex-basis: content;
 }
-.company-blok-2-title {
+.company-adv-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 125%;
 }
-.company-blok-2-text {
+.company-adv-text {
     font-size: 18px;
     line-height: 150%;
     opacity: 0.6;
@@ -789,12 +785,11 @@ main {
 /* footer ---------------*/
 footer {
     position: relative;
-    margin: 0 auto;
     background: #F3F3F3;
     padding-top: 33px;
     padding-bottom: 21px;
     z-index: 0;
-    margin-top: 93px;
+    margin-top: 157px;
 }
 .footer-flex {
     display: flex;
@@ -839,8 +834,8 @@ footer {
 .footer-contacts-a::before {    
     content: " ";
     position: absolute;
-    top: -9px;
-    left: -13px;    
+    top: -13px;
+    left: -18px;   
     background-color: #FBF138;  
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     border-radius: 100%;
@@ -1296,6 +1291,7 @@ footer {
     }
     .training-title {
         font-size: 32px;
+        padding-bottom: 0;
     }
     .container {
         max-width: 1024px;
@@ -1315,6 +1311,9 @@ footer {
     .company-flex-img {
         width: 53vw;
         overflow: hidden;
+    }
+    .company-adv {
+        gap: 3%;
     }
 }
 @media (max-width: 976px) {
@@ -1368,7 +1367,6 @@ footer {
     .menu-text-span {
         font-size: 16px;
         line-height: 140%;
-        padding-top: 18px;
         margin: 0;
     }
     .functional-training {
@@ -1379,6 +1377,14 @@ footer {
     }
     .company-flex-text {
         max-width: 349px;
+    }
+    .company-adv-text {
+        max-width: 360px;
+    }
+    .company-adv {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
     }
     .company-flex-img {
         width: 46vw;
@@ -1440,16 +1446,17 @@ footer {
     .mailing {
         margin-top: 36px;
     }
-    .company-blok {
-        padding-top: 75px;
-        padding-bottom: 10px;
+    .company {
+        margin-top: 70px;
     }
     .header-burger {
         display: block;
     }
     .menu-content {
-        max-width: 82.7%;
-        padding-top: 61px;
+        max-width: 768px;
+    }
+    .menu-title {
+        font-size: 6.9vw;
     }
     .menu-desc {
         padding-left: 0;
@@ -1457,7 +1464,7 @@ footer {
     .menu-item-text-sport {
         font-size: 16px;
     }
-    .menu-item-text {
+    .menu-subtitle {
         font-size: 26px;
         padding-top: 42px;
     }
@@ -1494,7 +1501,6 @@ footer {
     .menu-grid-box-veb2 {
         grid-area: c;
         background-image: url(../img/@2x/Vebinar2-mobile.png);
-        height: 600px;
         background-position: center top;
     }
     .training-flex {
@@ -1540,7 +1546,7 @@ footer {
     .text-2 {
         padding-top: 40px;
     }
-    .training-block {
+    .training-card {
         display: flex;
         flex-direction: column;
         padding-left: 126px;
@@ -1580,8 +1586,8 @@ footer {
     
 
     .menu-greeds {
-        grid-template-rows: 86vw 94vw;
-        grid-template-columns: 50% 48%;
+        grid-template-rows: 309px 336px;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "a b" 
         "c c";
@@ -1621,17 +1627,15 @@ footer {
     }
     .functional-training:hover .menu-text-span {
         padding-top: 0;
-        margin-top: 16px;
     }
-    .company-blok-2 {
-        display: flex;
-        flex-wrap: wrap;
+    /* kkk */
+    .company-adv {
         max-width: 758px;
         gap: 0px;
         margin-bottom: 25px;
         margin-top: 8px;
     }
-    .company-blok-2 li {
+    .company-adv li {
         max-width: 325px;
     }
     .company-flex-img {
@@ -1768,7 +1772,7 @@ footer {
         margin-top: 57px;
     }
     .menu-visual {
-        height: 77vw;
+        height: 344px;
     }
     .menu-content {
         padding-top: 1px;
@@ -1789,19 +1793,25 @@ footer {
     }
     .menu-title {
         line-height: 126%;
-        font-size: 7.1vw;          
+        font-size: 7.1vw;       
     }
-    .menu-item-text {
+    .menu-subtitle {
         font-size: 26px;
         padding-top: 44px;
     }
-    .menu-title-flex-group {
-        gap: 19px;
+    .menu-subject {
+        margin-top: 47px;
+    }
+    .span-text {
+        margin-right: 16px;
     }
     .menu-item-text-sport {
         font-size: 16px;
         padding-bottom: 38px;
         padding-top: 17px;
+    }
+    .events {
+        margin-top: 90px;
     }
     .menu-girl {
         left: 50%;
@@ -1828,9 +1838,8 @@ footer {
     }    
     .menu-titles {
         font-size: 7.2vw;
-    }
-    .menu-grid-box-veb2 {
-        height: 100%;
+        padding-bottom: 0;
+        margin-bottom: 20px;
     }
     .menu-grid-data {
         font-size: 12px;
@@ -1908,7 +1917,7 @@ footer {
         font-size: 16px;
         font-weight: 400;
     }
-    .training-block {
+    .training-card {
         display: flex;
         flex-wrap: wrap;
         flex: 74 85 auto;
@@ -1939,17 +1948,23 @@ footer {
         left: 78px;
         max-width: 244px;
     }
+    .training {
+        margin-top: 61px;
+    }
     .functional-training {
         padding: 20px 20px 0;
         margin-bottom: 0;
         min-height: 114px;
     }
+    .training-titles {
+        margin-bottom: 3px;
+    }
     .mailing-title {
-        max-width: 201px;
         font-size: 26px;
         padding-bottom: 51px;
-        line-height: 31.6px;
+        line-height: 1.3;
         margin: 0 auto;
+        display: inline-block;
     }
     .mailing-title::before {
         left: -15px;
@@ -1957,6 +1972,7 @@ footer {
     .mailing-item {
         padding-top: 52px;
         padding-bottom: 41px;
+        text-align: center;
     }
     .mailing-form {
         padding-left: 10px;
@@ -1970,17 +1986,24 @@ footer {
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 0;
+        margin-bottom: 24px;
     }
-    .company-blok-2-title {
+    .mailing {
+        margin-top: 79px;
+    }
+    .company {
+        margin-top: 54px;
+    }
+    .company-adv-title {
         font-size: 16px;
         line-height: 19.2px;
     }
-    .company-blok-2-text {
+    .company-adv-text {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 24px;
     }
-    .company-blok-2 {
+    .company-adv {
         max-width: 223px;
         margin-bottom: 7px;
     }
@@ -2016,7 +2039,7 @@ footer {
         width: 31px;
     }
     footer {
-        margin-top: 70px;
+        margin-top: 80px;
         padding-top: 0;
         padding-bottom: 40px;
         background: #FFFFFF;
