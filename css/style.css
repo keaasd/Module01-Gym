@@ -401,11 +401,14 @@ main {
     background:rgba(243, 243, 243, 0.5);
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }    
-.functional-training:hover .training-text {
+/* .functional-training:hover .training-text {
     padding-top: 10px;
+} */
+.functional-training:hover .paddng {
+    margin-top: 10px;
 }
 .active:hover .training-text {
-    padding-top: 40px;
+    margin-top: 40px;
 }    
 .functional-training:hover .menu-text-hidden {
     position: relative;
@@ -414,6 +417,10 @@ main {
     max-height: 500px;    
     margin-top: 20px;
 }
+.training-active-data-text {
+    margin-top: 20px;
+}
+
 .functional-training.active:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);    
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
@@ -516,7 +523,7 @@ main {
 }
 .training-active-data-text {
     max-height: 500px;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 .mailing {
     max-height: 100%;
@@ -662,7 +669,6 @@ main {
     left: 0;
     top: calc(50% - 10px);
     background-color: transparent;
-    border-radius: 2px;
     border: 2px solid #2B3541;
 }
 .mailing-checkbox:not(:checked) + label::after {
@@ -1263,11 +1269,9 @@ footer {
 }
 @media (max-width: 1300px) {    
     .menu-visual {
-        right: auto;
         height: 535px;
         top: 152px;
         max-width: 500px;
-        left: 42%;
     }
     .menu-content {
         padding-top: 60px;
@@ -1340,14 +1344,8 @@ footer {
         padding-top: 70px;
     }
     .menu-visual {
-        position: relative;
-        max-width: 100%;
-        top: 40px;
-        z-index: -1;
-        right: 2px;
-        left: 0;
-        gap: 2%;
-        height: 87vw;
+        height: 55vw;
+        top: 161px;
     }    
     .events {
         margin-top: 134px;
@@ -1355,22 +1353,20 @@ footer {
     .menu {
         flex-wrap: wrap;
     }
-    .menu-girl {
-        position: absolute;
-        height: 90%;
-        margin: 0 auto;
-        right: 1.4vw;
-        object-fit: cover;
-        bottom: 0;
+    
+    .menu-desc {
+        padding-left: 0;
+        height: 41.5vw;
     }
     .menu-arrow {
-        display: none;
+        bottom: 0;
     }
+    /* .menu-arrow {
+        display: none;
+    } */
 }
 @media (max-width: 938px) {
-    .events {
-        margin-top: 134px;
-    }
+    
     .footer-contacts {
         gap: 3vw;
     }
@@ -1385,7 +1381,6 @@ footer {
     .menu-text-span {
         font-size: 16px;
         line-height: 140%;
-        margin: 0;
     }
     .functional-training {
         padding: 15px 15px;
@@ -1442,7 +1437,21 @@ footer {
         display: none;
     }
     .menu-visual {
+        position: relative;
+        max-width: 100%;
         top: 40px;
+        z-index: -1;
+        right: 2px;
+        left: 0;
+        height: 87vw;
+    }    
+    .menu-girl {
+        position: absolute;
+        height: 90%;
+        margin: 0 auto;
+        right: 1.4vw;
+        object-fit: cover;
+        bottom: 0;
     }
     .wrap-popup {
         max-width: 100%;
@@ -1480,6 +1489,7 @@ footer {
     }
     .menu-desc {
         padding-left: 0;
+        height: 170px;
     }
     .menu-item-text-sport {
         font-size: 16px;
@@ -1646,7 +1656,7 @@ footer {
         margin-bottom: 18px;
     }
     .functional-training:hover .menu-text-span {
-        padding-top: 0;
+        margin-top: 16px;
     }
     /* kkk */
     .company-adv {
@@ -1881,8 +1891,8 @@ footer {
         padding: 13px 20px;
     }
     .menu-grid-box-veb1 {
-        background-size: 142% auto;
-        background-position: center 100%;
+        background-size: 114%;
+        background-position: left center;
     }
     .menu-grid-btn {
         display: none;
@@ -1953,7 +1963,7 @@ footer {
         margin-top: 10px;
     }
     .functional-training:hover .training-text {
-        margin-top: 0;
+        margin-top: 10px;
     }
     .menu-text-span {
         font-size: 12px;
@@ -2121,6 +2131,10 @@ footer {
     .training-title {
         max-width: 50vw;
     }
+    .menu-grid-box-veb1 {
+        background-size: 145%;
+        background-position: center 90%;
+    }
     .menu-item-text-sport {
         max-width: 293px;
     }
@@ -2132,6 +2146,10 @@ footer {
     }
 }
 @media (max-width: 320px) {
+    .menu-grid-box-veb1 {  
+        background-size: 161%;
+        background-position: center 98%;
+    }
     .modal-btn {
         max-width: 320px;
     }
