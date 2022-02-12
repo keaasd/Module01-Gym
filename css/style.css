@@ -114,12 +114,14 @@ main {
     height: 849px;
 }
 .box-gradient-left {
-    background: linear-gradient(90deg, rgba(251, 241, 56, 0.2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2; 
     flex-grow: 1;
     z-index: -1;
 }
 .box-gradient-right {
-    background: linear-gradient(90deg, rgba(253, 249, 182, 0.2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: 0.2;
     flex-basis: 30%;
     z-index: -1;
 }
@@ -1453,9 +1455,6 @@ footer {
     .popup {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .box-gradient-left {
-        opacity: 1;
     }
     .box-gradient-right {
         height: 100%;
